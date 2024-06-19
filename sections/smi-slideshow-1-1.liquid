@@ -1,0 +1,1326 @@
+{% style %}
+	.smi-section-base-slideshow .smi-slideshow__arrows .arrow-slider-content .arrow-slider-left{margin-left:8px}.smi-section-base-slideshow .smi-slideshow__arrows .arrow-slider-content .arrow-slider-right{margin-right:8px}.smi-base-slideshow,.smi-section-base-slideshow{background:unset}.smi-section-base-slideshow .smi-slideshow{background:unset;position:relative}.smi-section-base-slideshow .smi-slideshow:hover .smi-slideshow__arrows{visibility:visible;opacity:1}.smi-section-base-slideshow .smi-slideshow .swiper-slide{overflow:hidden}.smi-section-base-slideshow .smi-slideshow .smi-container,.smi-section-base-slideshow .smi-slideshow .smi-container-fluid{min-height:var(--slide-height-mobile);position:relative}@media screen and (min-width: 768px){.smi-section-base-slideshow .smi-slideshow .smi-container,.smi-section-base-slideshow .smi-slideshow .smi-container-fluid{min-height:var(--slide-height)}}.smi-section-base-slideshow .smi-slideshow .smi-slide-background{height:100%;line-height:0}.smi-section-base-slideshow .smi-slideshow .smi-slide-background:before{content:"";position:absolute;left:0;right:0;top:0;bottom:0;background:var(--image-overlay)}.smi-section-base-slideshow .smi-slideshow .smi-slide-background picture>*,.smi-section-base-slideshow .smi-slideshow .smi-slide-background>svg{object-fit:cover;width:100%;height:100%}.smi-section-base-slideshow .smi-slideshow .smi-slide-background video,.smi-section-base-slideshow .smi-slideshow .smi-slide-background video>*{object-fit:cover;width:100%;height:100%}.smi-section-base-slideshow .smi-slideshow .smi-slide-background iframe.smi-background-video{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);pointer-events:none}.smi-section-base-slideshow .smi-slideshow .smi-slide-content{width:var(--content-max-width, 480px);margin-bottom:80px;margin-top:60px;max-width:100%;word-wrap:break-word}.smi-section-base-slideshow .smi-slideshow .smi-slide-content>span{display:block}.smi-section-base-slideshow .smi-slideshow .smi-slide-content--background{width:calc(var(--content-max-width, 480px) + 80px);background-color:rgba(var(--color-background), var(--content-background-opacity))}.smi-section-base-slideshow .smi-slideshow .smi-slide-content .smi-text-sub{color:rgba(var(--color-subtext, --color-foreground), 1)}.smi-section-base-slideshow .smi-slideshow .smi-slide-content .smi-slide-button .smi-component-buttons{justify-content:inherit}.smi-section-base-slideshow .smi-slideshow__dots{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);z-index:2;display:flex;justify-content:center;align-items:center;background-color:rgba(0,0,0,0) !important;width:100%}.smi-section-base-slideshow .smi-slideshow__dots .text-pagination.smi-pagination{color:rgb(var(--color-foreground))}.smi-section-base-slideshow .smi-slideshow__dots .smi-pagination{position:revert}@media screen and (max-width: 767.8px){.smi-section-base-slideshow .smi-slideshow__dots .smi-slider-dot-container{max-width:calc(100% - 90px)}.smi-section-base-slideshow .smi-slideshow__dots .line-style-4 .swiper-pagination{width:180px !important}.smi-section-base-slideshow .smi-slideshow__dots .line-style-1 .swiper-pagination,.smi-section-base-slideshow .smi-slideshow__dots .line-style-2 .swiper-pagination,.smi-section-base-slideshow .smi-slideshow__dots .line-style-3 .swiper-pagination{flex-wrap:wrap}}.smi-section-base-slideshow .smi-slideshow__arrows{visibility:hidden;opacity:0;transition:all .3s ease;position:absolute;top:50%;transform:translateY(-50%);width:100%;left:0;z-index:2}@media screen and (max-width: 767.98px){.smi-section-base-slideshow .smi-slideshow__arrows{display:none}}.smi-section-base-slideshow .smi-slideshow__arrows .arrow-slider-content{width:100%}.smi-section-base-slideshow .smi-slideshow__arrows .arrow-slider-content .arrow-slider-left{position:absolute;left:0}.smi-section-base-slideshow .smi-slideshow__arrows .arrow-slider-content .arrow-slider-right{position:absolute;right:0}.smi-section-base-slideshow .smi-slideshow__arrows .swiper-button-lock{display:none;visibility:hidden}.smi-section-base-slideshow .smi-slideshow .smi-control{line-height:0;letter-spacing:0;display:flex}.smi-section-base-slideshow .smi-slideshow .smi-control.smi-show-divider:before{content:"";width:1px;height:24px;background-color:rgba(var(--color-foreground), 0.2);margin:0 20px;display:inline-block}.smi-section-base-slideshow .smi-slideshow .smi-control>button:not(:first-child){margin-left:20px}.smi-section-base-slideshow .smi-slideshow .smi-control svg{height:20px;width:20px;stroke:rgb(var(--color-foreground))}.smi-section-base-slideshow .smi-slideshow .smi-control svg path{fill:rgb(var(--color-foreground))}.smi-section-base-slideshow .smi-slideshow .smi-control .smi-btn-mute,.smi-section-base-slideshow .smi-slideshow .smi-control .smi-btn-play{padding:0;border:none;outline:none;font:inherit;color:inherit;background:none;cursor:pointer}.smi-section-base-slideshow .smi-slideshow .smi-control .smi-btn-mute span,.smi-section-base-slideshow .smi-slideshow .smi-control .smi-btn-play span{display:inline-block}
+{% endstyle %}
+{% comment %}#component#["settings/heading","settings/media-width","settings/section-padding","settings/custom-icons","settings/buttons","blocks/product-variant","blocks/product-quantity","blocks/product-purchase","blocks/product-color","settings/slider-arrows","settings/slider-dots","blocks/color-slideshow","settings/product-card","settings/slider-arrows/without-none-option","blocks/background","settings/media-settings-3","settings/media-settings","settings/design-mode","settings/animation-settings","settings/rich-content-heading","settings/countdown-timer"]#endcomponent#{% endcomment %}
+{{ 'smi-swiper-bundle.min.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'smi-swiper-bundle.min.js' | asset_url }}" defer data-id="swiper"></script>
+<style>
+    {% assign color_block = section.blocks | where: 'type', 'color' | first %}
+{% if color_block %}
+    #shopify-section-{{ section.id }},
+    #shopify-section-{{ section.id }} .smi-color-{{ section.settings.color_scheme }} {
+    --color-background: {{ color_block.settings.background_color.red }}, {{ color_block.settings.background_color.green }},{{ color_block.settings.background_color.blue }};
+    --color-background-alpha: {{ color_block.settings.background_color.alpha  }};
+    {% if scheme.settings.smi_background_gradient != empty %}
+        --gradient-background: {{ color_block.settings.background_gradient_color }};
+    {% else %}
+        --gradient-background: {{ color_block.settings.background_color }};
+    {% endif %}
+    --color-foreground: {{ color_block.settings.text_color.red }}, {{ color_block.settings.text_color.green }},{{ color_block.settings.text_color.blue }};
+    --color-subtext: {{ color_block.settings.subtext_color.red }},{{ color_block.settings.subtext_color.green }},{{ color_block.settings.subtext_color.blue }};
+    --color-button: {{ color_block.settings.solid_background_button_color.red }}, {{ color_block.settings.solid_background_button_color.green }},{{ color_block.settings.solid_background_button_color.blue }};
+    --color-button-text: {{ color_block.settings.solid_button_label_color.red }}, {{ color_block.settings.solid_button_label_color.green }},{{ color_block.settings.solid_button_label_color.blue }};
+    --color-shadow: {{ color_block.settings.shadow_color.red }}, {{ color_block.settings.shadow_color.green }},{{ color_block.settings.shadow_color.blue }};
+    --color-secondary-button: {{ color_block.settings.background_color.red }},{{ color_block.settings.background_color.green }},{{ color_block.settings.background_color.blue }};
+    --color-secondary-button-text: {{ color_block.settings.outline_button_color.red }}, {{ color_block.settings.outline_button_color.green }},{{ color_block.settings.outline_button_color.blue }};;
+    }
+    #shopify-section-{{ section.id }} .smi-custom-control-color{
+        --color-background: {{ colorblock.settings.control_background_color.red }}, {{ colorblock.settings.control_background_color.green }},{{ colorblock.settings.control_background_color.blue }};
+        --gradient-background: {{ colorblock.settings.control_background_color }};
+        --color-button: {{ color_block.settings.control_solid_background_button_color.red }}, {{ color_block.settings.control_solid_background_button_color.green }},{{ color_block.settings.control_solid_background_button_color.blue }};
+        --color-button-text: {{ color_block.settings.control_solid_button_label_color.red }}, {{ color_block.settings.control_solid_button_label_color.green }},{{ color_block.settings.control_solid_button_label_color.blue }};
+        --color-foreground: {{ color_block.settings.control_text_color.red }}, {{ color_block.settings.control_text_color.green }},{{ color_block.settings.control_text_color.blue }};
+    }
+{% endif %}
+</style>
+{% liquid
+    assign control_color = 'smi-color-' | append: section.settings.control_color_scheme
+    assign color_block = section.blocks | where: 'type', 'color' | first
+    if color_block
+        assign control_color = 'smi-custom-control-color'
+    endif
+    assign image_block_size = section.blocks | where: 'type', 'image' | size
+    assign video_block_size = section.blocks | where: 'type', 'video' | size
+    assign block_media_size = image_block_size | plus: video_block_size
+%}
+{% comment %}Slide Height{% endcomment %}
+{% liquid
+    case section.settings.slide_height
+        when 'adapt_to_first_image'
+            assign first_block = section.blocks[0]
+            case first_block.type
+                when 'image'
+                    assign aspect_ratio_md = first_block.settings.image.aspect_ratio
+                    assign aspect_ratio_xs = first_block.settings.mobile_image_optional.aspect_ratio | default: aspect_ratio_md
+                    assign slide_height = 'calc(100vw / ' | append: aspect_ratio_md | append: ')'
+                    assign slide_height_mobile = 'calc(100vw / ' | append: aspect_ratio_xs | append: ')'
+                when 'video'
+                    if first_block.settings.video != blank
+                        assign aspect_ratio = first_block.settings.video.aspect_ratio
+                    else
+                        assign aspect_ratio = 16.0 | divided_by: 9.0
+                    endif
+                    assign slide_height = 'calc(100vw / ' | append: aspect_ratio | append: ')'
+                    assign slide_height_mobile = 'calc(100vw / ' | append: aspect_ratio | append: ')'
+            endcase
+        when 'x_small'
+            assign slide_height = '420px'
+            assign slide_height_mobile = '260px'
+        when 'small'
+            assign slide_height = '480px'
+            assign slide_height_mobile = '330px'
+        when 'medium'
+            assign slide_height = '560px'
+            assign slide_height_mobile = '410px'
+        when 'large'
+            assign slide_height = '680px'
+            assign slide_height_mobile = '490px'
+        when 'fit_screen'
+            assign slide_height = '100vh'
+            assign slide_height_mobile = '550px'
+    endcase
+%}
+<div id="smi-{{ section.id }}" class="smi-{{ section.id }} smi-section__inner smi-gradient smi-section-base-slideshow smi-color-{{ section.settings.color_scheme }}" data-section="slideshow-1" data-name="✧Slideshow 1">
+     
+    <div class="smi-slideshow swiper" data-slider='{"autoplay":{{- section.settings.auto_rotate_slides -}},"delay":"{{- section.settings.change_slides_every | times: 1000 -}}","effect":"{{- section.settings.slide_transition -}}","pageDotStyle":"{{- section.settings.sticky_page_dot_style -}}"}'>
+        <div class="swiper-wrapper">
+            {% for block in section.blocks %}
+                {% case block.type %}
+                    {% when 'image' or 'video' %}
+                        {% comment %}Get classes for position of content{% endcomment %}
+{% liquid
+    assign position_y = block.settings.desktop_content_position | split: '_' | first
+    assign position_x = block.settings.desktop_content_position | split: '_' | last
+    capture position_content
+        if block.settings.desktop_content_position
+            echo 'smi-justify-content-' | append: position_x | append: ' smi-align-items-' | append: position_y
+        endif
+    endcapture
+%}
+{% capture properties %}
+    --content-max-width: {{ block.settings.content_max_width }}px;
+    --content-background-opacity: {{ block.settings.content_background_opacity | divided_by: 100.0 }};
+    --image-overlay: {{ block.settings.image_overlay }};
+    --slide-height: {{ slide_height }};
+    --slide-height-mobile: {{ slide_height_mobile }};
+{% endcapture %}
+<div
+        class="swiper-slide"
+        style="{{ properties | strip_newlines | remove: '   ' }}"
+        {{ block.shopify_attributes }}
+>
+    <div class="smi-slide-background smi-absolute-full">
+        {% if block.type == 'image' %}
+            <picture>
+                {% if block.settings.mobile_image_optional != blank %}
+                    <source media="(max-width:460px)"
+                            srcset="{{ block.settings.mobile_image_optional | image_url: width: 460 }}">
+                    <source media="(max-width:767px)"
+                            srcset="{{ block.settings.mobile_image_optional | image_url: width: 767 }}">
+                {% endif %}
+                {% if block.settings.image != blank %}
+                    {% if forloop.index0 == 0  %}
+                        {% assign imageLoading = 'eager' %}
+                    {% else %}
+                        {% assign imageLoading = 'lazy' %}
+                    {% endif %}
+                    {{ block.settings.image | image_url: width: 1920 | image_tag: class: 'smi-bg-image', widths: '400,500,800,1200,1600,1920', sizes: '(max-width:460px) calc(100vw/2)', loading: imageLoading }}
+                {% else %}
+                    {% if block.settings.mobile_image_optional == blank %}
+                        {{ 'hero-apparel-3' | placeholder_svg_tag }}
+                    {% else %}
+                        {{ 'hero-apparel-3' | placeholder_svg_tag: 'smi-d-none smi-d-md-block' }}
+                        <img class="smi-d-block smi-d-md-none" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="placeholder">
+                    {% endif %}
+                {% endif %}
+            </picture>
+        {% elsif block.type == 'video' %}
+            {% liquid
+                if block.settings.enable_sound_control
+                     assign has_sound_control = 'smi-has-sound-control'
+                else
+                    assign has_sound_control = ''
+                endif
+            %}
+            {% if block.settings.video != blank %}
+                {{ block.settings.video | video_tag: autoplay: false, loop: true, muted: true, controls: false, image_size: '1100x', class: has_sound_control }}
+            {% elsif block.settings.video_url != blank %}
+                {%- if block.settings.video_url.type == 'youtube' -%}
+                    <iframe
+                            src="https://www.youtube.com/embed/{{ block.settings.video_url.id }}?enablejsapi=1&autoplay=1&mute=1&controls=0&loop=1&playlist={{ block.settings.video_url.id }}&rel=0"
+                            class="smi-js-youtube smi-background-video {{ has_sound_control }}"
+                            allow="autoplay; encrypted-media" loading="lazy"
+                            allowfullscreen
+                            title="{{ block.settings.description | escape }}"
+                            width="100%"
+                            height="100%"
+                    ></iframe>
+                {%- else -%}
+                    <iframe
+                            src="https://player.vimeo.com/video/{{ block.settings.video_url.id }}?title=0&byline=0&portrait=0&autoplay=1&loop=1&background=1"
+                            class="smi-js-vimeo smi-background-video {{ has_sound_control }}"
+                            allow="autoplay; encrypted-media" loading="lazy"
+                            allowfullscreen
+                            title="{{ block.settings.description | escape }}"
+                            width="100%"
+                            height="100%"
+                    ></iframe>
+                {%- endif -%}
+            {% else %}
+                {{ 'hero-apparel-3' | placeholder_svg_tag }}
+            {% endif %}
+        {%endif%}
+    </div>
+    {%-liquid
+    if settings.smi_animations_reveal_on_scroll != nil
+        assign animation_scroll = settings.smi_animations_reveal_on_scroll
+    else
+        assign global_settings = shop.metafields.smind.settings.value
+        assign animation_scroll = global_settings.revealOnScroll
+    endif
+-%}
+    <div class="smi-container{%- if section.settings.container_full_width == true %}-fluid{%- endif %} smi-d-flex {{ position_content }} ">
+        <div class="smi-slide-content {% if block.settings.content_background_opacity > 0 %}smi-slide-content--background smi-content-wrapper smi-border smi-shadow smi-px-xl smi-py-xxl smi-py-md-xl smi-px-md-lg{% endif -%}
+            {{- block.settings.desktop_content_alignment | prepend: ' smi-text-md-' -}}
+            {{- block.settings.mobile_content_alignment | prepend: ' smi-text-' -}}
+            {%- if animation_scroll %} smi-scroll-trigger smi-animate--slide-in{% endif -%}"
+        >
+        <span class="smi-text-sub smi-link-wrapper">
+            {{ block.settings.subheading }}
+        </span>
+        <span class="{{ block.settings.heading_size }} {% if block.settings.description != blank %}smi-mb-sm{% endif %} smi-link-wrapper">
+            {{ block.settings.heading }}
+        </span>
+        <span class="smi-text-lg smi-link-wrapper smi-color-text-75">
+            {{ block.settings.description }}
+        </span>
+            {% if block.settings.first_button_label != blank or block.settings.second_button_label != blank %}
+                <div class="smi-slide-button smi-mt-xl smi-d-flex
+                    {{- block.settings.mobile_content_alignment | prepend: ' smi-justify-content-' -}}
+                    {{- block.settings.desktop_content_alignment | prepend: ' smi-justify-content-md-' -}}"
+                >
+                    <div class="smi-component-buttons smi-button-wrapper
+    {%- if block.settings.button_full_width == true %} smi-component-buttons-full-width{%- endif -%}
+    {%- unless block.settings.first_button_style contains 'text' or block.settings.second_button_style contains 'text' %} smi-component-buttons--same-width{% endunless -%}">
+    {% liquid
+    assign button_label = block.settings.first_button_label
+    assign button_style = block.settings.first_button_style
+    assign button_link = block.settings.first_button_link
+%}
+{% if button_label != blank %}
+    <a
+            href="{{- button_link -}}"
+            class="smi-button smi-button--first smi-text-button smi-button--{{ button_style | split: '_' | first -}}
+                {%- if button_style contains 'arrow' %} smi-has-icon{% endif %}
+                {{- settings.smi_animations_hover_elements | default: shop.metafields.smind.settings.value.buttonHoverEffect | default: 'none' | prepend: ' smi-hover-' -}}
+                {{- ' smi-border smi-shadow' -}}">
+            <span>
+                {{- button_label | escape -}}
+            </span>
+        {% if button_style contains 'arrow' %}
+            <div class="smi-d-flex smi-align-content-center">
+                {% render 'smi-icons', icon: 'arrow-right-2' %}
+            </div>
+        {% endif %}
+    </a>
+{% endif %}
+    {% liquid
+    assign button_label = block.settings.second_button_label
+    assign button_style = block.settings.second_button_style
+    assign button_link = block.settings.second_button_link
+%}
+{% if button_label != blank %}
+    <a
+            href="{{- button_link -}}"
+            class="smi-button smi-button--second smi-text-button smi-button--{{ button_style | split: '_' | first -}}
+                    {%- if button_style contains 'arrow' %} smi-has-icon{% endif %}
+                    {{- settings.smi_animations_hover_elements | default: shop.metafields.smind.settings.value.buttonHoverEffect | default: 'none' | prepend: ' smi-hover-' -}}
+                    {{- ' smi-border smi-shadow' -}}">
+                    <span>
+                        {{- button_label | escape -}}
+                    </span>
+        {% if button_style contains 'arrow' %}
+            <div class="smi-d-flex smi-align-content-center">
+                {% render 'smi-icons', icon: 'arrow-right-2' %}
+            </div>
+        {% endif %}
+    </a>
+{% endif %}
+</div>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+                {% endcase %}
+            {% endfor %}
+        </div>
+        <!-- If we need pagination -->
+        <div class="smi-slideshow__dots {{ control_color }}">
+            {% if block_media_size > 1%}
+                {% if section.settings.sticky_page_dot_style != 'none' %}
+  <div class="smi-slider-dot-container">
+    {% if section.settings.sticky_page_dot_style == 'text-style-1'
+      or section.settings.sticky_page_dot_style == 'text-style-2'
+      or section.settings.sticky_page_dot_style == 'text-style-3'
+    %}
+      <div class="smi-component-sticky-page-dot">
+        <div class="smi-slider-action">
+          <div class="smi-arrows {{ section.settings.sticky_page_dot_style }}">
+            <div data-control="textPrevSlide" class="smi-arrow dot-arrow-slider smi-text-sm">{% render 'smi-icons', icon: 'arrow-left' %}</div>
+            {% comment %} <div class="smi-slider-pagination smi-text-sm">1/3</div> {% endcomment %}
+            <div class="text-pagination smi-pagination smi-slider-pagination smi-text-sm smi-arrow"></div>
+            <div data-control="textNextSlide" class="smi-arrow dot-arrow-slider smi-text-sm">{% render 'smi-icons', icon: 'arrow-right' %}</div>
+          </div>
+        </div>
+      </div>
+    {% else %}
+      <div class="dot-container {{ section.settings.sticky_page_dot_style }}">
+        <div
+          class="swiper-pagination smi-pagination"
+          {% if section.settings.sticky_page_dot_style == 'dot-style-4' %}
+            style="display: flex;"
+          {% endif %}
+        ></div>
+      </div>
+    {% endif %}
+  </div>
+{% endif %}
+            {% endif %}
+            <div class="smi-control
+                {%- if block_media_size > 1 and section.settings.sticky_page_dot_style != 'none' %} smi-show-divider{% endif -%}">
+                {% if section.settings.auto_rotate_slides == true %}
+                    <button class="smi-btn-play" data-status="on">
+                        <span class="smi-icon-play smi-d-none">
+                            {% render 'smi-icons', icon: 'play-button' %}
+                        </span>
+                        <span class="smi-icon-pause">
+                            {% render 'smi-icons', icon: 'pause' %}
+                        </span>
+                    </button>
+                {% endif %}
+                <button class="smi-btn-mute" data-status="off">
+                    <span class="smi-icon-mute">
+                        {% render 'smi-icons', icon: 'volumn-up' %}
+                    </span>
+                    <span class="smi-icon-unmute smi-d-none">
+                        {% render 'smi-icons', icon: 'volumn-mute' %}
+                    </span>
+                </button>
+            </div>
+        </div>
+        <!-- If we need navigation buttons -->
+        <div class="smi-slideshow__arrows {{ control_color }}">
+            {% if section.settings.arrow_style != 'none' %}
+  <div class="smi-component-arrow-slider">
+    <div class="arrow-slider-content">
+      <div class="{{ section.settings.arrow_style }} arrow-icon arrow-slider-left smi-cursor-pointer">
+        {% if section.settings.arrow_style == 'arr-style-2' or 
+          section.settings.arrow_style == 'arr-square-style-4' or
+          section.settings.arrow_style == 'arr-square-style-5' or
+          section.settings.arrow_style == 'arr-square-style-6' or
+          section.settings.arrow_style == 'arr-circle-style-4' or
+          section.settings.arrow_style == 'arr-circle-style-5'
+        %}
+            {% render 'smi-icons', icon: 'arrow-left-2' %}
+        {% else %}
+            {% render 'smi-icons', icon: 'arrow-left' %}
+        {% endif %}
+      </div>
+      <div class="{{ section.settings.arrow_style }} arrow-icon arrow-slider-right smi-cursor-pointer">
+        {% if section.settings.arrow_style == 'arr-style-2' or 
+          section.settings.arrow_style == 'arr-square-style-4' or
+          section.settings.arrow_style == 'arr-square-style-5' or
+          section.settings.arrow_style == 'arr-square-style-6' or
+          section.settings.arrow_style == 'arr-circle-style-4' or
+          section.settings.arrow_style == 'arr-circle-style-5'
+        %}
+            {% render 'smi-icons', icon: 'arrow-right-2' %}
+        {% else %}
+            {% render 'smi-icons', icon: 'arrow-right' %}
+      {% endif %}
+      </div>
+    </div>
+  </div>
+{% endif %}
+        </div>
+    </div>
+</div>
+{% schema %}
+{
+	"name": "✧Slideshow 1-1",
+	"tag": "section",
+	"class": "smi-section smi-base-slideshow",
+	"settings": [
+		{
+			"type": "checkbox",
+			"id": "container_full_width",
+			"label": "Container full width",
+			"default": false
+		},
+		{
+			"type": "select",
+			"id": "slide_height",
+			"label": "Slide height",
+			"options": [
+				{
+					"value": "adapt_to_first_image",
+					"label": "Adapt to first image"
+				},
+				{
+					"value": "x_small",
+					"label": "XS"
+				},
+				{
+					"value": "small",
+					"label": "S"
+				},
+				{
+					"value": "medium",
+					"label": "M"
+				},
+				{
+					"value": "large",
+					"label": "L"
+				},
+				{
+					"value": "fit_screen",
+					"label": "Fit screen"
+				}
+			],
+			"default": "medium"
+		},
+		{
+			"type": "select",
+			"id": "arrow_style",
+			"label": "Arrow",
+			"options": [
+				{
+					"value": "none",
+					"label": "None"
+				},
+				{
+					"value": "arr-style-1",
+					"label": "Style 1"
+				},
+				{
+					"value": "arr-style-2",
+					"label": "Style 2"
+				},
+				{
+					"value": "arr-square-style-1",
+					"label": "Square style 1"
+				},
+				{
+					"value": "arr-square-style-2",
+					"label": "Square style 2"
+				},
+				{
+					"value": "arr-square-style-3",
+					"label": "Square style 3"
+				},
+				{
+					"value": "arr-square-style-4",
+					"label": "Square style 4 (bg)"
+				},
+				{
+					"value": "arr-square-style-5",
+					"label": "Square style 5 (bg)"
+				},
+				{
+					"value": "arr-square-style-6",
+					"label": "Square style 6"
+				},
+				{
+					"value": "arr-circle-style-1",
+					"label": "Circle style 1 (bg)"
+				},
+				{
+					"value": "arr-circle-style-2",
+					"label": "Circle style 2"
+				},
+				{
+					"value": "arr-circle-style-3",
+					"label": "Circle style 3"
+				},
+				{
+					"value": "arr-circle-style-4",
+					"label": "Circle style 4"
+				},
+				{
+					"value": "arr-circle-style-5",
+					"label": "Circle style 5 (bg)"
+				}
+			],
+			"default": "arr-style-1"
+		},
+		{
+			"type": "select",
+			"id": "sticky_page_dot_style",
+			"label": "Pagination",
+			"options": [
+				{
+					"value": "none",
+					"label": "None"
+				},
+				{
+					"value": "dot-style-1",
+					"label": "Dot style 1"
+				},
+				{
+					"value": "dot-style-2",
+					"label": "Dot style 2"
+				},
+				{
+					"value": "dot-style-3",
+					"label": "Dot style 3"
+				},
+				{
+					"value": "dot-style-4",
+					"label": "Dot style 4"
+				},
+				{
+					"value": "line-dot",
+					"label": "Line dot"
+				},
+				{
+					"value": "line-style-1",
+					"label": "Line style 1"
+				},
+				{
+					"value": "line-style-2",
+					"label": "Line style 2"
+				},
+				{
+					"value": "line-style-3",
+					"label": "Line style 3"
+				},
+				{
+					"value": "line-style-4",
+					"label": "Line style 4"
+				},
+				{
+					"value": "text-style-1",
+					"label": "Text style 1"
+				},
+				{
+					"value": "text-style-2",
+					"label": "Text style 2"
+				},
+				{
+					"value": "text-style-3",
+					"label": "Text style 3"
+				}
+			],
+			"default": "dot-style-1"
+		},
+		{
+			"type": "header",
+			"content": "Slides"
+		},
+		{
+			"type": "checkbox",
+			"id": "auto_rotate_slides",
+			"label": "Auto-rotate slides",
+			"default": false
+		},
+		{
+			"type": "range",
+			"id": "change_slides_every",
+			"min": 3,
+			"max": 9,
+			"step": 1,
+			"unit": "s",
+			"label": "Change slides every",
+			"default": 5
+		},
+		{
+			"type": "select",
+			"id": "slide_transition",
+			"label": "Slide transition",
+			"options": [
+				{
+					"value": "slide",
+					"label": "Slide"
+				},
+				{
+					"value": "fade",
+					"label": "Fade"
+				}
+			],
+			"default": "slide"
+		},
+		{
+			"type": "select",
+            "options": [
+                {
+                    "value": "scheme_1",
+                    "label": "Scheme 1"
+                },
+                {
+                    "value": "scheme_2",
+                    "label": "Scheme 2"
+                },
+                {
+                    "value": "scheme_3",
+                    "label": "Scheme 3"
+                },
+                {
+                    "value": "scheme_4",
+                    "label": "Scheme 4"
+                },
+                {
+                    "value": "scheme_5",
+                    "label": "Scheme 5"
+                },
+                {
+                    "value": "scheme_6",
+                    "label": "Scheme 6"
+                },
+                {
+                    "value": "scheme_7",
+                    "label": "Scheme 7"
+                },
+                {
+                    "value": "scheme_8",
+                    "label": "Scheme 8"
+                },
+                {
+                    "value": "scheme_9",
+                    "label": "Scheme 9"
+                },
+                {
+                    "value": "scheme_10",
+                    "label": "Scheme 10"
+                }
+            ],
+			"id": "control_color_scheme",
+			"label": "Control color scheme"
+		},
+		{
+			"type": "select",
+            "options": [
+                {
+                    "value": "scheme_1",
+                    "label": "Scheme 1"
+                },
+                {
+                    "value": "scheme_2",
+                    "label": "Scheme 2"
+                },
+                {
+                    "value": "scheme_3",
+                    "label": "Scheme 3"
+                },
+                {
+                    "value": "scheme_4",
+                    "label": "Scheme 4"
+                },
+                {
+                    "value": "scheme_5",
+                    "label": "Scheme 5"
+                },
+                {
+                    "value": "scheme_6",
+                    "label": "Scheme 6"
+                },
+                {
+                    "value": "scheme_7",
+                    "label": "Scheme 7"
+                },
+                {
+                    "value": "scheme_8",
+                    "label": "Scheme 8"
+                },
+                {
+                    "value": "scheme_9",
+                    "label": "Scheme 9"
+                },
+                {
+                    "value": "scheme_10",
+                    "label": "Scheme 10"
+                }
+            ],
+			"id": "color_scheme",
+			"label": "Content color scheme",
+			"info": "To use color scheme: Step 1: Hide color block in section. Step 2: Customize colors in color block of “✧Styles” section in global area. [Learn more](https://docs.smind.io/guides/color-block-and-color-scheme)"
+		}
+	],
+	"blocks": [
+		{
+			"name": "Image",
+			"type": "image",
+			"settings": [
+				{
+					"type": "image_picker",
+					"id": "image",
+					"label": "Image"
+				},
+				{
+					"type": "image_picker",
+					"id": "mobile_image_optional",
+					"label": "Mobile image (optional)"
+				},
+				{
+					"type": "inline_richtext",
+					"id": "subheading",
+					"label": "Subheading"
+				},
+				{
+					"type": "inline_richtext",
+					"id": "heading",
+					"default": "MW75 Active Noise Cancelling Headphones",
+					"label": "Heading"
+				},
+				{
+					"type": "select",
+					"id": "heading_size",
+					"label": "Heading size",
+					"options": [
+						{
+							"value": "smi-h4",
+							"label": "XS"
+						},
+						{
+							"value": "smi-h3",
+							"label": "S"
+						},
+						{
+							"value": "smi-h2",
+							"label": "M"
+						},
+						{
+							"value": "smi-h1",
+							"label": "L"
+						}
+					],
+					"default": "smi-h1"
+				},
+				{
+					"type": "inline_richtext",
+					"id": "description",
+					"default": "These headphones feature a clever design that folds in two directions. ",
+					"label": "Description"
+				},
+				{
+					"type": "header",
+					"content": "Buttons"
+				},
+				{
+					"type": "text",
+					"id": "first_button_label",
+					"label": "First button label",
+					"default": "VIEW ALL",
+					"info": "Leave the label blank to hide the button."
+				},
+				{
+					"type": "url",
+					"id": "first_button_link",
+					"label": "First button link"
+				},
+				{
+					"type": "select",
+					"id": "first_button_style",
+					"label": "First button style",
+					"options": [
+						{
+							"value": "solid",
+							"label": "Solid"
+						},
+						{
+							"value": "solid_arrow",
+							"label": "Solid & arrow"
+						},
+						{
+							"value": "outline",
+							"label": "Outline"
+						},
+						{
+							"value": "outline_arrow",
+							"label": "Outline & arrow"
+						},
+						{
+							"value": "text",
+							"label": "Text"
+						},
+						{
+							"value": "text_arrow",
+							"label": "Text & arrow"
+						}
+					],
+					"default": "solid"
+				},
+				{
+					"type": "text",
+					"id": "second_button_label",
+					"label": "Second button label",
+					"info": "Leave the label blank to hide the button."
+				},
+				{
+					"type": "url",
+					"id": "second_button_link",
+					"label": "Second button link"
+				},
+				{
+					"type": "select",
+					"id": "second_button_style",
+					"label": "Second button style",
+					"options": [
+						{
+							"value": "solid",
+							"label": "Solid"
+						},
+						{
+							"value": "solid_arrow",
+							"label": "Solid & arrow"
+						},
+						{
+							"value": "outline",
+							"label": "Outline"
+						},
+						{
+							"value": "outline_arrow",
+							"label": "Outline & arrow"
+						},
+						{
+							"value": "text",
+							"label": "Text"
+						},
+						{
+							"value": "text_arrow",
+							"label": "Text & arrow"
+						}
+					],
+					"default": "solid"
+				},
+				{
+					"type": "header",
+					"content": "Content settings"
+				},
+				{
+					"type": "select",
+					"id": "desktop_content_position",
+					"label": "Desktop content position",
+					"options": [
+						{
+							"value": "start_start",
+							"label": "Top left"
+						},
+						{
+							"value": "start_center",
+							"label": "Top center"
+						},
+						{
+							"value": "start_end",
+							"label": "Top right"
+						},
+						{
+							"value": "center_start",
+							"label": "Middle left"
+						},
+						{
+							"value": "center_center",
+							"label": "Middle center"
+						},
+						{
+							"value": "center_end",
+							"label": "Middle right"
+						},
+						{
+							"value": "end_start",
+							"label": "Bottom left"
+						},
+						{
+							"value": "end_center",
+							"label": "Bottom center"
+						},
+						{
+							"value": "end_end",
+							"label": "Bottom right"
+						}
+					],
+					"default": "center_start",
+					"info": "Position is automatically optimized for mobile."
+				},
+				{
+					"type": "text_alignment",
+					"id": "desktop_content_alignment",
+					"label": "Desktop content alignment",
+					"default": "left"
+				},
+				{
+					"type": "text_alignment",
+					"id": "mobile_content_alignment",
+					"label": "Mobile content alignment",
+					"default": "center"
+				},
+				{
+					"type": "range",
+					"id": "content_max_width",
+					"min": 400,
+					"max": 1200,
+					"step": 20,
+					"unit": "px",
+					"label": "Content max-width",
+					"default": 480
+				},
+				{
+					"type": "range",
+					"id": "content_background_opacity",
+					"min": 0,
+					"max": 100,
+					"step": 1,
+					"unit": "%",
+					"label": "Content background opacity",
+					"default": 0
+				},
+				{
+					"type": "color_background",
+					"id": "image_overlay",
+					"label": "Image overlay",
+					"default": "linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0))"
+				}
+			]
+		},
+		{
+			"name": "Video",
+			"type": "video",
+			"settings": [
+				{
+					"type": "video",
+					"id": "video",
+					"label": "Video"
+				},
+				{
+					"type": "video_url",
+					"id": "video_url",
+					"label": "Video URL",
+					"accept": [
+						"youtube",
+						"vimeo"
+					]
+				},
+				{
+					"type": "checkbox",
+					"id": "enable_sound_control",
+					"label": "Enable sound control",
+					"default": false
+				},
+				{
+					"type": "inline_richtext",
+					"id": "subheading",
+					"label": "Subheading"
+				},
+				{
+					"type": "inline_richtext",
+					"id": "heading",
+					"default": "MW75 Active Noise Cancelling Headphones",
+					"label": "Heading"
+				},
+				{
+					"type": "select",
+					"id": "heading_size",
+					"label": "Heading size",
+					"options": [
+						{
+							"value": "smi-h4",
+							"label": "XS"
+						},
+						{
+							"value": "smi-h3",
+							"label": "S"
+						},
+						{
+							"value": "smi-h2",
+							"label": "M"
+						},
+						{
+							"value": "smi-h1",
+							"label": "L"
+						}
+					],
+					"default": "smi-h1"
+				},
+				{
+					"type": "inline_richtext",
+					"id": "description",
+					"default": "These headphones feature a clever design that folds in two directions. ",
+					"label": "Description"
+				},
+				{
+					"type": "header",
+					"content": "Buttons"
+				},
+				{
+					"type": "text",
+					"id": "first_button_label",
+					"label": "First button label",
+					"default": "VIEW ALL",
+					"info": "Leave the label blank to hide the button."
+				},
+				{
+					"type": "url",
+					"id": "first_button_link",
+					"label": "First button link"
+				},
+				{
+					"type": "select",
+					"id": "first_button_style",
+					"label": "First button style",
+					"options": [
+						{
+							"value": "solid",
+							"label": "Solid"
+						},
+						{
+							"value": "solid_arrow",
+							"label": "Solid & arrow"
+						},
+						{
+							"value": "outline",
+							"label": "Outline"
+						},
+						{
+							"value": "outline_arrow",
+							"label": "Outline & arrow"
+						},
+						{
+							"value": "text",
+							"label": "Text"
+						},
+						{
+							"value": "text_arrow",
+							"label": "Text & arrow"
+						}
+					],
+					"default": "solid"
+				},
+				{
+					"type": "text",
+					"id": "second_button_label",
+					"label": "Second button label",
+					"info": "Leave the label blank to hide the button."
+				},
+				{
+					"type": "url",
+					"id": "second_button_link",
+					"label": "Second button link"
+				},
+				{
+					"type": "select",
+					"id": "second_button_style",
+					"label": "Second button style",
+					"options": [
+						{
+							"value": "solid",
+							"label": "Solid"
+						},
+						{
+							"value": "solid_arrow",
+							"label": "Solid & arrow"
+						},
+						{
+							"value": "outline",
+							"label": "Outline"
+						},
+						{
+							"value": "outline_arrow",
+							"label": "Outline & arrow"
+						},
+						{
+							"value": "text",
+							"label": "Text"
+						},
+						{
+							"value": "text_arrow",
+							"label": "Text & arrow"
+						}
+					],
+					"default": "solid"
+				},
+				{
+					"type": "header",
+					"content": "Content settings"
+				},
+				{
+					"type": "select",
+					"id": "desktop_content_position",
+					"label": "Desktop content position",
+					"options": [
+						{
+							"value": "start_start",
+							"label": "Top left"
+						},
+						{
+							"value": "start_center",
+							"label": "Top center"
+						},
+						{
+							"value": "start_end",
+							"label": "Top right"
+						},
+						{
+							"value": "center_start",
+							"label": "Middle left"
+						},
+						{
+							"value": "center_center",
+							"label": "Middle center"
+						},
+						{
+							"value": "center_end",
+							"label": "Middle right"
+						},
+						{
+							"value": "end_start",
+							"label": "Bottom left"
+						},
+						{
+							"value": "end_center",
+							"label": "Bottom center"
+						},
+						{
+							"value": "end_end",
+							"label": "Bottom right"
+						}
+					],
+					"default": "center_start",
+					"info": "Position is automatically optimized for mobile."
+				},
+				{
+					"type": "text_alignment",
+					"id": "desktop_content_alignment",
+					"label": "Desktop content alignment",
+					"default": "left"
+				},
+				{
+					"type": "text_alignment",
+					"id": "mobile_content_alignment",
+					"label": "Mobile content alignment",
+					"default": "center"
+				},
+				{
+					"type": "range",
+					"id": "content_max_width",
+					"min": 400,
+					"max": 1200,
+					"step": 20,
+					"unit": "px",
+					"label": "Content max-width",
+					"default": 480
+				},
+				{
+					"type": "range",
+					"id": "content_background_opacity",
+					"min": 0,
+					"max": 100,
+					"step": 1,
+					"unit": "%",
+					"label": "Content background opacity",
+					"default": 0
+				},
+				{
+					"type": "color_background",
+					"id": "image_overlay",
+					"label": "Image overlay"
+				}
+			]
+		},
+		{
+			"name": "Color",
+			"limit": 1,
+			"type": "color",
+			"settings": [
+				{
+					"type": "paragraph",
+					"content": "How to use “Custom color block” and “Color scheme”. [Learn more](https://docs.smind.io/guides/color-block-and-color-scheme)"
+				},
+				{
+					"type": "header",
+					"content": "Control"
+				},
+				{
+					"type": "color",
+					"id": "control_background_color",
+					"default": "#F3F3F3",
+					"label": "Background"
+				},
+				{
+					"type": "color",
+					"id": "control_text_color",
+					"default": "#121212",
+					"label": "Text"
+				},
+				{
+					"type": "color",
+					"id": "control_solid_background_button_color",
+					"default": "#121212",
+					"label": "Solid button background"
+				},
+				{
+					"type": "color",
+					"id": "control_solid_button_label_color",
+					"default": "#FFFFFF",
+					"label": "Solid button label"
+				},
+				{
+					"type": "header",
+					"content": "Content"
+				},
+				{
+					"type": "color",
+					"id": "background_color",
+					"default": "#F3F3F3",
+					"label": "Background"
+				},
+				{
+					"type": "color_background",
+					"id": "background_gradient_color",
+					"label": "Background gradient",
+					"info": "Background gradient replaces background where possible."
+				},
+				{
+					"type": "color",
+					"id": "text_color",
+					"default": "#121212",
+					"label": "Text"
+				},
+				{
+					"type": "color",
+					"id": "subtext_color",
+					"default": "#EA1111",
+					"label": "Subtext"
+				},
+				{
+					"type": "color",
+					"id": "solid_background_button_color",
+					"default": "#121212",
+					"label": "Solid button background"
+				},
+				{
+					"type": "color",
+					"id": "solid_button_label_color",
+					"default": "#FFFFFF",
+					"label": "Solid button label"
+				},
+				{
+					"type": "color",
+					"id": "outline_button_color",
+					"default": "#121212",
+					"label": "Outline button"
+				},
+				{
+					"type": "color",
+					"id": "shadow_color",
+					"default": "#121212",
+					"label": "Shadow"
+				}
+			]
+		}
+	],
+	"presets": [
+		{
+			"name": "✧Slideshow 1-1",
+			"settings": {
+				"container_full_width": false,
+				"slide_height": "medium",
+				"arrow_style": "arr-circle-style-3",
+				"sticky_page_dot_style": "dot-style-2",
+				"auto_rotate_slides": true,
+				"change_slides_every": 5,
+				"slide_transition": "slide",
+				"control_color_scheme": "scheme_4",
+				"color_scheme": "scheme_4"
+			},
+			"blocks": [
+				{
+					"type": "image",
+					"settings": {
+						"image": "shopify://shop_images/smi-smi-clothing-36.jpg",
+						"subheading": "",
+						"heading": "Discover latest trends",
+						"heading_size": "smi-h1",
+						"description": "Explore our trendy collection of clothing and accessories to make a fashion statement.",
+						"first_button_label": "Shop product",
+						"first_button_link": null,
+						"first_button_style": "solid",
+						"second_button_label": "",
+						"second_button_link": null,
+						"second_button_style": "solid",
+						"desktop_content_position": "end_center",
+						"desktop_content_alignment": "center",
+						"mobile_content_alignment": "center",
+						"content_max_width": 520,
+						"content_background_opacity": 0,
+						"image_overlay": "linear-gradient(180deg, rgba(29, 16, 2, 0.05), rgba(0, 0, 0, 0) 100%)"
+					}
+				},
+				{
+					"type": "image",
+					"settings": {
+						"image": "shopify://shop_images/smi-smi-clothing_2d621f1c-f125-4afb-8170-c00b9c18a298.jpg",
+						"subheading": "",
+						"heading": "Timeless style modern",
+						"heading_size": "smi-h1",
+						"description": "Explore our trendy collection of clothing and accessories to make a fashion statement.",
+						"first_button_label": "Explore all",
+						"first_button_link": null,
+						"first_button_style": "solid",
+						"second_button_label": "",
+						"second_button_link": null,
+						"second_button_style": "solid",
+						"desktop_content_position": "end_center",
+						"desktop_content_alignment": "center",
+						"mobile_content_alignment": "center",
+						"content_max_width": 520,
+						"content_background_opacity": 0,
+						"image_overlay": "linear-gradient(180deg, rgba(29, 16, 2, 0.05), rgba(0, 0, 0, 0) 100%)"
+					}
+				},
+				{
+					"type": "image",
+					"settings": {
+						"image": "shopify://shop_images/smi-image_2.jpg",
+						"subheading": "",
+						"heading": "Bold new styles",
+						"heading_size": "smi-h1",
+						"description": "From cozy winter wear to breezy summer outfits, explore versatile fashion choices that adapt to.",
+						"first_button_label": "Explore now",
+						"first_button_link": null,
+						"first_button_style": "solid",
+						"second_button_label": "",
+						"second_button_link": null,
+						"second_button_style": "solid",
+						"desktop_content_position": "end_center",
+						"desktop_content_alignment": "center",
+						"mobile_content_alignment": "center",
+						"content_max_width": 520,
+						"content_background_opacity": 0,
+						"image_overlay": "linear-gradient(180deg, rgba(29, 16, 2, 0.05), rgba(0, 0, 0, 0) 100%)"
+					}
+				},
+				{
+					"type": "color",
+					"settings": {
+						"control_background_color": "#63513f",
+						"control_text_color": "#ffffff",
+						"control_solid_background_button_color": "#ffffff",
+						"control_solid_button_label_color": "#63513f",
+						"background_color": "#63513f",
+						"background_gradient_color": "",
+						"text_color": "#ffffff",
+						"subtext_color": "#ffffff",
+						"solid_background_button_color": "#ffffff",
+						"solid_button_label_color": "#63513f",
+						"outline_button_color": "#ffffff",
+						"shadow_color": "#ffffff"
+					}
+				}
+			]
+		}
+	]
+}
+{% endschema %}
+<script defer>
+!function(){class e{options={init:!1,loop:!0,autoHeight:!0,grabCursor:!0,pagination:{el:"",clickable:!0},navigation:{nextEl:"",prevEl:""}};swiper=null;el=null;dataSetting=null;constructor(e){if("undefined"==typeof Swiper)return null;this.sectionEl=e,this.el=e.querySelector(".smi-slideshow"),this.initSlideshow(),this._addAltToImgInVideoUpload()}initSlideshow(){this.dataSetting=JSON.parse(this.el.getAttribute("data-slider")),this._handleSettingBeforeInitSlide(),this.options.navigation.nextEl=this.sectionEl.querySelector(".arrow-slider-right"),this.options.navigation.prevEl=this.sectionEl.querySelector(".arrow-slider-left"),this.options.pagination.el=this.sectionEl.querySelector(".smi-pagination"),this.swiper=new Swiper(this.el,this.options),this.swiper.on("init",(e=>{this._handleButtonAutoplay(),this._handleButtonMuteClick(),this._handleVisibilityButtonMute(e),this.fitCoverVideo(),this._handleAutoplayVideo(e)})),this.swiper.on("slideChange",(e=>{this._handleVisibilityButtonMute(e),this._handleAutoplayVideo(e),this._handleButtonMuteOnChangeSlide()})),this.swiper.on("afterInit",(e=>{this._handleDesignMode(e)})),this.swiper.init()}_handleSettingBeforeInitSlide(){this.dataSetting.autoplay?this.options.autoplay={delay:this.dataSetting?.delay??5e3,disableOnInteraction:!1}:delete this.options.autoplay,"fade"===this.dataSetting.effect?(this.options.effect="fade",this.options.fadeEffect={crossFade:!0}):delete this.options.effect,this.dataSetting.pageDotStyle.includes("text-style")?this.options.pagination={type:"fraction",clickable:!0}:this.options.pagination={clickable:!0}}_handleButtonAutoplay(){const e=this.el.querySelector(".smi-btn-play");e&&e.addEventListener("click",(()=>{let t=e.getAttribute("data-status");this._handleToggleButton(e),"on"===t?this.swiper.autoplay.running&&this.swiper.autoplay.pause():"off"===t&&(this.swiper.autoplay.paused?this.swiper.autoplay.resume():this.swiper.autoplay.start())}))}_handleButtonMuteClick(){const e=this.el.querySelector(".smi-btn-mute");e.addEventListener("click",(()=>{let t=e.getAttribute("data-status");this._handleToggleButton(e),"on"===t?this._handleMute():"off"===t&&this._handleUnmute()}))}_handleButtonMuteOnChangeSlide(){const e=this.el.querySelector(".smi-btn-mute");e.setAttribute("data-status","off"),e.querySelector(".smi-icon-mute").classList.remove("smi-d-none"),e.querySelector(".smi-icon-unmute").classList.add("smi-d-none"),this._handleMute()}_handleVisibilityButtonMute(e){let t=e.slides[e.activeIndex].querySelector("video");t||(t=e.slides[e.activeIndex].querySelector("iframe"));const i=this.el.querySelector(".smi-btn-mute"),s=i.parentNode;t&&t.classList.contains("smi-has-sound-control")?(i.classList.remove("smi-d-none"),s.children.length<2&&s.classList.remove("smi-d-none")):(i.classList.add("smi-d-none"),s.children.length<2&&s.classList.add("smi-d-none"))}_handleMute(){this.el.querySelectorAll("video").forEach((e=>{e.muted=!0})),this.el.querySelectorAll(".smi-js-youtube").forEach((e=>{e.contentWindow.postMessage('{"event":"command","func":"mute","args":""}',"*")})),this.el.querySelectorAll(".smi-js-vimeo").forEach((e=>{e.contentWindow.postMessage('{"method":"setVolume", "value":0}',"*")}))}_handleUnmute(){const e=this.el.querySelector(".swiper-slide-active").querySelector(".smi-has-sound-control");e&&("VIDEO"===e.tagName?e.muted=!1:e.classList.contains("smi-js-youtube")?e.contentWindow.postMessage('{"event":"command","func":"unMute","args":""}',"*"):e.classList.contains("smi-js-vimeo")&&e.contentWindow.postMessage('{"method":"setVolume", "value":1}',"*"))}_handleToggleButton(e){let t=e.getAttribute("data-status");e.setAttribute("data-status","on"===t?"off":"on"),e.querySelectorAll("span").forEach((e=>{e.classList.toggle("smi-d-none")}))}_handleAutoplayVideo(e){const t=e.slides[e.activeIndex];this.el.querySelectorAll("video").forEach((e=>e.pause())),this.el.querySelectorAll(".smi-js-youtube").forEach((e=>{e.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}',"*")})),this.el.querySelectorAll(".smi-js-vimeo").forEach((e=>{e.contentWindow.postMessage('{"method":"pause"}',"*")}));const i=t.querySelector("video");if(i){let e;i&&(clearTimeout(e),e=setTimeout((()=>i.play()),150))}else if(t.querySelector(".smi-js-youtube")){t.querySelector(".smi-js-youtube").contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}',"*")}else if(t.querySelector(".smi-js-vimeo")){t.querySelector(".smi-js-vimeo").contentWindow.postMessage('{"method":"play"}',"*")}}_handleDesignMode(e){if(Shopify.designMode){(()=>{document.addEventListener("shopify:block:select",(t=>{const i=t.target.dataset.swiperSlideIndex;void 0!==i&&this.swiper.slideTo(i,0,!1),e.autoplay.running&&e.autoplay.pause()}))})(),document.addEventListener("shopify:block:deselect",(t=>{e.autoplay.paused&&e.autoplay.resume()})),document.addEventListener("shopify:section:load",(e=>{const t=this.swiper.activeIndex;setTimeout((()=>{let e=document.querySelector("#smi-{{ section.id }} .smi-slideshow").swiper;e&&void 0!==t&&e.slideTo(t,0,!1)}),150)}))}}parseResolutionString(e){const t=e.split(/\s?:\s?/i),i=16/9;if(t.length<2)return i;const s=parseInt(t[0],10),o=parseInt(t[1],10);return isNaN(s)||isNaN(o)?i:s/o}fitCoverVideo(){const e=this.parseResolutionString("16:9"),onResize=()=>{const t=this.el.querySelectorAll("iframe");if(t.length){const i=this.el,s=i.offsetHeight+200,o=i.offsetWidth+200,n=e;t.forEach((e=>{e.classList.contains("smi-background-video")&&(n>o/s?(e.style.width=s*n+"px",e.style.height=s+"px"):(e.style.width=o+"px",e.style.height=o/n+"px"))}))}};window.addEventListener("resize",(()=>{window.requestAnimationFrame(onResize)})),onResize()}_addAltToImgInVideoUpload(){this.sectionEl.querySelectorAll("video").forEach((e=>{const t=e.querySelector("img");t&&t.setAttribute("alt","video")}))}}if(Shopify.designMode){let t=0;const i=setInterval((()=>{t++,("undefined"!=typeof Swiper||t>200)&&(clearInterval(i),new e(document.getElementById("smi-{{ section.id }}")))}),10)}else document.addEventListener("DOMContentLoaded",(()=>{new e(document.getElementById("smi-{{ section.id }}"))}))}();
+</script>

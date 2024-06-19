@@ -1,0 +1,987 @@
+{% style %}
+	.smi-gg-sm{grid-gap:12px}.smi-gg-md{grid-gap:16px}.smi-pd-bd{padding:0px 22px}.smi-gg-bd{grid-gap:22px}.smi-mb-lg-im{margin-bottom:calc(var(--spacing-elements)*24px)}.smi-gg-bdi{grid-gap:1px solid red;overflow:hidden}.smi-gg-bdl{padding-left:22px}.smi-gg-bdr{padding-right:22px}.smi-gg-lg{grid-gap:24px}.hide-countdown{display:none}.show-countdown{display:block !important}.small-container-content .unit-countdown{width:52px}.small-container-content .smi-h1{font-size:calc(var(--font-heading-scale)*38*1px);line-height:calc((1 + .8/(var(--font-heading-scale)*38/16))*var(--heading-line-height-scale, 1))}.small-container-content .smi-h2{font-size:calc(var(--font-heading-scale)*32*1px);line-height:calc((1 + .8/(var(--font-heading-scale)*32/16))*var(--heading-line-height-scale, 1))}.small-container-content .smi-h3{font-size:calc(var(--font-heading-scale)*26*1px);line-height:calc((1 + .8/(var(--font-heading-scale)*26/16))*var(--heading-line-height-scale, 1))}.small-container-content .smi-h4{font-size:calc(var(--font-heading-scale)*20*1px);line-height:calc((1 + .8/(var(--font-heading-scale)*20/16))*var(--heading-line-height-scale, 1))}.small-container-content .smi-text-md{font-size:calc(var(--font-body-scale)*16*1px);line-height:calc((1 + .8/(var(--font-body-scale)*16/16))*var(--body-line-height-scale, 1))}.small-container-content .smi-pr-lg{padding-right:24px}.small-container-content .smi-pl-lg{padding-left:24px}.small-container-content .smi-py-sm{padding-top:12px;padding-bottom:12px}.small-container-content .smi-px-md{padding-left:16px;padding-right:16px}.small-container-content .smi-py-xs{padding-top:8px;padding-bottom:8px}.small-container-content .smi-mr-sm{margin-right:8px}.small-container-content .smi-ml-sm{margin-left:8px}.small-container-content .solid_2_radius{padding:4px 12px}.small-container-content .solid_2{padding:4px 12px}.small-container-content .smi-rich-content-half-true{width:100%}.extra-small-container-content .unit-countdown{width:52px}.extra-small-container-content .smi-h1{font-size:calc(var(--font-heading-scale)*30*1px);line-height:calc((1 + .8/(var(--font-heading-scale)*30/16))*var(--heading-line-height-scale, 1))}.extra-small-container-content .smi-h2{font-size:calc(var(--font-heading-scale)*26*1px);line-height:calc((1 + .8/(var(--font-heading-scale)*26/16))*var(--heading-line-height-scale, 1))}.extra-small-container-content .smi-h3{font-size:calc(var(--font-heading-scale)*24*1px);line-height:calc((1 + .8/(var(--font-heading-scale)*24/16))*var(--heading-line-height-scale, 1))}.extra-small-container-content .smi-h4{font-size:calc(var(--font-heading-scale)*20*1px);line-height:calc((1 + .8/(var(--font-heading-scale)*20/16))*var(--heading-line-height-scale, 1))}.extra-small-container-content .smi-text-md{font-size:calc(var(--font-body-scale)*16*1px);line-height:calc((1 + .8/(var(--font-body-scale)*16/16))*var(--body-line-height-scale, 1))}.extra-small-container-content .smi-pr-lg{padding-right:18px}.extra-small-container-content .smi-pl-lg{padding-left:18px}.extra-small-container-content .smi-py-sm{padding-top:12px;padding-bottom:12px}.extra-small-container-content .smi-px-md{padding-left:12px;padding-right:12px}.extra-small-container-content .smi-py-xs{padding-top:8px;padding-bottom:8px}.extra-small-container-content .smi-mr-sm{margin-right:8px}.extra-small-container-content .smi-ml-sm{margin-left:8px}.extra-small-container-content .solid_2_radius{padding:4px 12px}.extra-small-container-content .solid_2{padding:4px 12px}.extra-small-container-content .smi-rich-content-half-true{width:100%}.ex-extra-small-container-content .unit-countdown{width:50px}.ex-extra-small-container-content .smi-h1{font-size:24px !important;line-height:calc(1.5333333333*var(--heading-line-height-scale, 1)) !important}.ex-extra-small-container-content .smi-h2{font-size:20px !important;line-height:calc(1.64*var(--heading-line-height-scale, 1)) !important}.ex-extra-small-container-content .smi-h3{font-size:18px !important;line-height:calc((1 + .8/(var(--font-heading-scale)*18/16))*var(--heading-line-height-scale, 1)) !important}.ex-extra-small-container-content .smi-h4{font-size:16px !important;line-height:calc((1 + .8/(var(--font-heading-scale)*16/16))*var(--heading-line-height-scale, 1)) !important}.ex-extra-small-container-content .smi-text-md{font-size:12px !important;line-height:calc(2.0666666667*var(--body-line-height-scale, 1)) !important}.ex-extra-small-container-content .smi-pr-lg{padding-right:2px !important}.ex-extra-small-container-content .smi-pl-lg{padding-left:2px !important}.ex-extra-small-container-content .smi-py-sm{padding-top:4px !important;padding-bottom:4px !important}.ex-extra-small-container-content .smi-px-md{padding-left:4px !important;padding-right:4px !important}.ex-extra-small-container-content .smi-py-xs{padding-top:3px !important;padding-bottom:3px !important}.ex-extra-small-container-content .smi-mr-sm{margin-right:2px !important}.ex-extra-small-container-content .smi-ml-sm{margin-left:2px !important}.ex-extra-small-container-content .solid_2_radius{padding:0px 6px !important}.ex-extra-small-container-content .solid_2{padding:0px 6px !important}.smi-component-settings-countdown-timer{display:flex;height:fit-content;align-items:center}.smi-component-settings-countdown-timer .c2-border-bg{background:rgba(var(--color-background), 1)}.smi-component-settings-countdown-timer .smi-text-75{opacity:.75}.smi-component-settings-countdown-timer .unit-countdown{width:fit-content;margin:auto;text-align:center}.smi-component-settings-countdown-timer .countdown{display:flex;grid-gap:0px 4px;align-items:center;justify-content:center;margin:auto}.smi-component-settings-countdown-timer .hide-days{display:none}.smi-component-settings-countdown-timer .smi-classic_2{border-right:1px solid rgba(var(--color-foreground), 0.2)}.smi-component-settings-countdown-timer .smi-classic_2 .unit-countdown{width:67px}.smi-component-settings-countdown-timer .content-classic--border{background:rgba(var(--color-foreground), 0.2);color:rgba(0,0,0,0);width:1px;height:100%}.smi-component-settings-countdown-timer .smi-classic_3{border-right:1px solid rgba(var(--color-foreground), 0.2)}.smi-component-settings-countdown-timer .smi-classic_3 .unit-countdown{width:67px}.smi-component-settings-countdown-timer .smi-solid_1{background-color:rgba(var(--color-button), 1);color:rgba(var(--color-button-text), 1)}.smi-component-settings-countdown-timer .smi-solid_1_radius{border-radius:10px;background-color:rgba(var(--color-button), 1);color:rgba(var(--color-button-text), 1)}.smi-component-settings-countdown-timer .solid_1{color:rgba(var(--color-button-text), 1)}.smi-component-settings-countdown-timer .solid_1_radius{color:rgba(var(--color-button-text), 1)}.smi-component-settings-countdown-timer .solid_2_radius{width:fit-content;height:fit-content;padding:4px 8px;border-radius:10px;background-color:rgba(var(--color-button), 1);color:rgba(var(--color-button-text), 1)}.smi-component-settings-countdown-timer .solid_2{width:fit-content;height:fit-content;padding:4px 8px;background-color:rgba(var(--color-button), 1);color:rgba(var(--color-button-text), 1)}.border-all{width:fit-content;border:1px solid rgba(var(--color-foreground), 0.2)}.border-all-radius{border-radius:10px;width:fit-content;border:1px solid rgba(var(--color-foreground), 0.2)}@media screen and (max-width: 400px){.smi-component-settings-countdown-timer .countdown{grid-gap:0px 2px !important}}.smi-component-blocks-heading{width:100%;justify-content:var(--content-alignment)}.smi-component-blocks-heading .heading-only{max-width:750px}.smi-component-blocks-heading .heading-only-left{margin:auto auto auto 0px}.smi-component-blocks-heading .heading-only-right{margin:auto 0px auto auto}.smi-component-blocks-heading .heading-only-center{margin:auto}.smi-component-blocks-heading .smi-text-75{opacity:.75}.smi-component-blocks-heading .sub-heading{color:rgba(var(--color-subtext), 1);letter-spacing:1px}.smi-component-blocks-heading .description p{margin-bottom:calc(16px*var(--spacing-elements))}.smi-component-blocks-heading .description p:last-child{margin-bottom:0px !important}.smi-component-blocks-heading{width:100%;justify-content:var(--content-alignment)}.smi-component-blocks-heading .heading-only{max-width:750px}.smi-component-blocks-heading .heading-only-left{margin:auto auto auto 0px}.smi-component-blocks-heading .heading-only-right{margin:auto 0px auto auto}.smi-component-blocks-heading .heading-only-center{margin:auto}.smi-component-blocks-heading .smi-text-75{opacity:.75}.smi-component-blocks-heading .sub-heading{color:rgba(var(--color-subtext), 1);letter-spacing:1px}.smi-component-blocks-heading .description p{margin-bottom:calc(16px*var(--spacing-elements))}.smi-component-blocks-heading .description p:last-child{margin-bottom:0px !important}.smi-section-countdonw-7{background:var(--gradient-background-section)}.smi-section-countdonw-7 .smi-container-relative{position:relative}.smi-section-countdonw-7 .smi-bg-img-settings{position:absolute;background:var(--media-overlay);width:100%;height:100%}.smi-section-countdonw-7 .smi-bg-img-settings .background-img-dt-settings{border-radius:calc(var(--media-radius) - var(--media-border-width));position:absolute;height:-webkit-fill-available;width:100%;color:rgba(0,0,0,0);font-size:.1px}.smi-section-countdonw-7 .smi-bg-img-settings .smi-bg-image{border-radius:calc(var(--media-radius) - var(--media-border-width));width:100%;height:100%;object-fit:cover}.smi-section-countdonw-7 .padding-bg-img{padding-top:var(--image-padding-top);padding-bottom:var(--image-padding-bottom);padding-left:48px;padding-right:48px}.smi-section-countdonw-7 .smi-bg-container{background:var(--gradient-background)}.smi-section-countdonw-7 .smi-container-detail{padding:calc(var(--media-border-width) + var(--section-padding-top-image)) calc(var(--media-border-width) + 36px) calc(var(--section-padding-bottom-image) + var(--media-border-width)) calc(var(--media-border-width) + 36px);display:flex;gap:0px 80px;align-items:center;flex-direction:var(--media-position)}.smi-section-countdonw-7 .smi-container-detail .content-alignment-countdown-mobile-left .smi-component-settings-countdown-timer{justify-content:left}.smi-section-countdonw-7 .smi-container-detail .content-alignment-countdown-mobile-right .smi-component-settings-countdown-timer{justify-content:right}.smi-section-countdonw-7 .smi-container-detail .content-alignment-countdown-mobile-center .smi-component-settings-countdown-timer{justify-content:center}.smi-section-countdonw-7 .smi-container-detail .content-alignment-left{text-align:left}.smi-section-countdonw-7 .smi-container-detail .content-alignment-left .smi-component-buttons{margin:auto auto auto 0px}.smi-section-countdonw-7 .smi-container-detail .content-alignment-right{text-align:right}.smi-section-countdonw-7 .smi-container-detail .content-alignment-right .smi-component-buttons{margin:auto 0px auto auto}.smi-section-countdonw-7 .smi-container-detail .content-alignment-center{text-align:center}.smi-section-countdonw-7 .smi-container-detail .content-alignment-center .smi-component-buttons{margin:auto}.smi-section-countdonw-7 .smi-container-detail .img-ratio{aspect-ratio:var(--media-ratio)}.smi-section-countdonw-7 .smi-container-detail .smi-content-max-width{max-width:100%}.smi-section-countdonw-7 .smi-container-detail .smi-rich-content-position-left{margin:auto auto auto 0px}.smi-section-countdonw-7 .smi-container-detail .smi-rich-content-position-right{margin:auto 0px auto auto}.smi-section-countdonw-7 .smi-container-detail .smi-rich-content-position-center{margin:auto}.smi-section-countdonw-7 .smi-container-detail .smi-component-settings-countdown-timer{text-align:center}.smi-section-countdonw-7 .smi-container-detail .smi-component-settings-countdown-timer .unit-countdown{width:62px}.smi-section-countdonw-7 .smi-container-detail .smi-component-settings-countdown-timer .solid_2_radius.smi-h1,.smi-section-countdonw-7 .smi-container-detail .smi-component-settings-countdown-timer .solid_2.smi-h1{width:calc(var(--font-heading-scale)*40*1px)}.smi-section-countdonw-7 .smi-container-detail .smi-component-settings-countdown-timer .solid_2_radius.smi-h2,.smi-section-countdonw-7 .smi-container-detail .smi-component-settings-countdown-timer .solid_2.smi-h2{width:calc(var(--font-heading-scale)*38*1px)}.smi-section-countdonw-7 .smi-container-detail .smi-component-settings-countdown-timer .solid_2_radius.smi-h3,.smi-section-countdonw-7 .smi-container-detail .smi-component-settings-countdown-timer .solid_2.smi-h3{width:calc(var(--font-heading-scale)*34*1px)}.smi-section-countdonw-7 .smi-container-detail .smi-component-settings-countdown-timer .solid_2_radius.smi-h4,.smi-section-countdonw-7 .smi-container-detail .smi-component-settings-countdown-timer .solid_2.smi-h4{width:calc(var(--font-heading-scale)*32*1px)}.smi-section-countdonw-7 .smi-container-detail .smi-component-settings-countdown-timer .smi-solid_1_radius.smi-solid_1-smi-h1,.smi-section-countdonw-7 .smi-container-detail .smi-component-settings-countdown-timer .smi-solid_1_radius.smi-solid_1_radius-smi-h1,.smi-section-countdonw-7 .smi-container-detail .smi-component-settings-countdown-timer .smi-solid_1.smi-solid_1-smi-h1,.smi-section-countdonw-7 .smi-container-detail .smi-component-settings-countdown-timer .smi-solid_1.smi-solid_1_radius-smi-h1{width:calc(var(--font-heading-scale)*76*1px)}.smi-section-countdonw-7 .smi-container-detail .smi-component-settings-countdown-timer .smi-solid_1_radius.smi-solid_1-smi-h2,.smi-section-countdonw-7 .smi-container-detail .smi-component-settings-countdown-timer .smi-solid_1_radius.smi-solid_1_radius-smi-h2,.smi-section-countdonw-7 .smi-container-detail .smi-component-settings-countdown-timer .smi-solid_1.smi-solid_1-smi-h2,.smi-section-countdonw-7 .smi-container-detail .smi-component-settings-countdown-timer .smi-solid_1.smi-solid_1_radius-smi-h2{width:calc(var(--font-heading-scale)*72*1px)}.smi-section-countdonw-7 .smi-container-detail .smi-component-settings-countdown-timer .smi-solid_1_radius.smi-solid_1-smi-h3,.smi-section-countdonw-7 .smi-container-detail .smi-component-settings-countdown-timer .smi-solid_1_radius.smi-solid_1_radius-smi-h4,.smi-section-countdonw-7 .smi-container-detail .smi-component-settings-countdown-timer .smi-solid_1.smi-solid_1-smi-h3,.smi-section-countdonw-7 .smi-container-detail .smi-component-settings-countdown-timer .smi-solid_1.smi-solid_1_radius-smi-h4{width:calc(var(--font-heading-scale)*66*1px)}.smi-section-countdonw-7 .smi-container-detail .smi-component-settings-countdown-timer .smi-solid_1_radius.smi-solid_1-smi-h4,.smi-section-countdonw-7 .smi-container-detail .smi-component-settings-countdown-timer .smi-solid_1_radius.smi-solid_1_radius-smi-h4,.smi-section-countdonw-7 .smi-container-detail .smi-component-settings-countdown-timer .smi-solid_1.smi-solid_1-smi-h4,.smi-section-countdonw-7 .smi-container-detail .smi-component-settings-countdown-timer .smi-solid_1.smi-solid_1_radius-smi-h4{width:calc(var(--font-heading-scale)*61*1px)}.smi-section-countdonw-7 .smi-container-detail .smi-component-settings-countdown-timer .smi-h1{font-size:calc(var(--font-heading-scale)*32*1px);line-height:calc((1 + .8/(var(--font-heading-scale)*32/16))*var(--heading-line-height-scale, 1))}.smi-section-countdonw-7 .smi-container-detail .smi-component-settings-countdown-timer .smi-h2{font-size:calc(var(--font-heading-scale)*28*1px);line-height:calc((1 + .8/(var(--font-heading-scale)*28/16))*var(--heading-line-height-scale, 1))}.smi-section-countdonw-7 .smi-container-detail .smi-component-settings-countdown-timer .smi-h3{font-size:calc(var(--font-heading-scale)*24*1px);line-height:calc((1 + .8/(var(--font-heading-scale)*24/16))*var(--heading-line-height-scale, 1))}.smi-section-countdonw-7 .smi-container-detail .smi-component-settings-countdown-timer .smi-h4{font-size:calc(var(--font-heading-scale)*20*1px);line-height:calc((1 + .8/(var(--font-heading-scale)*20/16))*var(--heading-line-height-scale, 1))}.smi-section-countdonw-7 .smi-container-detail .smi-component-settings-countdown-timer .smi-text-md{font-size:calc(var(--font-body-scale)*16*1px);line-height:calc((1 + .8/(var(--font-body-scale)*16/16))*var(--body-line-height-scale, 1))}.smi-section-countdonw-7 .smi-container-detail .smi-component-settings-countdown-timer .smi-pr-lg{padding-right:22px}.smi-section-countdonw-7 .smi-container-detail .smi-component-settings-countdown-timer .smi-pl-lg{padding-left:22px}.smi-section-countdonw-7 .smi-container-detail .smi-component-settings-countdown-timer .smi-px-md{padding-left:16px;padding-right:16px}.smi-section-countdonw-7 .smi-container-detail .smi-component-settings-countdown-timer .smi-mr-sm{margin-right:16px}.smi-section-countdonw-7 .smi-container-detail .smi-component-settings-countdown-timer .smi-ml-sm{margin-left:16px}.smi-section-countdonw-7 .smi-container-detail .countdown-type-classic_1 .smi-component-settings-countdown-timer .smi-pr-lg,.smi-section-countdonw-7 .smi-container-detail .countdown-type-classic_2 .smi-component-settings-countdown-timer .smi-pr-lg{padding-right:24px}.smi-section-countdonw-7 .smi-container-detail .countdown-type-classic_1 .smi-component-settings-countdown-timer .smi-pl-lg,.smi-section-countdonw-7 .smi-container-detail .countdown-type-classic_2 .smi-component-settings-countdown-timer .smi-pl-lg{padding-left:24px}.smi-section-countdonw-7 .smi-container-detail .countdown-type-solid_2 .smi-component-settings-countdown-timer .smi-mr-sm,.smi-section-countdonw-7 .smi-container-detail .countdown-type-solid_2_radius .smi-component-settings-countdown-timer .smi-mr-sm{margin-right:12px}.smi-section-countdonw-7 .smi-container-detail .countdown-type-solid_2 .smi-component-settings-countdown-timer .smi-ml-sm,.smi-section-countdonw-7 .smi-container-detail .countdown-type-solid_2_radius .smi-component-settings-countdown-timer .smi-ml-sm{margin-left:12px}.smi-section-countdonw-7 .smi-container-detail .smi-rich-content-detail{width:-webkit-fill-available;position:relative}.smi-section-countdonw-7 .smi-container-detail .smi-rich-content-detail .smi-content-max-width{display:flex;align-items:center;justify-content:space-between !important;grid-gap:0px 48px}.smi-section-countdonw-7 .smi-container-detail .smi-rich-content-detail .smi-content-max-width div:last-child{margin-bottom:0px}.smi-section-countdonw-7 .smi-container-detail .smi-rich-content{max-width:600px}.smi-section-countdonw-7 .smi-container-detail .smi-rich-content-half-true{width:calc(50% - 12px) !important}.smi-section-countdonw-7 .smi-container-detail .smi-block-type-heading .smi-component-blocks-heading{display:flex}.smi-section-countdonw-7 .smi-container-detail .smi-block-type-heading .heading-only{max-width:600px}.smi-section-countdonw-7 .smi-container-detail .content-alignment-left .heading-only{margin:auto auto auto 0px !important}.smi-section-countdonw-7 .smi-container-detail .content-alignment-right .heading-only{margin:auto 0px auto !important}.smi-section-countdonw-7 .smi-container-detail .content-alignment-center .heading-only{margin:auto !important}.smi-section-countdonw-7 .smi-container-detail .smi-block-type-countdown_timer{flex-basis:auto}.smi-section-countdonw-7 .smi-container-detail .smi-block-type-button{flex-basis:auto}.smi-section-countdonw-7 .smi-container-detail .smi-block-type-button .smi-button{text-wrap:nowrap}.smi-section-countdonw-7 .smi-container-detail .smi-block-type-divider{font-size:1px;color:rgba(0,0,0,0);height:1px;width:100%;background:rgba(var(--color-foreground), 0.2)}.smi-section-countdonw-7 .smi-container-detail .smi-block-type-email_form .email-container{width:100%}.smi-section-countdonw-7 .smi-container-detail .smi-block-type-email_form .email-container form{width:100% !important}.smi-section-countdonw-7 .smi-container-detail .smi-rich-content-media .smi-rich-content-image img,.smi-section-countdonw-7 .smi-container-detail .smi-rich-content-media .smi-rich-content-image svg{aspect-ratio:var(--media-ratio)}.smi-section-countdonw-7 .smi-container-detail .smi-rich-content-media .smi-rich-content-image .round{border-radius:2000px !important}.smi-section-countdonw-7 .smi-container-detail .smi-block-type-text p:last-child{margin-bottom:0px !important}@media screen and (max-width: 1600px){.smi-section-countdonw-7 .smi-container-detail .smi-rich-content-60 .smi-component-settings-countdown-timer,.smi-section-countdonw-7 .smi-container-detail .smi-rich-content-50 .smi-component-settings-countdown-timer,.smi-section-countdonw-7 .smi-container-detail .smi-rich-content-40 .smi-component-settings-countdown-timer{--font-heading-scale: 1!important;--font-body-scale: 1 !important;--heading-letter-spacing-scale: 0px !important;--body-letter-spacing-scale: 0px !important}}@media screen and (max-width: 992px){.smi-section-countdonw-7 .smi-container-detail{gap:0px 48px}.smi-section-countdonw-7 .smi-container-detail .smi-rich-content-detail .smi-content-max-width{grid-gap:0px 48px}}@media screen and (max-width: 1200px){.smi-section-countdonw-7 .smi-container-detail .smi-rich-content-detail .smi-content-max-width{grid-gap:0px 48px}}@media screen and (max-width: 1150px){.smi-section-countdonw-7 .smi-rich-content-40 .email-container.style-2 .smi-button-wrapper,.smi-section-countdonw-7 .smi-rich-content-50 .email-container.style-2 .smi-button-wrapper,.smi-section-countdonw-7 .smi-rich-content-60 .email-container.style-2 .smi-button-wrapper{min-width:160px}}@media screen and (max-width: 1200px){.smi-section-countdonw-7 .smi-rich-content-40 .email-container.style-2 .smi-button-wrapper,.smi-section-countdonw-7 .smi-rich-content-50 .email-container.style-2 .smi-button-wrapper,.smi-section-countdonw-7 .smi-rich-content-60 .email-container.style-2 .smi-button-wrapper{width:100%;max-width:100%}.smi-section-countdonw-7 .smi-rich-content-40 .email-container.style-2 .smi-button-wrapper .button-sub,.smi-section-countdonw-7 .smi-rich-content-50 .email-container.style-2 .smi-button-wrapper .button-sub,.smi-section-countdonw-7 .smi-rich-content-60 .email-container.style-2 .smi-button-wrapper .button-sub{width:100%}}@media screen and (max-width: 900px){.smi-section-countdonw-7 .smi-container-detail{display:flex;flex-direction:column}.smi-section-countdonw-7 .smi-container-detail .content-alignment-countdown-mobile-left{margin:auto auto auto 0px}.smi-section-countdonw-7 .smi-container-detail .content-alignment-countdown-mobile-right{margin:auto 0px auto auto}.smi-section-countdonw-7 .smi-container-detail .smi-rich-content-media{margin-top:calc(var(--spacing-elements)*12px)}.smi-section-countdonw-7 .smi-container-detail .content-alignment-countdown-mobile-heading-center{margin:auto auto calc(var(--spacing-elements)*24px) auto}.smi-section-countdonw-7 .smi-container-detail .content-alignment-countdown-mobile-heading-left{margin:auto auto calc(var(--spacing-elements)*24px) 0px}.smi-section-countdonw-7 .smi-container-detail .content-alignment-countdown-mobile-heading-right{margin:auto 0px calc(var(--spacing-elements)*24px) auto}.smi-section-countdonw-7 .smi-container-detail .content-alignment-countdown-mobile-ant-center{margin:auto auto calc(var(--spacing-elements)*36px) auto}.smi-section-countdonw-7 .smi-container-detail .content-alignment-countdown-mobile-ant-left{margin:auto auto calc(var(--spacing-elements)*36px) 0px}.smi-section-countdonw-7 .smi-container-detail .content-alignment-countdown-mobile-ant-right{margin:auto 0px calc(var(--spacing-elements)*36px) auto}.smi-section-countdonw-7 .smi-container-detail .smi-rich-content-detail .smi-content-max-width{flex-wrap:wrap;grid-gap:0px 48px}.smi-section-countdonw-7 .smi-container-detail .smi-block-type-heading .heading-only{max-width:100%}.smi-section-countdonw-7 .smi-container-detail .smi-block-type-countdown_timer{flex-basis:100%}.smi-section-countdonw-7 .smi-container-detail .smi-block-type-button{flex-basis:100%}.smi-section-countdonw-7 .smi-container-detail .smi-block-type-button .smi-button{text-wrap:nowrap}}@media screen and (max-width: 768px){.smi-section-countdonw-7 .smi-container-detail{display:flex;gap:0px 36px}.smi-section-countdonw-7 .smi-container-detail .smi-rich-content-detail .smi-content-max-width{grid-gap:0px 36px}.smi-section-countdonw-7 .smi-container-detail .smi-rich-content-half-true{width:100% !important}}@media screen and (max-width: 576px){.smi-section-countdonw-7 .smi-container-fluid-no-padding .smi-container-detail{padding:calc(var(--media-border-width) + var(--section-padding-top-image)) calc(var(--media-border-width) + 24px) calc(var(--section-padding-bottom-image) + var(--media-border-width)) calc(var(--media-border-width) + 24px)}.smi-section-countdonw-7 .smi-container-fluid-no-padding .smi-container-detail .smi-rich-content-detail{padding-left:15px !important;padding-right:15px !important}.smi-section-countdonw-7 .smi-container-fluid-no-padding .smi-container-detail .smi-detail-container-fluid-no-padding{margin:0px;width:100% !important;margin-inline-end:0px !important}.smi-section-countdonw-7 .padding-bg-img{padding-left:24px !important;padding-right:24px !important}.smi-section-countdonw-7 .smi-container-detail{padding:calc(var(--media-border-width) + var(--section-padding-top-image)) calc(var(--media-border-width) + 24px) calc(var(--section-padding-bottom-image) + var(--media-border-width)) calc(var(--media-border-width) + 24px);flex-direction:column}.smi-section-countdonw-7 .smi-container-detail .smi-rich-content-media{margin-top:calc(var(--spacing-elements)*12px)}.smi-section-countdonw-7 .smi-container-detail .content-alignment-countdown-mobile-heading-center{margin:auto auto calc(var(--spacing-elements)*36px) auto}.smi-section-countdonw-7 .smi-container-detail .content-alignment-countdown-mobile-heading-left{margin:auto auto calc(var(--spacing-elements)*36px) 0px}.smi-section-countdonw-7 .smi-container-detail .content-alignment-countdown-mobile-heading-right{margin:auto 0px calc(var(--spacing-elements)*36px) auto}.smi-section-countdonw-7 .smi-container-detail .content-alignment-countdown-mobile-ant-center{margin:auto auto calc(var(--spacing-elements)*36px) auto}.smi-section-countdonw-7 .smi-container-detail .content-alignment-countdown-mobile-ant-left{margin:auto auto calc(var(--spacing-elements)*36px) 0px}.smi-section-countdonw-7 .smi-container-detail .content-alignment-countdown-mobile-ant-right{margin:auto 0px calc(var(--spacing-elements)*36px) auto}.smi-section-countdonw-7 .smi-container-detail .smi-rich-content-detail{padding-top:0px}.smi-section-countdonw-7 .smi-container-detail .smi-rich-content-half-true{width:100% !important}.smi-section-countdonw-7 .content-detail-container-fluid-no-padding{padding:0px 15px}.smi-section-countdonw-7 .smi-component-settings-countdown-timer .unit-countdown{width:45px !important}.smi-section-countdonw-7 .smi-component-settings-countdown-timer .solid_2_radius.smi-h1,.smi-section-countdonw-7 .smi-component-settings-countdown-timer .solid_2.smi-h1{width:calc(var(--font-heading-scale)*30*1px) !important}.smi-section-countdonw-7 .smi-component-settings-countdown-timer .solid_2_radius.smi-h2,.smi-section-countdonw-7 .smi-component-settings-countdown-timer .solid_2.smi-h2{width:calc(var(--font-heading-scale)*28*1px) !important}.smi-section-countdonw-7 .smi-component-settings-countdown-timer .solid_2_radius.smi-h3,.smi-section-countdonw-7 .smi-component-settings-countdown-timer .solid_2.smi-h3{width:calc(var(--font-heading-scale)*26*1px) !important}.smi-section-countdonw-7 .smi-component-settings-countdown-timer .solid_2_radius.smi-h4,.smi-section-countdonw-7 .smi-component-settings-countdown-timer .solid_2.smi-h4{width:calc(var(--font-heading-scale)*24*1px) !important}.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-solid_1_radius.smi-solid_1-smi-h1,.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-solid_1_radius.smi-solid_1_radius-smi-h1,.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-solid_1.smi-solid_1-smi-h1,.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-solid_1.smi-solid_1_radius-smi-h1{width:calc(var(--font-heading-scale)*50*1px) !important}.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-solid_1_radius.smi-solid_1-smi-h2,.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-solid_1_radius.smi-solid_1_radius-smi-h2,.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-solid_1.smi-solid_1-smi-h2,.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-solid_1.smi-solid_1_radius-smi-h2{width:calc(var(--font-heading-scale)*48*1px) !important}.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-solid_1_radius.smi-solid_1-smi-h3,.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-solid_1_radius.smi-solid_1_radius-smi-h4,.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-solid_1.smi-solid_1-smi-h3,.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-solid_1.smi-solid_1_radius-smi-h4{width:calc(var(--font-heading-scale)*46*1px) !important}.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-solid_1_radius.smi-solid_1-smi-h4,.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-solid_1_radius.smi-solid_1_radius-smi-h4,.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-solid_1.smi-solid_1-smi-h4,.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-solid_1.smi-solid_1_radius-smi-h4{width:calc(var(--font-heading-scale)*45*1px) !important}.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-h1{font-size:calc(var(--font-heading-scale)*20*1px) !important;line-height:calc((1 + .8/(var(--font-heading-scale)*20/16))*var(--heading-line-height-scale, 1)) !important}.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-h2{font-size:calc(var(--font-heading-scale)*18*1px) !important;line-height:calc((1 + .8/(var(--font-heading-scale)*18/16))*var(--heading-line-height-scale, 1)) !important}.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-h3{font-size:calc(var(--font-heading-scale)*16*1px) !important;line-height:calc((1 + .8/(var(--font-heading-scale)*16/16))*var(--heading-line-height-scale, 1)) !important}.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-h4{font-size:calc(var(--font-heading-scale)*14*1px) !important;line-height:calc((1 + .8/(var(--font-heading-scale)*14/16))*var(--heading-line-height-scale, 1)) !important}.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-text-md{font-size:calc(var(--font-body-scale)*12*1px) !important;line-height:calc((1 + .8/(var(--font-body-scale)*12/16))*var(--body-line-height-scale, 1)) !important}.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-pr-lg{padding-right:6px !important}.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-pl-lg{padding-left:6px !important}.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-py-sm{padding-top:8px !important;padding-bottom:8px !important}.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-px-md{padding-left:8px !important;padding-right:8px !important}.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-py-xs{padding-top:4px !important;padding-bottom:4px !important}.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-mr-sm{margin-right:6px !important}.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-ml-sm{margin-left:6px !important}.smi-section-countdonw-7 .smi-component-settings-countdown-timer .solid_2_radius{padding:4px 8px !important}.smi-section-countdonw-7 .smi-component-settings-countdown-timer .solid_2{padding:4px 8px !important}.smi-section-countdonw-7 .countdown-type-solid_2 .smi-component-settings-countdown-timer .smi-mr-sm,.smi-section-countdonw-7 .countdown-type-solid_2_radius .smi-component-settings-countdown-timer .smi-mr-sm{margin-right:6px !important}.smi-section-countdonw-7 .countdown-type-solid_2 .smi-component-settings-countdown-timer .smi-ml-sm,.smi-section-countdonw-7 .countdown-type-solid_2_radius .smi-component-settings-countdown-timer .smi-ml-sm{margin-left:6px !important}.smi-section-countdonw-7 .countdown-type-classic_1 .smi-component-settings-countdown-timer .smi-pr-lg,.smi-section-countdonw-7 .countdown-type-classic_2 .smi-component-settings-countdown-timer .smi-pr-lg{padding-right:6px !important}.smi-section-countdonw-7 .countdown-type-classic_1 .smi-component-settings-countdown-timer .smi-pl-lg,.smi-section-countdonw-7 .countdown-type-classic_2 .smi-component-settings-countdown-timer .smi-pl-lg{padding-left:6px !important}}@media screen and (max-width: 400px){.smi-section-countdonw-7 .smi-component-settings-countdown-timer .unit-countdown{width:45px !important}.smi-section-countdonw-7 .smi-component-settings-countdown-timer .solid_2_radius.smi-h1,.smi-section-countdonw-7 .smi-component-settings-countdown-timer .solid_2.smi-h1{width:calc(var(--font-heading-scale)*26*1px) !important}.smi-section-countdonw-7 .smi-component-settings-countdown-timer .solid_2_radius.smi-h2,.smi-section-countdonw-7 .smi-component-settings-countdown-timer .solid_2.smi-h2{width:calc(var(--font-heading-scale)*24*1px) !important}.smi-section-countdonw-7 .smi-component-settings-countdown-timer .solid_2_radius.smi-h3,.smi-section-countdonw-7 .smi-component-settings-countdown-timer .solid_2.smi-h3{width:calc(var(--font-heading-scale)*23*1px) !important}.smi-section-countdonw-7 .smi-component-settings-countdown-timer .solid_2_radius.smi-h4,.smi-section-countdonw-7 .smi-component-settings-countdown-timer .solid_2.smi-h4{width:calc(var(--font-heading-scale)*22*1px) !important}.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-solid_1_radius.smi-solid_1-smi-h1,.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-solid_1_radius.smi-solid_1_radius-smi-h1,.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-solid_1.smi-solid_1-smi-h1,.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-solid_1.smi-solid_1_radius-smi-h1{width:calc(var(--font-heading-scale)*50*1px) !important}.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-solid_1_radius.smi-solid_1-smi-h2,.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-solid_1_radius.smi-solid_1_radius-smi-h2,.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-solid_1.smi-solid_1-smi-h2,.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-solid_1.smi-solid_1_radius-smi-h2{width:calc(var(--font-heading-scale)*48*1px) !important}.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-solid_1_radius.smi-solid_1-smi-h3,.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-solid_1_radius.smi-solid_1_radius-smi-h4,.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-solid_1.smi-solid_1-smi-h3,.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-solid_1.smi-solid_1_radius-smi-h4{width:calc(var(--font-heading-scale)*46*1px) !important}.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-solid_1_radius.smi-solid_1-smi-h4,.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-solid_1_radius.smi-solid_1_radius-smi-h4,.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-solid_1.smi-solid_1-smi-h4,.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-solid_1.smi-solid_1_radius-smi-h4{width:calc(var(--font-heading-scale)*45*1px) !important}.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-h1{font-size:calc(var(--font-heading-scale)*18*1px) !important;line-height:calc((1 + .8/(var(--font-heading-scale)*18/16))*var(--heading-line-height-scale, 1)) !important}.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-h2{font-size:calc(var(--font-heading-scale)*16*1px) !important;line-height:calc((1 + .8/(var(--font-heading-scale)*16/16))*var(--heading-line-height-scale, 1)) !important}.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-h3{font-size:calc(var(--font-heading-scale)*14*1px) !important;line-height:calc((1 + .8/(var(--font-heading-scale)*14/16))*var(--heading-line-height-scale, 1)) !important}.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-h4{font-size:calc(var(--font-heading-scale)*13*1px) !important;line-height:calc((1 + .8/(var(--font-heading-scale)*13/16))*var(--heading-line-height-scale, 1)) !important}.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-text-md{font-size:calc(var(--font-body-scale)*10*1px) !important;line-height:calc((1 + .8/(var(--font-body-scale)*10/16))*var(--body-line-height-scale, 1)) !important}.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-pr-lg{padding-right:4px}.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-pl-lg{padding-left:4px}.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-py-sm{padding-top:3px !important;padding-bottom:3px !important}.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-px-md{padding-left:3px !important;padding-right:3px !important}.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-py-xs{padding-top:2px !important;padding-bottom:2px !important}.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-mr-sm{margin-right:2px !important}.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-ml-sm{margin-left:2px !important}.smi-section-countdonw-7 .smi-component-settings-countdown-timer .solid_2_radius{padding:2px 3px !important;border-radius:7px !important}.smi-section-countdonw-7 .smi-component-settings-countdown-timer .solid_2{padding:2px 3px !important}.smi-section-countdonw-7 .smi-component-settings-countdown-timer .smi-rich-content-half-true{width:100%}.smi-section-countdonw-7 .countdown-type-solid_2 .smi-component-settings-countdown-timer .smi-mr-sm,.smi-section-countdonw-7 .countdown-type-solid_2_radius .smi-component-settings-countdown-timer .smi-mr-sm{margin-right:4px !important}.smi-section-countdonw-7 .countdown-type-solid_2 .smi-component-settings-countdown-timer .smi-ml-sm,.smi-section-countdonw-7 .countdown-type-solid_2_radius .smi-component-settings-countdown-timer .smi-ml-sm{margin-left:4px !important}.smi-section-countdonw-7 .countdown-type-classic_1 .smi-component-settings-countdown-timer .smi-pr-lg,.smi-section-countdonw-7 .countdown-type-classic_2 .smi-component-settings-countdown-timer .smi-pr-lg{padding-right:4px !important}.smi-section-countdonw-7 .countdown-type-classic_1 .smi-component-settings-countdown-timer .smi-pl-lg,.smi-section-countdonw-7 .countdown-type-classic_2 .smi-component-settings-countdown-timer .smi-pl-lg{padding-left:4px !important}}
+{% endstyle %}
+{% comment %}#component#["settings/heading","settings/media-settings-3","settings/slider-arrows","settings/slider-dots","settings/slides","settings/section-padding","settings/button-without-url","blocks/color","blocks/background","settings/product-card","settings/content-alignment","settings/color-scheme","settings/rich-content-heading","settings/countdown-timer","settings/content-settings","settings/buttons","settings/layout-settings","settings/container-width","settings/media-width","settings/media-position","settings/media-height","settings/custom-icons","blocks/product-variant","blocks/product-quantity","blocks/product-purchase","blocks/product-color","settings/mega-menu","blocks/mega-menu/color","blocks/mega-menu/classic","blocks/mega-menu/collection","blocks/mega-menu/banner","blocks/mega-menu/product","blocks/mega-menu/product-tab","blocks/header-search","settings/product-card-bundle","settings/gap-between-content","settings/design-mode","settings/heading-blog-post","settings/animation-settings","settings/blog-item","settings/slider-pagination-1-style","settings/media-settings-5","settings/media-settings-4","settings/media-settings","settings/button-single","settings/collapsible-category","blocks/collapsible-content","settings/text","settings/divider","settings/social-media","settings/image","settings/icon-with-text","settings/page-content","blocks/email-signup","settings/icon-setting"]#endcomponent#{% endcomment %}
+<style>
+  {% assign colorblock = section.blocks | where: 'type', 'color' | first %}
+{% if colorblock %}
+      #shopify-section-{{ section.id }},
+      #shopify-section-{{ section.id }} .smi-color-{{ section.settings.color_scheme }},
+      .smi-block-custom-color { 
+        --color-background: {{ colorblock.settings.background_color.red }}, {{ colorblock.settings.background_color.green }},{{ colorblock.settings.background_color.blue }};        
+        {% if colorblock.settings.background_gradient_color == blank %}
+            --gradient-background: {{ colorblock.settings.background_color }};
+        {% else %}
+            --gradient-background: {{ colorblock.settings.background_gradient_color }};
+        {% endif %}
+        --color-foreground-hex: {{ colorblock.settings.text_color }};
+        --color-foreground: {{ colorblock.settings.text_color.red }}, {{ colorblock.settings.text_color.green }},{{ colorblock.settings.text_color.blue }};
+        --color-subtext: {{ colorblock.settings.subtext_color.red }},{{ colorblock.settings.subtext_color.green }},{{ colorblock.settings.subtext_color.blue }};
+        --color-button: {{ colorblock.settings.solid_background_button_color.red }}, {{ colorblock.settings.solid_background_button_color.green }},{{ colorblock.settings.solid_background_button_color.blue }};
+        --color-button-text: {{ colorblock.settings.solid_button_label_color.red }}, {{ colorblock.settings.solid_button_label_color.green }},{{ colorblock.settings.solid_button_label_color.blue }};
+        --color-secondary-button-text: {{ colorblock.settings.outline_button_color.red }}, {{ colorblock.settings.outline_button_color.green }},{{ colorblock.settings.outline_button_color.blue }};
+        --color-shadow: {{ colorblock.settings.shadow_color.red }}, {{ colorblock.settings.shadow_color.green }},{{ colorblock.settings.shadow_color.blue }};
+    }
+{% endif %}
+        #shopify-section-{{ section.id }}{
+    }
+    {% assign has_block_color = false %}
+        {% for block in section.blocks %}
+          {% if block.type == "color" %}
+            {% assign has_block_color = true %}
+            {% assign colorblock = section.blocks | where: 'type', 'color' | first %}
+          {% endif %}
+        {% endfor %}
+    #smi-{{ section.id }} {
+      --section-padding-top: {{ section.settings.padding_top }}px;
+--section-padding-bottom: {{ section.settings.padding_bottom }}px;
+{% if section.settings.padding_top_section != blank or section.settings.padding_bottom_section != blank %}
+    --section-margin-top: {{ section.settings.padding_top_section }}px;
+    --section-margin-bottom: {{ section.settings.padding_bottom_section }}px;
+{% endif %}
+;
+      --content-max-width: {{ section.settings.content_max_width }}px;;
+      --content-alignment: {{ section.settings.content_alignment }};
+      --media-position: {{ section.settings.desktop_media_position }};
+      --media-ratio: {{ section.settings.media_ratio }};
+      --media-overlay: {{  section.setting.image_overlay }};
+      --section-padding-top-image: {{ section.settings.image_padding_top }}px;
+      --section-padding-bottom-image: {{ section.settings.image_padding_bottom }}px;
+      {% if has_block_color == true %}
+        --gradient-background-section: {{ colorblock.settings.section_background_color }};
+        {% else %}
+        {% if section.settings.section_color_scheme.settings.smi_background_gradient != blank %}
+          --gradient-background-section: {{ section.settings.section_color_scheme.settings.smi_background_gradient }};
+          {% else %}
+          --gradient-background-section: {{ section.settings.section_color_scheme.settings.smi_background }};
+        {%  endif %}
+      {%  endif %}
+      .smi-media-wrapper{
+        {% if has_block_color == true %}
+          --gradient-background-section: {{ colorblock.settings.section_background_color }};
+          --color-shadow: {{ colorblock.settings.section_shadow_color.red }}, {{ colorblock.settings.section_shadow_color.green }},{{ colorblock.settings.section_shadow_color.blue }};
+          --color-foreground: {{ colorblock.settings.section_text_color.red }}, {{ colorblock.settings.section_text_color.green }},{{ colorblock.settings.section_text_color.blue }};
+          {%  else %}
+          {% if section.settings.section_color_scheme.settings.smi_background_gradient != blank %}
+            --gradient-background-section: {{ section.settings.section_color_scheme.settings.smi_background_gradient }};
+            {% else %}
+            --gradient-background-section: {{ section.settings.section_color_scheme.settings.smi_background }};
+          {%  endif %}
+          --color-foreground: {{ section.settings.section_color_scheme.settings.smi_text.red }}, {{ section.settings.section_color_scheme.settings.smi_text.green }},{{ section.settings.section_color_scheme.settings.smi_text.blue }};
+          --color-shadow: {{ section.settings.section_color_scheme.settings.smi_shadow.red }}, {{ section.settings.section_color_scheme.settings.smi_shadow.green }},{{ section.settings.section_color_scheme.settings.smi_shadow.blue }};
+        {% endif %}
+      }
+      --image-padding-top: {{  section.settings.image_padding_top }}px;
+      --image-padding-bottom: {{  section.settings.image_padding_bottom }}px;
+      {% if section.settings.padding_bottom == 0 %}
+        --no-padding-bottom: 24px;
+        {% else %}
+        --no-padding-bottom: 0px;
+      {% endif %}
+      {% if section.settings.padding_top == 0 %}
+        --no-padding-top: 36px;
+        {% else %}
+        --no-padding-top: 0px;
+      {% endif %}
+      {% comment %} --font-heading-scale: var(--font-heading-scale-max); {% endcomment %}
+  }
+</style>
+{%- liquid
+  assign media_height = section.settings.media_height
+  assign collapse_index = 0
+  assign media_shape = section.settings.media_shape
+  assign content_alignment = section.settings.content_alignment
+  assign content_position = section.settings.content_position
+  assign color_pos = 0
+  assign bkg_pos = 0
+  for block in section.blocks
+  if block.type == 'color'
+  assign color_pos = forloop.index
+  endif
+  if block.type == 'background'
+  assign bkg_pos = forloop.index
+  endif
+endfor
+-%}
+{%-liquid
+    assign media_ratio = section.settings.media_ratio
+    assign media_shape = section.settings.media_shape
+    if media_shape == 'none'
+        assign media_shape = 'hidden'
+    endif
+    assign media_classes = 'smi-w-100 smi-object-fit-cover '
+    if media_shape != 'default' and media_shape != 'round'
+        assign media_classes = media_classes | append: media_shape
+    endif
+    if media_ratio == 'auto' 
+        assign media_classes = media_classes | append: ' smi-h-auto'
+    else
+        assign media_classes = media_classes | append: ' smi-h-100 smi-p-absolute'
+    endif
+    assign media_wrapper_classes = 'smi-media-wrapper smi-border smi-shadow smi-lh-0 smi-overflow-hidden smi-p-relative smi-' | append: media_shape
+    if media_shape contains 'blob'
+        assign media_wrapper_classes = media_wrapper_classes | append: ' smi-blob-wrapper smi-has-blob'
+    endif
+-%}
+<div
+  id="smi-{{ section.id }}"
+  class="smi-{{ section.id }} smi-section__inner smi-gradient smi-section-countdonw-7 smi-color-{{ section.settings.color_scheme }} smi-content-settings"
+  data-section="countdown-7" data-name="✧Countdown 7">
+   
+  {% render 'smi-background' %}
+  <input type="hidden" value="" id="interval_countdown_{{ section.id }}">
+  <div class="smi-container-relative smi-container{%- if section.settings.full_width -%}-fluid{%- endif -%}">
+    <div class="smi-bg-img-settings
+      smi-media-wrapper smi-border smi-shadow
+      ">
+      <div style="position: relative; height: 100%;">
+        <div class="background-img-dt-settings" style="background: {{ section.settings.image_overlay }};">colorne</div>
+        {% if section.settings.image != blank %}
+          {{ section.settings.image | image_url: width: 1900 | image_tag: class: 'smi-bg-image', widths: '600,800,1000,1200,1400,1600,1800,1900', sizes: '(max-width: 460px) calc(100vw/2)'  }}
+          {% else %}
+          {{ 'blog-apparel-3' | placeholder_svg_tag: 'smi-placeholder smi-bg-image' }}
+        {% endif %}
+      </div>
+    </div>
+    <div class="smi-container-detail
+      {% if section.settings.image == blank %} smi-bg-container {% endif %}
+      {% if section.settings.image != blank or section.settings.image_overlay != blank %} padding-bg-img {% endif %} smi-content-position-{{ section.settings.content_position }}">
+      {% liquid
+        assign index_countdown = 0
+        for block in section.blocks
+          if block.type == 'countdown_timer'
+          assign index_countdown = index_countdown | plus: 1
+          endif
+        endfor
+        assign all_index = section.blocks.size | minus: index_countdown
+        assign index_count = 0 
+      %}
+      {%-liquid
+    if settings.smi_animations_reveal_on_scroll != nil
+        assign animation_scroll = settings.smi_animations_reveal_on_scroll
+    else
+        assign global_settings = shop.metafields.smind.settings.value
+        assign animation_scroll = global_settings.revealOnScroll
+    endif
+-%}
+      <div
+        class="
+        smi-section-block-{{ section.id }}
+        smi-content-detail-padding-{{ section.settings.desktop_media_position }}
+        smi-rich-content-detail
+        smi-rich-content-{{ 100 | minus: section.settings.desktop_media_width }}
+        smi-rich-content-load1-{{ section.id }} content-detail-{{ section.settings.full_width }}
+        {%- if animation_scroll %} smi-scroll-trigger smi-animate--slide-in smi-animate-order-1 {% endif -%}"
+        data-load='
+          {
+            "size": "{{ section.blocks.size }}"
+          }
+        '
+        data-block='{
+          "color_pos": "{{ color_pos }}", 
+          "bkg_pos": "{{ bkg_pos }}",
+          "all_block": {{ section.blocks.size }}
+        }'
+      >
+        <div class="smi-content-max-width smi-rich-content-position-{{ section.settings.content_position }}">
+          {% for block in section.blocks %}
+            {% if block.type != 'countdown_timer' %}
+              {% assign index_count = index_count | plus: 1 %}
+            {% endif %}
+            {% if block.type != 'color' and block.type != 'background' %}
+            <div class="content-alignment-{{ section.settings.content_alignment }}
+              smi-block-postion-{{ forloop.index }}-{{ section.id }}
+              smi-rich-content
+              smi-block-type-{{ block.type }}
+              countdown-type-{{ block.settings.countdown_style }}
+              {% if block.type != 'color' and block.type != 'background' %}
+                content-alignment-countdown-mobile-{{ section.settings.content_alignment }}
+                {% if block.type == 'heading' %}
+                  content-alignment-countdown-mobile-heading-{{ section.settings.content_alignment }}
+                  {% else %}
+                  content-alignment-countdown-mobile-ant-{{ section.settings.content_alignment }}
+                {% endif %}
+              {% endif %}
+              "
+              {{ block.shopify_attributes }} 
+            >
+              {% if block.type == 'heading' %}
+                <div class="smi-component-blocks-heading content-alignment-{{ content_alignment }}">
+  <div class="heading-only heading-only-{{ content_alignment }}">
+    <p class="smi-text-sub smi-mb-xxs sub-heading smi-link-wrapper" data-type="subheading" data-key="b.heading.sub_heading">{{ block.settings.sub_heading }}</p>
+    <h3 class="{{ block.settings.heading_size }} 
+        {% if block.settings.description != blank or block.settings.description != ""%} smi-mb-sm {% endif %} smi-link-wrapper" data-type="heading" data-key="b.heading.heading">{{ block.settings.heading}}</h3>
+    <div class="smi-text-md smi-text-75 description smi-link-wrapper" data-field="richtext" data-type="description" data-key="b.heading.description">{{ block.settings.description }}</div>
+</div>  
+</div>
+              {% endif %}
+              {% if block.type == 'heading_content' %}
+                <div class="smi-component-blocks-heading content-alignment-{{ content_alignment }}">
+  <div class="heading-content">
+    <h3 class="{{ block.settings.heading_size }} smi-mb-xxs smi-link-wrapper" data-type="heading" data-key="b.heading.heading">{{ block.settings.heading }}</h3>
+    <div class="description smi-text-md smi-text-75 smi-link-wrapper" data-field="richtext" data-type="description" data-key="b.heading.content">
+    {{ block.settings.content }}
+    </div>
+</div>
+</div>
+              {% endif %}
+              {% if block.type == 'button' %}
+                {% liquid
+    assign button_label = block.settings.button_label
+    assign button_style = block.settings.button_style
+    assign button_link = block.settings.button_link
+%}
+{% if button_label != blank %}
+    <div class="smi-component-button-single smi-button-wrapper
+        {%- if block.settings.button_full_width == true %} {%unless button_style contains 'text'%}smi-component-buttons-full-width{% endunless %}{%- endif -%}
+    "  {{- block.shopify_attributes -}}>
+        {% if button_label != blank %}
+            {% assign button_hover_animation = settings.smi_animations_hover_elements | default: shop.metafields.smind.settings.value.buttonHoverEffect | default: 'none'  %}
+            <a href="{% if button_link != blank %}{{ button_link }}{% else %}#{% endif %}" class="smi-button smi-text-button smi-button--{{ button_style | split: '_' | first -}}
+            {%- if button_style contains 'arrow' %} smi-has-icon{% endif %}
+            {{- ' smi-hover-' | append: button_hover_animation -}}
+            {{- ' smi-border smi-shadow' -}}">
+                    <span>
+                        {{- button_label | escape -}}
+                    </span>
+                    {% if button_style contains 'arrow' %}
+                        <div class="smi-d-flex smi-align-content-center">
+                            {% render 'smi-icons', icon: 'arrow-right-2' %}
+                        </div>
+                    {% endif %}
+            </a>
+        {% endif %}
+    </div>
+{% endif %}
+              {% endif %}
+              {% if block.type == 'countdown_timer' %}
+                <div
+   {% comment %} style="margin-bottom: calc(var(--spacing-elements) * 24px) !important;" {% endcomment %}
+   class="smi-component-settings-countdown-timer 
+   {% comment %} smi-mb-lg {% endcomment %}
+  {% if content_max_width >= 530 and content_max_width < 610 %}
+    small-container-content
+    {% elsif content_max_width < 530 and content_max_width >= 400  %}
+      extra-small-container-content
+      {% elsif content_max_width < 400 %}
+        ex-extra-small-container-content
+  {% endif %}
+    {% if block.settings.countdown_style == "border" %}border-all
+    {%elsif block.settings.countdown_style == "border_radius" %}border-all-radius
+{% endif %}" id="count_dount_timer_container_{{ section.id }}">
+  <input type="hidden" value="{{ block.settings.end_date_time }}" id="count_down_date_{{ section.id }}">
+  <input type="hidden" value="{{ block.settings.countdown_style }}" id="style_countdown_{{ section.id }}">
+  <input type="hidden" value="{{ block.settings.number_size }}" id="size_countdown_{{ section.id }}">
+  <input type="hidden" value="{{ block.settings.hide_expires }}" id="hide_when_expire_{{ section.id }}">
+  <div
+    class="
+    {% if block.settings.countdown_style contains "solid" %}smi-mr-sm{% endif %}
+    {% if block.settings.countdown_style == "classic_1" %}
+        smi-pr-lg
+      {% elsif block.settings.countdown_style == "classic_2" %} 
+        smi-pr-lg smi-classic_2
+      {% elsif block.settings.countdown_style contains "border" %}
+        smi-py-xs smi-pr-lg smi-pl-lg smi-classic_3
+      {% elsif block.settings.countdown_style contains "solid_1" %}
+    {% endif %}
+    "
+  >
+    <div class="days-countdown countdown
+        {% if block.settings.countdown_style contains "solid_1" %}
+      smi-px-md smi-py-sm smi-{{ block.settings.countdown_style }} smi-{{ block.settings.countdown_style }}-{{ block.settings.number_size }}
+    {% endif %}
+        " id="days_count_down">
+        <h3 class="{{ block.settings.countdown_style }} {{ block.settings.number_size }}" id="1_day_unit_{{ section.id }}">D</h3>
+        <h3 class="{{ block.settings.countdown_style }} {{ block.settings.number_size }}" id="2_day_unit_{{ section.id }}">D</h3>
+        <h3 class="{{ block.settings.countdown_style }} {{ block.settings.number_size }} hide-days" id="3_day_unit_{{ section.id }}">D</h3>
+        <h3 class="{{ block.settings.countdown_style }} {{ block.settings.number_size }} hide-days" id="4_day_unit_{{ section.id }}">D</h3>
+    </div>
+    <p class="smi-text-75 unit-countdown smi-text-md">Days</p>
+  </div>
+  {% unless block.settings.countdown_style contains "classic_2" or block.settings.countdown_style contains "border" %}<span class="smi-text-75">:</span>{% endunless %}
+  <div class="
+    {% if block.settings.countdown_style contains "solid" %}smi-mr-sm smi-ml-sm{% endif %}
+    {% if block.settings.countdown_style == "classic_1" %}
+        smi-pr-lg smi-pl-lg
+      {% elsif block.settings.countdown_style == "classic_2" %}
+        smi-pr-lg smi-pl-lg smi-classic_2
+      {% elsif block.settings.countdown_style contains "border" %}
+        smi-py-xs smi-pr-lg smi-pl-lg smi-classic_3
+      {% elsif block.settings.countdown_style contains "solid_1" %}
+    {% endif %}
+    ">
+    <div class="hours-countdown countdown
+        {% if block.settings.countdown_style contains "solid_1" %}
+      smi-px-md smi-py-sm smi-{{ block.settings.countdown_style }} smi-{{ block.settings.countdown_style }}-{{ block.settings.number_size }}
+    {% endif %}
+        " id="hours_count_down">
+        <h3 class="{{ block.settings.countdown_style }} {{ block.settings.number_size }}" id="1_hour_unit_{{ section.id }}">H</h3>
+        <h3 class="{{ block.settings.countdown_style }} {{ block.settings.number_size }}" id="2_hour_unit_{{ section.id }}">H</h3>
+    </div>
+    <p class="smi-text-75 unit-countdown smi-text-md">Hours</p>
+  </div>
+  {% unless block.settings.countdown_style contains "classic_2" or block.settings.countdown_style contains "border" %}<span class="smi-text-75">:</span>{% endunless %}
+  <div class="{% if block.settings.countdown_style contains "solid" %}smi-mr-sm smi-ml-sm{% endif %}
+    {% if block.settings.countdown_style == "classic_1" %}
+        smi-pr-lg smi-pl-lg
+      {% elsif block.settings.countdown_style == "classic_2" %}
+        smi-pr-lg smi-pl-lg smi-classic_2
+      {% elsif block.settings.countdown_style contains "border" %}
+        smi-py-xs smi-pr-lg smi-pl-lg smi-classic_3
+      {% elsif block.settings.countdown_style contains "solid_1" %}
+    {% endif %}
+    ">
+    <div class="minutes-countdown countdown
+        {% if block.settings.countdown_style contains "solid_1" %} smi-{{ block.settings.countdown_style }}-{{ block.settings.number_size }}
+      smi-px-md smi-py-sm smi-{{ block.settings.countdown_style }}
+    {% endif %}
+        " id="minutes_count_down">
+        <h3 class="{{ block.settings.countdown_style }} {{ block.settings.number_size }}" id="1_minute_unit_{{ section.id }}">M</h3>
+        <h3 class="{{ block.settings.countdown_style }} {{ block.settings.number_size }}" id="2_minute_unit_{{ section.id }}">M</h3>
+    </div>
+    <p class="smi-text-75 unit-countdown smi-text-md">Minutes</p>
+  </div>
+  {% unless block.settings.countdown_style contains "classic_2" or block.settings.countdown_style contains "border" %}<span class="smi-text-75">:</span>{% endunless %}
+  <div class="{% if block.settings.countdown_style contains "solid" %}smi-ml-sm{% endif %}
+    {% if block.settings.countdown_style == "classic_1" %}
+        smi-pl-lg
+      {% elsif block.settings.countdown_style == "classic_2" %}
+        smi-pl-lg
+      {% elsif block.settings.countdown_style contains "border" %}
+        smi-pr-lg smi-pl-lg
+      {% elsif block.settings.countdown_style contains "solid_1" %}
+    {% endif %}
+    ">
+    <div class="seconds-countdown countdown
+        {% if block.settings.countdown_style contains "solid_1" %}
+      smi-px-md smi-py-sm smi-{{ block.settings.countdown_style }} smi-solid_1-{{ block.settings.number_size }}
+    {% endif %}
+        " id="2onds_count_down_{{ section.id }}">
+        <h3 class="{{ block.settings.countdown_style }} {{ block.settings.number_size }}" id="1_second_unit_{{ section.id }}">S</h3>
+        <h3 class="{{ block.settings.countdown_style }} {{ block.settings.number_size }}" id="2_second_unit_{{ section.id }}">S</h3>
+    </div>
+    <p class="smi-text-75 unit-countdown smi-text-md">Seconds</p>
+  </div>
+</div>
+              {% endif %}
+            </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+	"name": "✧Countdown timer 7-6",
+	"tag": "section",
+	"class": "smi-section smi-countdown-7",
+	"settings": [
+		{
+			"type": "checkbox",
+			"id": "full_width",
+			"label": "Container full-width",
+			"default": false
+		},
+		{
+			"type": "image_picker",
+			"id": "image",
+			"label": "Background image"
+		},
+		{
+			"type": "text_alignment",
+			"id": "content_alignment",
+			"label": "Content alignment",
+			"default": "center"
+		},
+		{
+			"type": "header",
+			"content": "Colors"
+		},
+		{
+			"type": "select",
+            "options": [
+                {
+                    "value": "scheme_1",
+                    "label": "Scheme 1"
+                },
+                {
+                    "value": "scheme_2",
+                    "label": "Scheme 2"
+                },
+                {
+                    "value": "scheme_3",
+                    "label": "Scheme 3"
+                },
+                {
+                    "value": "scheme_4",
+                    "label": "Scheme 4"
+                },
+                {
+                    "value": "scheme_5",
+                    "label": "Scheme 5"
+                },
+                {
+                    "value": "scheme_6",
+                    "label": "Scheme 6"
+                },
+                {
+                    "value": "scheme_7",
+                    "label": "Scheme 7"
+                },
+                {
+                    "value": "scheme_8",
+                    "label": "Scheme 8"
+                },
+                {
+                    "value": "scheme_9",
+                    "label": "Scheme 9"
+                },
+                {
+                    "value": "scheme_10",
+                    "label": "Scheme 10"
+                }
+            ],
+			"id": "section_color_scheme",
+			"label": "Section color Scheme",
+			"info": "This color scheme applies to the border and shadow of cards. [Learn more](https://docs.smind.io/guides/color-block-and-color-scheme#how-to-configure-border-and-shadow-colors-in-sections-with-two-color-schemes)"
+		},
+		{
+			"type": "select",
+            "options": [
+                {
+                    "value": "scheme_1",
+                    "label": "Scheme 1"
+                },
+                {
+                    "value": "scheme_2",
+                    "label": "Scheme 2"
+                },
+                {
+                    "value": "scheme_3",
+                    "label": "Scheme 3"
+                },
+                {
+                    "value": "scheme_4",
+                    "label": "Scheme 4"
+                },
+                {
+                    "value": "scheme_5",
+                    "label": "Scheme 5"
+                },
+                {
+                    "value": "scheme_6",
+                    "label": "Scheme 6"
+                },
+                {
+                    "value": "scheme_7",
+                    "label": "Scheme 7"
+                },
+                {
+                    "value": "scheme_8",
+                    "label": "Scheme 8"
+                },
+                {
+                    "value": "scheme_9",
+                    "label": "Scheme 9"
+                },
+                {
+                    "value": "scheme_10",
+                    "label": "Scheme 10"
+                }
+            ],
+			"id": "color_scheme",
+			"label": "Content color Scheme",
+			"info": "To use color scheme: Step 1: Hide color block in section. Step 2: Customize colors in color block of “✧Styles” section in global area. [Learn more](https://docs.smind.io/guides/color-block-and-color-scheme)"
+		},
+		{
+			"type": "color_background",
+			"id": "image_overlay",
+			"label": "Image overlay"
+		},
+		{
+			"type": "header",
+			"content": "Padding"
+		},
+		{
+			"type": "range",
+			"id": "padding_top",
+			"min": 0,
+			"max": 200,
+			"step": 2,
+			"unit": "px",
+			"label": "Top section padding",
+			"default": 50
+		},
+		{
+			"type": "range",
+			"id": "padding_bottom",
+			"min": 0,
+			"max": 200,
+			"step": 2,
+			"unit": "px",
+			"label": "Bottom section padding",
+			"default": 50
+		},
+		{
+			"type": "range",
+			"id": "image_padding_top",
+			"min": 0,
+			"max": 200,
+			"step": 2,
+			"unit": "px",
+			"label": "Top image padding",
+			"default": 50
+		},
+		{
+			"type": "range",
+			"id": "image_padding_bottom",
+			"min": 0,
+			"max": 200,
+			"step": 2,
+			"unit": "px",
+			"label": "Bottom image padding",
+			"default": 50
+		}
+	],
+	"blocks": [
+		{
+			"type": "heading",
+			"name": "Heading",
+			"limit": 1,
+			"settings": [
+				{
+					"type": "inline_richtext",
+					"id": "sub_heading",
+					"label": "Subheading",
+					"default": "URNA CRAS MAURIS"
+				},
+				{
+					"type": "inline_richtext",
+					"id": "heading",
+					"label": "Heading",
+					"default": "Opening Hours"
+				},
+				{
+					"type": "select",
+					"id": "heading_size",
+					"label": "Heading size",
+					"options": [
+						{
+							"value": "smi-h4",
+							"label": "XS"
+						},
+						{
+							"value": "smi-h3",
+							"label": "S"
+						},
+						{
+							"value": "smi-h2",
+							"label": "M"
+						},
+						{
+							"value": "smi-h1",
+							"label": "L"
+						}
+					],
+					"default": "smi-h3"
+				},
+				{
+					"type": "richtext",
+					"id": "description",
+					"default": "<p>Enjoy 10% off on your first purchase and be the first to know about new releases, latest stories and offers.</p>",
+					"label": "Description"
+				}
+			]
+		},
+		{
+			"type": "heading_content",
+			"name": "Heading & content",
+			"limit": 1,
+			"settings": [
+				{
+					"type": "inline_richtext",
+					"id": "heading",
+					"label": "Heading",
+					"default": "Season Sale on store"
+				},
+				{
+					"type": "select",
+					"id": "heading_size",
+					"label": "Heading size",
+					"options": [
+						{
+							"value": "smi-h6",
+							"label": "XS"
+						},
+						{
+							"value": "smi-h5",
+							"label": "S"
+						},
+						{
+							"value": "smi-h4",
+							"label": "M"
+						},
+						{
+							"value": "smi-h3",
+							"label": "L"
+						}
+					],
+					"default": "smi-h5"
+				},
+				{
+					"type": "richtext",
+					"id": "content",
+					"label": "Content",
+					"default": "<p>Great to save 25% on all your favorites. Don’t miss this deal!</p>"
+				}
+			]
+		},
+		{
+			"type": "button",
+			"name": "Buttons",
+			"limit": 1,
+			"settings": [
+				{
+					"type": "text",
+					"id": "button_label",
+					"label": "Button label",
+					"default": "Shop now"
+				},
+				{
+					"type": "url",
+					"id": "button_link",
+					"label": "Button link"
+				},
+				{
+					"type": "select",
+					"id": "button_style",
+					"label": "Button style",
+					"options": [
+						{
+							"value": "solid",
+							"label": "Solid"
+						},
+						{
+							"value": "solid_arrow",
+							"label": "Solid & arrow"
+						},
+						{
+							"value": "outline",
+							"label": "Outline"
+						},
+						{
+							"value": "outline_arrow",
+							"label": "Outline & arrow"
+						},
+						{
+							"value": "text",
+							"label": "Text"
+						},
+						{
+							"value": "text_arrow",
+							"label": "Text & arrow"
+						}
+					],
+					"default": "solid"
+				}
+			]
+		},
+		{
+			"type": "countdown_timer",
+			"name": "Countdown timer",
+			"limit": 1,
+			"settings": [
+				{
+					"type": "text",
+					"id": "end_date_time",
+					"label": "End date",
+					"placeholder": "E.g. 2023-12-12 12:00",
+					"info": "YYYY-MM-DD HH:MM Hours and minutes are optional."
+				},
+				{
+					"type": "select",
+					"id": "number_size",
+					"label": "Heading size",
+					"options": [
+						{
+							"value": "smi-h4",
+							"label": "XS"
+						},
+						{
+							"value": "smi-h3",
+							"label": "S"
+						},
+						{
+							"value": "smi-h2",
+							"label": "M"
+						},
+						{
+							"value": "smi-h1",
+							"label": "L"
+						}
+					],
+					"default": "smi-h2"
+				},
+				{
+					"type": "select",
+					"id": "countdown_style",
+					"label": "Countdown style",
+					"options": [
+						{
+							"value": "classic_1",
+							"label": "Classic 1"
+						},
+						{
+							"value": "classic_2",
+							"label": "Classic 2"
+						},
+						{
+							"value": "border",
+							"label": "Border"
+						},
+						{
+							"value": "border_radius",
+							"label": "Border (radius)"
+						},
+						{
+							"value": "solid_1",
+							"label": "Solid 1"
+						},
+						{
+							"value": "solid_1_radius",
+							"label": "Solid 1 (radius)"
+						},
+						{
+							"value": "solid_2",
+							"label": "Solid 2"
+						},
+						{
+							"value": "solid_2_radius",
+							"label": "Solid 2 (radius)"
+						}
+					],
+					"default": "solid_2_radius"
+				},
+				{
+					"type": "checkbox",
+					"id": "hide_expires",
+					"label": "Hide countdown when time expires",
+					"default": true
+				}
+			]
+		},
+		{
+			"name": "Color",
+			"limit": 1,
+			"type": "color",
+			"settings": [
+				{
+					"type": "header",
+					"content": "Section"
+				},
+				{
+					"type": "paragraph",
+					"content": "How to use “Color block” and “Color scheme”. [Learn more](https://docs.smind.io/guides/color-block-and-color-scheme#how-to-use-the-color-block)"
+				},
+				{
+					"type": "color",
+					"id": "section_background_color",
+					"default": "#F3F3F3",
+					"label": "Background"
+				},
+				{
+					"type": "color",
+					"id": "section_text_color",
+					"default": "#121212",
+					"label": "Text"
+				},
+				{
+					"type": "color",
+					"id": "section_shadow_color",
+					"default": "#121212",
+					"label": "Shadow"
+				},
+				{
+					"type": "paragraph",
+					"content": "This color scheme applies to the border and shadow of cards. [Learn more](https://docs.smind.io/guides/color-block-and-color-scheme#how-to-configure-border-and-shadow-colors-in-sections-with-two-color-schemes)"
+				},
+				{
+					"type": "header",
+					"content": "Content"
+				},
+				{
+					"type": "color",
+					"id": "text_color",
+					"default": "#121212",
+					"label": "Text"
+				},
+				{
+					"type": "color",
+					"id": "subtext_color",
+					"default": "#121212",
+					"label": "Subtext"
+				},
+				{
+					"type": "color",
+					"id": "solid_background_button_color",
+					"default": "#121212",
+					"label": "Solid button background"
+				},
+				{
+					"type": "color",
+					"id": "solid_button_label_color",
+					"default": "#FFFFFF",
+					"label": "Solid button label"
+				},
+				{
+					"type": "color",
+					"id": "outline_button_color",
+					"default": "#121212",
+					"label": "Outline buttton"
+				},
+				{
+					"type": "color",
+					"id": "shadow_color",
+					"default": "#121212",
+					"label": "Shadow"
+				}
+			]
+		},
+		{
+			"name": "Background",
+			"limit": 1,
+			"type": "background",
+			"settings": [
+				{
+					"type": "color",
+					"id": "background_simple",
+					"label": "Background section"
+				},
+				{
+					"type": "image_picker",
+					"id": "image",
+					"label": "Image"
+				},
+				{
+					"type": "image_picker",
+					"id": "image_mobile",
+					"label": "Mobile image (optional)"
+				},
+				{
+					"type": "select",
+					"id": "animation",
+					"label": "Image animation",
+					"options": [
+						{
+							"label": "None",
+							"value": "none"
+						},
+						{
+							"label": "Ambient movement",
+							"value": "ambient_movement"
+						},
+						{
+							"label": "Parallax",
+							"value": "parallax"
+						}
+					],
+					"default": "none"
+				},
+				{
+					"type": "header",
+					"content": "Video background"
+				},
+				{
+					"type": "video",
+					"id": "video",
+					"label": "Upload video"
+				},
+				{
+					"type": "video_url",
+					"id": "video_url",
+					"label": "Video URL",
+					"accept": [
+						"youtube",
+						"vimeo"
+					]
+				},
+				{
+					"type": "color_background",
+					"id": "background_overlay",
+					"label": "Overlay background"
+				}
+			]
+		}
+	],
+	"presets": [
+		{
+			"name": "✧Countdown timer 7-6",
+			"settings": {
+				"full_width": true,
+				"image": "shopify://shop_images/smi-smi-image_clothing-73_4a570eb4-1c9a-4586-bf64-e74807977bea.jpg",
+				"content_alignment": "center",
+				"image_overlay": "linear-gradient(270deg, rgba(32, 21, 2, 0.502), rgba(32, 21, 2, 0.502) 100%)",
+				"padding_top": 50,
+				"padding_bottom": 50,
+				"image_padding_top": 50,
+				"image_padding_bottom": 50
+			},
+			"blocks": [
+				{
+					"type": "heading",
+					"settings": {
+						"sub_heading": "",
+						"heading": "Black friday sale",
+						"heading_size": "smi-h2",
+						"description": ""
+					}
+				},
+				{
+					"type": "countdown_timer",
+					"settings": {
+						"end_date_time": "2024-06-15",
+						"number_size": "smi-h2",
+						"countdown_style": "classic_2",
+						"hide_expires": true
+					}
+				},
+				{
+					"type": "heading_content",
+					"settings": {
+						"heading": "Last chance savings",
+						"heading_size": "smi-h5",
+						"content": "<p>Hurry, time is running out! Don't miss out on your chance to save big.</p>"
+					}
+				},
+				{
+					"type": "button",
+					"settings": {
+						"button_label": "Shop now",
+						"button_link": null,
+						"button_style": "outline_arrow"
+					}
+				},
+				{
+					"type": "color",
+					"settings": {
+						"section_background_color": "#ffffff",
+						"section_text_color": "#000000",
+						"section_shadow_color": "#000000",
+						"text_color": "#ffffff",
+						"subtext_color": "#ffffff",
+						"solid_background_button_color": "#ffffff",
+						"solid_button_label_color": "#63513f",
+						"outline_button_color": "#ffffff",
+						"shadow_color": "#ffffff"
+					}
+				}
+			]
+		}
+	]
+}
+{% endschema %}
+<script defer>
+var SMI_Countdown=function(){"use strict";return class{sectionEl=null;sectionId=null;x=null;constructor(e){this._smiCountdown(e)}_smiCountdown(e){let t=localStorage.getItem(`interval_countdown_${e.substring(e.length-5,e.length)}`);""!=t&&null!=t&&null!=t&&clearInterval(t);document.getElementById("smi-{{ section.id }}");if(document.getElementById(`count_down_date_${e}`)){let t=document.getElementById(`count_down_date_${e}`).value,s=document.getElementById(`hide_when_expire_${e}`).value,i=t.split(" "),c=i[0],a=[],m=!0,r=!0,d=c.replaceAll("-"," ").replaceAll("/"," ").split(" "),u="",_="";if(3==d.length){let e=d[0];null==e?r=!1:(e.length<4||parseInt(e)>2050)&&(m=!1);let t=d[1];"0"==t?m=!1:null==t||parseInt(t)>12?r=!1:t.length<2&&(t=`0${t}`);let n=d[2];"0"==n?m=!1:null==n||2==parseInt(t)&&parseInt(n)>28||(4==parseInt(t)||6==parseInt(t)||9==parseInt(t)||11==parseInt(t))&&parseInt(n)>30||(1==parseInt(t)||3==parseInt(t)||5==parseInt(t)||7==parseInt(t)||8==parseInt(t)||10==parseInt(t)||12==parseInt(t))&&parseInt(n)>31?r=!1:n.length<2&&(n=`0${n}`),(isNaN(e)||isNaN(t)||isNaN(n))&&(m=!1),u=`${e}-${t}-${n}`}else m=!1,r=!1;if(i.length>1){a=i[1];let e=a.split(":"),t=e[0],n="";e.length<2&&(r=!1),t.length<2?t=`0${t}`:parseInt(t)>24&&(m=!1),e.length>1?(n=e[1],n.length<2?n=`0${n}`:parseInt(n)>60&&(m=!1)):m=!1,(isNaN(n)||isNaN(t))&&(m=!1),_=`${t}:${n}`}let g=`${u} ${_}`;document.getElementById(`style_countdown_${e}`).value,document.getElementById(`size_countdown_${e}`).value;if(""==t||null==t||null==t)document.getElementById(`1_day_unit_${e}`).innerHTML="D",document.getElementById(`2_day_unit_${e}`).innerHTML="D",document.getElementById(`1_hour_unit_${e}`).innerHTML="H",document.getElementById(`2_hour_unit_${e}`).innerHTML="H",document.getElementById(`1_minute_unit_${e}`).innerHTML="M",document.getElementById(`2_minute_unit_${e}`).innerHTML="M",document.getElementById(`1_second_unit_${e}`).innerHTML="S",document.getElementById(`2_second_unit_${e}`).innerHTML="S";else if(1==m&&1==r){if(g.length>0){g=g.replaceAll("-","/");var n=new Date(g).getTime();this.x=setInterval((function(){var t=(new Date).getTime();if(1==r)if(n<t)clearInterval(this.x),"true"==s||1==s?(document.getElementById(`count_dount_timer_container_${e}`).innerHTML="",document.getElementById(`count_dount_timer_container_${e}`).classList.remove("smi-mb-lg"),document.querySelector(`.smi-block-countdown_timer-${e}`)&&document.querySelector(`.smi-block-countdown_timer-${e}`).classList.remove("smi-mb-lg"),document.getElementById(`count_dount_timer_container_${e}`).style.marginBottom="0px"):(document.getElementById(`1_day_unit_${e}`).innerHTML="0",document.getElementById(`2_day_unit_${e}`).innerHTML="0",document.getElementById(`1_hour_unit_${e}`).innerHTML="0",document.getElementById(`2_hour_unit_${e}`).innerHTML="0",document.getElementById(`1_minute_unit_${e}`).innerHTML="0",document.getElementById(`2_minute_unit_${e}`).innerHTML="0",document.getElementById(`1_second_unit_${e}`).innerHTML="0",document.getElementById(`2_second_unit_${e}`).innerHTML="0");else{var l=n-t;if((o=Math.floor(l/864e5))<10)var o="0"+o;if((i=Math.floor(l%864e5/36e5))<10)var i="0"+i;if((c=Math.floor(l%36e5/6e4))<10)var c="0"+c;var a=Math.floor(l%6e4/1e3);let s="";s=o.toString().length<2?`0${o.toString()}`:o.toString();for(let t=0;t<s.length;t++)2!=t&&3!=t||document.getElementById(`${t+1}_day_unit_${e}`).classList.remove("hide-days"),document.getElementById(`${t+1}_day_unit_${e}`)&&(document.getElementById(`${t+1}_day_unit_${e}`).innerText=s[t]);let m="";m=i.toString().length<2?`0${i.toString()}`:i.toString();for(let t=0;t<m.length;t++)document.getElementById(`${t+1}_hour_unit_${e}`)&&(document.getElementById(`${t+1}_hour_unit_${e}`).innerText=m[t]);let r="";r=c.toString().length<2?`0${c.toString()}`:c.toString();for(let t=0;t<r.length;t++)document.getElementById(`${t+1}_minute_unit_${e}`)&&(document.getElementById(`${t+1}_minute_unit_${e}`).innerText=r[t]);let d="";d=a.toString().length<2?`0${a.toString()}`:a.toString();for(let t=0;t<d.length;t++)document.getElementById(`${t+1}_second_unit_${e}`)&&(document.getElementById(`${t+1}_second_unit_${e}`).innerText=d[t]);l<0&&clearInterval(this.x)}else clearInterval(this.x)}),1e3),localStorage.setItem(`interval_countdown_${e.substring(e.length-5,e.length)}`,this.x);var l=(new Date).getTime(),o=localStorage.getItem(`setupTime${e}`);null==o?localStorage.setItem(`setupTime${e}`,l):l-o>864e5&&(localStorage.removeItem(`interval_countdown_${e.substring(e.length-5,e.length)}`),localStorage.setItem(`setupTime${e}`,l))}}else document.getElementById(`count_dount_timer_container_${e}`).innerHTML=0==r?"<h4 class='smi-h4' style='opacity: 0.75; font-weight: 500;'>End date format is not available</h4>":"<h4 class='smi-h4' style='opacity: 0.75; font-weight: 500;'>End date is not available</h4>"}}changeTimezone(e){return"string"==typeof e?new Date(new Date(e).toLocaleString("en-US",{timeZone:window.smiObject.timezone})):new Date(e.toLocaleString("en-US",{timeZone:window.smiObject.timezone}))}}}();if(window.addEventListener("DOMContentLoaded",(e=>{let t="smi-{{ section.id }}".replace("smi-","");new SMI_Countdown(t)})),Shopify.designMode){let e="smi-{{ section.id }}".replace("smi-","");new SMI_Countdown(e)}window.addEventListener("DOMContentLoaded",(e=>{document.getElementById("smi-{{ section.id }}")})),window.addEventListener("DOMContentLoaded",(e=>{document.getElementById("smi-{{ section.id }}")})),function(){"use strict";class e{sectionEl=null;constructor(e){this.display1stRichCollapsibleContent2(e),this.removeLastMB(e)}removeLastMB(e){const t=document.querySelector(`.smi-section-block-${e.replace("smi-","")}`);if(t){let n=JSON.parse(t.getAttribute("data-block")),l=parseInt(n.color_pos),o=parseInt(n.bkg_pos),s=parseInt(n.all_block),i=l>o?l:o,c=l>o?o:l,a=0;i==s&&(a=c==i-1?c-1:i-1),a>0&&["smi-mb-xxl","smi-mb-xl","smi-mb-lg","smi-mb-md","smi-mb-sm","smi-mb-xs"].forEach((t=>{document.querySelector(`.smi-block-postion-${a}-${e.replace("smi-","")}`).classList.remove(t)}))}}display1stRichCollapsibleContent2(e){const t=document.querySelector(`.smi-rich-content-load1-${e.replace("smi-","")}`);if(t){let n=JSON.parse(t.getAttribute("data-load")),l=parseInt(n.size);for(let t=1;t<=l;t++)document.getElementById(`collapsible_detail_container_${t}_${e.replace("smi-","")}`)&&document.getElementById(`collapsible_detail_container_${t}_${e.replace("smi-","")}`).addEventListener("click",(()=>{"false"==kcheckCollapR1&&(i_rc1=t,document.getElementById(`collapse_content_${t}_${e.replace("smi-","")}`)?.classList.contains("collapse-desc-content-show")?(document.getElementById(`collapse_content_${t}_${e.replace("smi-","")}`)?.classList.remove("collapse-desc-content-show"),document.getElementById(`collapse_up_arr_${t}_${e.replace("smi-","")}`)?.classList.remove("collapse-desc-arr-show"),document.getElementById(`collapse_down_arr_${t}_${e.replace("smi-","")}`)?.classList.add("collapse-desc-arr-show")):(document.getElementById(`collapse_content_${t}_${e.replace("smi-","")}`)?.classList.add("collapse-desc-content-show"),document.getElementById(`collapse_up_arr_${t}_${e.replace("smi-","")}`)?.classList.add("collapse-desc-arr-show"),document.getElementById(`collapse_down_arr_${t}_${e.replace("smi-","")}`)?.classList.remove("collapse-desc-arr-show"))),kcheckCollapR1="true",setTimeout((()=>{kcheckCollapR1="false"}),250)}))}}}document.addEventListener("DOMContentLoaded",(()=>{new e("smi-{{ section.id }}")})),Shopify.designMode&&new e("smi-{{ section.id }}")}();var i_rc1,kcheckCollapR1="false",secRC1="";window.addEventListener("DOMContentLoaded",(e=>{secRC1="smi-{{ section.id }}",removeSpaceCollapsibleContent()}));var intervals=[];if(Shopify.designMode){secRC1="smi-{{ section.id }}",removeSpaceCollapsibleContent()}function removeSpaceCollapsibleContent(){var e=document.querySelectorAll(".smi-block-type-collapsible_content");for(let t=0;t<e.length;t++){let n=e[t].nextElementSibling,l=e[t].previousElementSibling;if(n?.classList.contains("smi-block-type-collapsible_content")&&e[t].classList.remove("smi-mb-lg"),l?.classList.contains("smi-block-type-collapsible_content")||(e[t].style.borderTop="1px solid rgba(var(--color-foreground), 0.2)"),n?.classList.contains("smi-block-type-color")){let l=n.nextElementSibling;if((n?.classList.contains("smi-block-type-color")||n?.classList.contains("smi-block-type-background"))&&(l?.classList.contains("smi-block-type-collapsible_category")||l?.classList.contains("smi-block-type-button"))&&(e[t].classList.remove("smi-mb-lg"),e[t].classList.remove("smi-mb-md")),l){let o=l.nextElementSibling;!l?.classList.contains("smi-block-type-color")&&!l?.classList.contains("smi-block-type-background")||n?.classList.contains("smi-block-type-collapsible_content")||(o?.classList.contains("smi-block-type-collapsible_category")||o?.classList.contains("smi-block-type-button"))&&(e[t].classList.remove("smi-mb-lg"),e[t].classList.remove("smi-mb-md"))}}}}
+</script>

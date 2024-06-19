@@ -1,0 +1,624 @@
+{% style %}
+	.smi-content-settings .smi-content-max-width{width:var(--content-max-width);max-width:100%}.smi-content-settings .content-alignment-left{display:flex;flex-wrap:wrap;justify-content:flex-start;text-align:left}.smi-content-settings .content-alignment-right{display:flex;flex-wrap:wrap;justify-content:flex-end;text-align:right}.smi-content-settings .content-alignment-center{display:flex;flex-wrap:wrap;justify-content:center;text-align:center}@media screen and (min-width: 768px){.smi-content-settings .smi-content-position-left{display:flex;flex-wrap:wrap;justify-content:flex-start}.smi-content-settings .smi-content-position-right{display:flex;flex-wrap:wrap;justify-content:flex-end}.smi-content-settings .smi-content-position-center{display:flex;flex-wrap:wrap;justify-content:center}}.smi-section-page-heading-1{position:relative;padding-top:0px;padding-bottom:0px;overflow:hidden}.smi-section-page-heading-1 .smi-text-75{opacity:.75}.smi-section-page-heading-1 .heading-component__description p{margin-bottom:0}.smi-section-page-heading-1 .smi-container{position:relative;padding-top:var(--section-padding-top);padding-bottom:var(--section-padding-bottom);display:flex;justify-content:var(--content-postion)}.smi-section-page-heading-1 .smi-container-fluid{position:relative;padding-top:var(--section-padding-top);padding-bottom:var(--section-padding-bottom);display:flex;justify-content:var(--content-postion)}.smi-section-page-heading-1 .smi-bg-img-settings-img-overlay{background:var(--media-overlay)}.smi-section-page-heading-1 .smi-bg-img-settings{position:absolute;width:100%;height:100%}.smi-section-page-heading-1 .smi-bg-img-settings .background-img-dt-settings{position:absolute;height:-webkit-fill-available;width:100%;color:rgba(0,0,0,0);font-size:.1px}.smi-section-page-heading-1 .smi-bg-img-settings .smi-bg-image{width:100%;height:100%;object-fit:cover;object-position:bottom}.smi-section-page-heading-1 .content-container-max-width{width:100%;max-width:var(--content-max-width)}.smi-section-page-heading-1 .smi-container-detail{height:fit-content;text-align:var(--content-alignment)}.smi-section-page-heading-1 .smi-container-detail .smi-heading-component{justify-content:var(--content-alignment)}.smi-section-page-heading-1 .smi-container-detail .smi-heading-component .smi-heading-inner{margin-bottom:0px !important}.smi-section-page-heading-1 .smi-container-detail .smi-block-type-breadcrumb{display:flex;justify-content:var(--content-alignment)}.smi-section-page-heading-1 .smi-container-detail .smi-block-type-breadcrumb .breadcrumb-content{align-items:center;grid-gap:0px 4px}.smi-section-page-heading-1 .smi-container-detail .smi-block-type-breadcrumb .breadcrumb-content .smi-svg-icon{width:17px;height:17px;margin-bottom:-2px;padding-top:3px}.smi-section-page-heading-1 .smi-container-detail .smi-block-type-breadcrumb .breadcrumb-content a,.smi-section-page-heading-1 .smi-container-detail .smi-block-type-breadcrumb .breadcrumb-content a:visited,.smi-section-page-heading-1 .smi-container-detail .smi-block-type-breadcrumb .breadcrumb-content a:hover,.smi-section-page-heading-1 .smi-container-detail .smi-block-type-breadcrumb .breadcrumb-content a:active{color:inherit}
+{% endstyle %}
+{% comment %}#component#["settings/section-padding","blocks/background","settings/product-card","settings/content-settings","settings/media-width","settings/custom-icons","blocks/product-variant","blocks/product-quantity","blocks/product-purchase","blocks/product-color","settings/heading","settings/buttons","settings/product-info-tab","settings/container-width","settings/media-position","settings/media-settings","settings/color-scheme","settings/rich-content-heading","blocks/collapsible-content","settings/text","settings/social-media","settings/image","settings/icon-with-text","settings/page-content","blocks/email-signup","settings/countdown-timer","blocks/color","settings/media-settings-3","settings/design-mode","settings/animation-settings","settings/divider","settings/icon-setting"]#endcomponent#{% endcomment %}
+<style>
+  {% assign colorblock = section.blocks | where: 'type', 'color' | first %}
+{% if colorblock %}
+      #shopify-section-{{ section.id }},
+      #shopify-section-{{ section.id }} .smi-color-{{ section.settings.color_scheme }},
+      .smi-block-custom-color { 
+        --color-background: {{ colorblock.settings.background_color.red }}, {{ colorblock.settings.background_color.green }},{{ colorblock.settings.background_color.blue }};        
+        {% if colorblock.settings.background_gradient_color == blank %}
+            --gradient-background: {{ colorblock.settings.background_color }};
+        {% else %}
+            --gradient-background: {{ colorblock.settings.background_gradient_color }};
+        {% endif %}
+        --color-foreground-hex: {{ colorblock.settings.text_color }};
+        --color-foreground: {{ colorblock.settings.text_color.red }}, {{ colorblock.settings.text_color.green }},{{ colorblock.settings.text_color.blue }};
+        --color-subtext: {{ colorblock.settings.subtext_color.red }},{{ colorblock.settings.subtext_color.green }},{{ colorblock.settings.subtext_color.blue }};
+        --color-button: {{ colorblock.settings.solid_background_button_color.red }}, {{ colorblock.settings.solid_background_button_color.green }},{{ colorblock.settings.solid_background_button_color.blue }};
+        --color-button-text: {{ colorblock.settings.solid_button_label_color.red }}, {{ colorblock.settings.solid_button_label_color.green }},{{ colorblock.settings.solid_button_label_color.blue }};
+        --color-secondary-button-text: {{ colorblock.settings.outline_button_color.red }}, {{ colorblock.settings.outline_button_color.green }},{{ colorblock.settings.outline_button_color.blue }};
+        --color-shadow: {{ colorblock.settings.shadow_color.red }}, {{ colorblock.settings.shadow_color.green }},{{ colorblock.settings.shadow_color.blue }};
+    }
+{% endif %}
+  #smi-{{ section.id }} {
+      --section-padding-top: {{ section.settings.padding_top }}px;
+--section-padding-bottom: {{ section.settings.padding_bottom }}px;
+{% if section.settings.padding_top_section != blank or section.settings.padding_bottom_section != blank %}
+    --section-margin-top: {{ section.settings.padding_top_section }}px;
+    --section-margin-bottom: {{ section.settings.padding_bottom_section }}px;
+{% endif %}
+      --heading-alignment: {{ section.settings.heading_alignment }};
+      --content-max-width: {{ section.settings.content_max_width }}px;;
+      --media-overlay: {{  section.settings.image_overlay }};
+      --content-postion: {{  section.settings.content_position }};
+      --content-alignment: {{  section.settings.content_alignment }};
+  }
+</style>
+{% comment %} CHECK DEFAULT IMG FOR BG {% endcomment %}
+{% liquid
+  assign content_alignment = section.settings.content_alignment
+    assign has_img_bg = false
+    assign img_bg_url = ''
+  if section.settings.image != blank
+    assign has_img_bg = true
+  else
+    unless template == 'index' or template == 'cart' or template == 'list-collections' or template == '404'
+        assign t = template | split: '.' | first
+        case t
+            when 'product'
+                assign target = product.selected_or_first_available_variant
+                if target.featured_image
+                    assign has_img_bg = true
+                    assign img_bg_url = target.featured_image
+                endif
+            when 'collection' and collection.handle
+                if collection.featured_image
+                    assign has_img_bg = true
+                    assign img_bg_url = collection.featured_image
+                endif
+            when 'article'
+                if article.image
+                    assign has_img_bg = true
+                    assign img_bg_url = article.image
+                endif
+        endcase
+    endunless
+  endif
+%}
+<div
+  id="smi-{{ section.id }}"
+  class="smi-{{ section.id }} smi-section__inner smi-gradient smi-section-page-heading-1 smi-color-{{ section.settings.color_scheme }}"
+  data-section="page-heading-1" data-name="✧Page heading 1">
+   
+  {% render 'smi-background' %}
+  {% comment %}
+    <div class="smi-container">
+         {% comment %} {%-liquid
+    if settings.smi_animations_reveal_on_scroll != nil
+        assign animation_scroll = settings.smi_animations_reveal_on_scroll
+    else
+        assign global_settings = shop.metafields.smind.settings.value
+        assign animation_scroll = global_settings.revealOnScroll
+    endif
+-%}
+<div class="smi-heading-component smi-heading-component--align-{{section.settings.heading_alignment}} smi-link-wrapper" {{- block.shopify_attributes -}}    >
+  {% liquid
+    assign heading = section.settings.heading | strip
+    assign sub_heading = section.settings.sub_heading | strip
+    assign description = section.settings.description | strip
+  %}
+  <div class="smi-heading-inner
+    {%- if animation_scroll %} smi-scroll-trigger smi-animate--slide-in{% endif -%}
+    {%- if heading != blank or sub_heading != blank or description != blank %} smi-mb-xxl{% endif -%}
+    ">
+        {%- assign sub_heading = section.settings.sub_heading | strip -%}
+{% if sub_heading != blank %}
+    <p class="smi-text-sub smi-mb-xxs smi-heading-component__subheading" data-type="subheading" data-key="s.subheading">{{- sub_heading -}}</p>
+{% endif %} 
+        {%- assign description = section.settings.description | strip -%}
+{%- assign heading = section.settings.heading | strip -%}
+{% if heading != blank %}
+    <h2 class="{{ section.settings.heading_size }} {% if description != blank %}smi-mb-sm{% endif %} smi-heading-component__heading" data-type="heading" data-key="s.heading">{{- heading -}}</h2>
+{% endif %} 
+        {%- assign description = section.settings.description | strip -%}
+{% if description != blank %}
+    <div class="smi-text-md smi-heading-component__description" data-type="description" data-key="s.description">{{ description }}</div>
+{% endif %}
+    </div>
+</div>
+ {% endcomment %}
+    </div>
+  {% endcomment %}
+  {% if section.settings.show_banner %}
+    <div
+      class="
+        smi-bg-img-settings
+        {% if has_img_bg %}
+          smi-bg-img-settings-img-overlay
+        {% endif %}
+        {% comment %} {% if section.settings.image != blank %} {% endcomment %}
+        {% comment %} smi-media-wrapper smi-border smi-shadow {% endcomment %}
+        {% comment %} {% endif %} {% endcomment %}
+      "
+    >
+      <div style="position: relative; height: 100%">
+        <div class="background-img-dt-settings" style="background: {{ section.settings.image_overlay }};">colorne</div>
+        {% if section.settings.image != blank %}
+          {{ section.settings.image | image_url: width: 1024 | image_tag: class: 'smi-bg-image', widths: '200,300,400,600,800,1000,1200', sizes: '(max-width: 350px) calc(100vw/4)' }}
+        {% else %}
+              {% if has_img_bg %}
+                  {{ img_bg_url | image_url: width: 1024 | image_tag: class: 'smi-bg-image', widths: '200,300,400,600,800,1000,1200', sizes: '(max-width: 350px) calc(100vw/4)' }}
+              {% endif %}
+        {% endif %}
+      </div>
+    </div>
+  {% endif %}
+  <div class="{% if section.settings.container_full_width %}smi-container-fluid{% else %}smi-container{% endif -%}">
+    {%-liquid
+    if settings.smi_animations_reveal_on_scroll != nil
+        assign animation_scroll = settings.smi_animations_reveal_on_scroll
+    else
+        assign global_settings = shop.metafields.smind.settings.value
+        assign animation_scroll = global_settings.revealOnScroll
+    endif
+-%}
+    <div class="smi-container-detail {% if animation_scroll %}smi-scroll-trigger smi-animate--slide-in{% endif %} content-container-max-width">
+      {% for block in section.blocks %}
+        <div
+          class="
+            content-alignment-{{ section.settings.content_alignment }}
+            smi-content-position-{{ section.settings.content_position }}
+            {% if forloop.index < section.blocks.size %}
+                smi-mb-md
+            {% endif %}
+            smi-block-type-{{ block.type }}
+          "
+        >
+          {% if block.type == 'heading' %}
+            {%- assign heading = block.settings.heading | strip | strip_newlines | strip_html -%}
+{% comment %} {% if heading != blank %} {% endcomment %}
+    {%- unless template == 'index' or template == 'cart' or template == 'list-collections' or template == '404' -%}
+        {%- assign t = template | split: '.' | first -%}
+          {%- case t -%}
+            {%- when 'page' -%}
+                {% if heading != blank %}
+                    <h2 class="{{ block.settings.heading_size }} 
+                        {% if heading != blank %}smi-mb-sm{% endif %} smi-heading-component__heading smi-link-wrapper">{{- heading -}}</h2>
+                    {% else %}
+                    <h2 class="{{ block.settings.heading_size }} 
+                        {% if heading != blank %}smi-mb-sm{% endif %} smi-heading-component__heading smi-link-wrapper">{{- page.title -}}</h2>
+                  {% endif %}
+            {%- when 'product' -%}
+                {% if heading != blank %}
+                    <h2 class="{{ block.settings.heading_size }} 
+                        {% if heading != blank %}smi-mb-sm{% endif %} smi-heading-component__heading smi-link-wrapper">{{- heading -}}</h2>
+                    {% else %}
+                    <h2 class="{{ block.settings.heading_size }} 
+                        {% if heading != blank %}smi-mb-sm{% endif %} smi-heading-component__heading smi-link-wrapper">{{- product.title -}}</h2>
+                  {% endif %}
+            {%- when 'collection' and collection.handle -%}
+                {% if heading != blank %}
+                    <h2 class="{{ block.settings.heading_size }} 
+                        {% if heading != blank %}smi-mb-sm{% endif %} smi-heading-component__heading smi-link-wrapper">{{- heading -}}</h2>
+                    {% else %}
+                    <h2 class="{{ block.settings.heading_size }} 
+                        {% if heading != blank %}smi-mb-sm{% endif %} smi-heading-component__heading smi-link-wrapper">{{- collection.title -}}</h2>
+                  {% endif %}
+            {%- when 'blog' -%}
+                {% comment %} {% if heading != blank %} {% endcomment %}
+                {% comment %} BLOG DOESNT HAVE CONTENT OR DESC {% endcomment %}
+                {% if heading != blank %}
+                    <h2 class="{{ block.settings.heading_size }} 
+                        {% if heading != blank %}smi-mb-sm{% endif %} smi-heading-component__heading smi-link-wrapper">{{- heading -}}</h2>
+                    {% else %}
+                    <h2 class="{{ block.settings.heading_size }} 
+                        {% if heading != blank %}smi-mb-sm{% endif %} smi-heading-component__heading smi-link-wrapper">{{- blog.title -}}</h2>
+                  {% endif %}
+                    {% comment %} {% else %}
+                    <div class="smi-text-md heading-component__description">{{ article.title }}</div>
+                  {% endif %} {% endcomment %}
+            {%- when 'article' -%}
+                {% if heading != blank %}
+                    <h2 class="{{ block.settings.heading_size }} 
+                        {% if heading != blank %}smi-mb-sm{% endif %} smi-heading-component__heading smi-link-wrapper">{{- heading -}}</h2>
+                    {% else %}
+                    <h2 class="{{ block.settings.heading_size }} 
+                        {% if heading != blank %}smi-mb-sm{% endif %} smi-heading-component__heading smi-link-wrapper">{{- article.title -}}</h2>
+                  {% endif %}
+            {%- else -%}
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link smi-text-75" href="{{ request.path }}" aria-current="page">{{ page_title }}</a>
+              </li>
+          {% endcase %}
+      {%- endunless -%}
+{% comment %} {% endif %} {% endcomment %}
+          {% endif %}
+          {% if block.type == 'breadcrumb' %}
+            {%- unless template == 'index' or template == 'cart' or template == 'list-collections' or template == '404' -%}
+    {%- assign t = template | split: '.' | first -%}
+    <span class="breadcrumb-content"
+      ><a class="breadcrumbs__link_home" href="/">Home</a>{% render 'smi-icons', icon: 'arrow-right' %}
+      {%- case t -%}
+        {%- when 'page' -%}
+          <a class="breadcrumbs__link smi-text-75" href="{{ page.url }}" aria-current="page">{{ page.title }}</a>
+        {%- when 'product' -%}
+          {% for collect in  product.collections %}
+              {% if forloop.index == 1 and product.collections.size >= 1 %}
+                {% assign collection = collect %}
+              {% endif %}
+          {% endfor %}
+          {%- if collection.url -%}
+            {{ collection.title | link_to: collection.url }}
+            {% render 'smi-icons', icon: 'arrow-right' %}
+          {% endif %}
+          <a class="breadcrumbs__link smi-text-75" href="{{ product.url }}" aria-current="page">{{ product.title }}</a>
+        {%- when 'collection' and collection.handle -%}
+          {%- if current_tags -%}
+            {{ collection.title | link_to: collection.url -}}
+            {%- render 'smi-icons', icon: 'arrow-right' %}
+            {%- capture tag_url -%}{{ collection.url }}/{{ current_tags | join: "+"}}{%- endcapture -%}
+            <a class="breadcrumbs__link smi-text-75" href="{{ tag_url }}" aria-current="page">{{ current_tags | join: ' + ' }}</a>
+          {%- else -%}
+            <a class="breadcrumbs__link smi-text-75" href="{{ collection.url }}" aria-current="page">{{ collection.title }}</a>
+          {%- endif -%}
+        {%- when 'blog' -%}
+          {%- if current_tags -%}
+            {{ blog.title | link_to: blog.url -}}
+            {%- render 'smi-icons', icon: 'arrow-right' %}
+            {%- capture tag_url -%}{{blog.url}}/tagged/{{ current_tags | join: "+" }}{%- endcapture -%}
+            <a class="breadcrumbs__link smi-text-75" href="{{ tag_url }}" aria-current="page">{{ current_tags | join: ' + ' }}</a>
+            {%- render 'smi-icons', icon: 'arrow-right' %}
+          {%- else -%}
+            <a class="breadcrumbs__link smi-text-75" href="{{ blog.url }}" aria-current="page">{{ blog.title }}</a>
+          {%- endif -%}
+        {%- when 'article' -%}
+          {{ blog.title | link_to: blog.url -}}
+          {%- render 'smi-icons', icon: 'arrow-right' %}
+          <a class="breadcrumbs__link smi-text-75" href="{{ article.url }}" aria-current="page">{{ article.title }}</a>
+        {%- else -%}
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link smi-text-75" href="{{ request.path }}" aria-current="page">{{ page_title }}</a>
+          </li>
+      {% endcase %}
+    </span>
+  {%- endunless -%}
+          {% endif %}
+          {% if block.type == 'description' %}
+            {%- assign description = block.settings.description | strip | strip_newlines | strip_html -%}
+{% comment %} {% if description != blank %} {% endcomment %}
+    {%- unless template == 'index' or template == 'cart' or template == 'list-collections' or template == '404' -%}
+        {%- assign t = template | split: '.' | first -%}
+          {%- case t -%}
+            {%- when 'page' -%}
+                {% if description != blank %}
+                    <div class="smi-text-md heading-component__description smi-link-wrapper smi-text-75">{{ description }}</div>
+                    {% else %}
+                    <div class="smi-text-md heading-component__description smi-link-wrapper smi-text-75">{{ page.content }}</div>
+                  {% endif %}
+            {%- when 'product' -%}
+                {% if description != blank %}
+                    <div class="smi-text-md heading-component__description smi-link-wrapper smi-text-75">{{ description }}</div>
+                    {% else %}
+                    <div class="smi-text-md heading-component__description smi-link-wrapper smi-text-75">{{ product.description }}</div>
+                  {% endif %}
+            {%- when 'collection' and collection.handle -%}
+                {% if description != blank %}
+                    <div class="smi-text-md heading-component__description smi-link-wrapper smi-text-75">{{ description }}</div>
+                    {% else %}
+                    <div class="smi-text-md heading-component__description smi-link-wrapper smi-text-75">{{ collection.description }}</div>
+                  {% endif %}
+            {%- when 'blog' -%}
+                {% comment %} {% if description != blank %} {% endcomment %}
+                {% comment %} BLOG DOESNT HAVE CONTENT OR DESC {% endcomment %}
+                    <div class="smi-text-md heading-component__description smi-link-wrapper smi-text-75">{{ description }}</div>
+                    {% comment %} {% else %}
+                    <div class="smi-text-md heading-component__description smi-link-wrapper smi-text-75">{{ article.content }}</div>
+                  {% endif %} {% endcomment %}
+            {%- when 'article' -%}
+                {% if description != blank %}
+                    <div class="smi-text-md heading-component__description smi-link-wrapper smi-text-75">{{ description }}</div>
+                    {% else %}
+                    <div class="smi-text-md heading-component__description smi-link-wrapper smi-text-75">{{ article.content }}</div>
+                  {% endif %}
+            {%- else -%}
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link smi-text-75" href="{{ request.path }}" aria-current="page">{{ page_title }}</a>
+              </li>
+          {% endcase %}
+      {%- endunless -%}
+{% comment %} {% endif %} {% endcomment %}
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+    {% comment %}
+        {%-liquid
+    if settings.smi_animations_reveal_on_scroll != nil
+        assign animation_scroll = settings.smi_animations_reveal_on_scroll
+    else
+        assign global_settings = shop.metafields.smind.settings.value
+        assign animation_scroll = global_settings.revealOnScroll
+    endif
+-%}
+      <h2 class="{% if animation_scroll %}smi-scroll-trigger smi-animate--slide-in{% endif %}">
+          Lorem ipsum dolor.
+      </h2>
+      <div class="{{ settings.smi_animations_hover_image | default: shop.metafields.smind.settings.value.imageHoverEffect | default: 'none' | prepend: ' smi-hover-image-' }}" style="width: 500px; height: 300px">
+          <img src="https://media.istockphoto.com/id/1366491129/vi/anh/hoa-h%C6%B0%E1%BB%9Bng-d%C6%B0%C6%A1ng-v%C3%A0ng-m%E1%BB%8Dc-tr%C3%AAn-c%C3%A1nh-%C4%91%E1%BB%93ng-c%C3%A2y-tr%E1%BB%93ng-n%C3%B4ng-nghi%E1%BB%87p.jpg?s=1024x1024&w=is&k=20&c=dIBLpHguNzCyq_ZMpxBQGGiCE5-u3FyODNvr69zFo4U=" alt="">
+      </div>
+    {% endcomment %}
+  </div>
+</div>
+{% schema %}
+{
+	"name": "✧Page heading 1-1",
+	"tag": "section",
+	"class": "smi-section smi-page-heading-1",
+	"settings": [
+		{
+			"type": "checkbox",
+			"id": "container_full_width",
+			"label": "Container full-width",
+			"default": false
+		},
+		{
+			"type": "header",
+			"content": "Content settings"
+		},
+		{
+			"type": "select",
+			"id": "content_position",
+			"label": "Content position",
+			"options": [
+				{
+					"value": "left",
+					"label": "Left"
+				},
+				{
+					"value": "center",
+					"label": "Center"
+				},
+				{
+					"value": "right",
+					"label": "Right"
+				}
+			],
+			"default": "left"
+		},
+		{
+			"type": "text_alignment",
+			"id": "content_alignment",
+			"label": "Content alignment",
+			"default": "left"
+		},
+		{
+			"type": "range",
+			"id": "content_max_width",
+			"min": 300,
+			"max": 1200,
+			"step": 10,
+			"unit": "px",
+			"label": "Content max-width",
+			"default": 700
+		},
+		{
+			"type": "header",
+			"content": "Image banner"
+		},
+		{
+			"type": "checkbox",
+			"id": "show_banner",
+			"label": "Show banner",
+			"default": false
+		},
+		{
+			"type": "image_picker",
+			"id": "image",
+			"label": "Background image"
+		},
+		{
+			"type": "header",
+			"content": "Color"
+		},
+		{
+			"type": "select",
+			"options": [
+				{
+					"value": "scheme_1",
+					"label": "Scheme 1"
+				},
+				{
+					"value": "scheme_2",
+					"label": "Scheme 2"
+				},
+				{
+					"value": "scheme_3",
+					"label": "Scheme 3"
+				},
+				{
+					"value": "scheme_4",
+					"label": "Scheme 4"
+				},
+				{
+					"value": "scheme_5",
+					"label": "Scheme 5"
+				},
+				{
+					"value": "scheme_6",
+					"label": "Scheme 6"
+				},
+				{
+					"value": "scheme_7",
+					"label": "Scheme 7"
+				},
+				{
+					"value": "scheme_8",
+					"label": "Scheme 8"
+				},
+				{
+					"value": "scheme_9",
+					"label": "Scheme 9"
+				},
+				{
+					"value": "scheme_10",
+					"label": "Scheme 10"
+				}
+			],
+			"id": "color_scheme",
+			"label": "Color Scheme"
+		},
+		{
+			"type": "paragraph",
+			"content": "How to use “Color block” and “Color scheme”. [Learn more](https://docs.smind.io/guides/color-block-and-color-scheme)"
+		},
+		{
+			"type": "color_background",
+			"id": "image_overlay",
+			"label": "Image overlay"
+		},
+		{
+			"type": "header",
+			"content": "Section padding"
+		},
+		{
+			"type": "range",
+			"id": "padding_top",
+			"min": 0,
+			"max": 200,
+			"step": 2,
+			"unit": "px",
+			"label": "Top padding",
+			"default": 50
+		},
+		{
+			"type": "range",
+			"id": "padding_bottom",
+			"min": 0,
+			"max": 200,
+			"step": 2,
+			"unit": "px",
+			"label": "Bottom padding",
+			"default": 50
+		}
+	],
+	"blocks": [
+		{
+			"type": "heading",
+			"name": "Heading",
+			"limit": 1,
+			"settings": [
+				{
+					"type": "inline_richtext",
+					"id": "heading",
+					"label": "Heading",
+					"info": "If you want the title of the current page to be displayed by default, leave this field empty."
+				},
+				{
+					"type": "select",
+					"id": "heading_size",
+					"label": "Heading size",
+					"options": [
+						{
+							"value": "smi-h4",
+							"label": "XS"
+						},
+						{
+							"value": "smi-h3",
+							"label": "S"
+						},
+						{
+							"value": "smi-h2",
+							"label": "M"
+						},
+						{
+							"value": "smi-h1",
+							"label": "L"
+						}
+					],
+					"default": "smi-h2"
+				}
+			]
+		},
+		{
+			"type": "breadcrumb",
+			"name": "Breadcrumb",
+			"limit": 1
+		},
+		{
+			"type": "description",
+			"name": "Description",
+			"limit": 1,
+			"settings": [
+				{
+					"type": "richtext",
+					"id": "description",
+					"label": "Description",
+					"default": "<p>A description to see how this collection</p>",
+					"info": "If you want the description of the current page to be displayed by default, leave this field empty."
+				}
+			]
+		},
+		{
+			"name": "Color",
+			"limit": 1,
+			"type": "color",
+			"settings": [
+				{
+					"type": "paragraph",
+					"content": "How to use “Color block” and “Color scheme”. [Learn more](https://docs.smind.io/guides/color-block-and-color-scheme#how-to-use-the-color-block)"
+				},
+				{
+					"type": "color",
+					"id": "background_color",
+					"default": "#F3F3F3",
+					"label": "Background"
+				},
+				{
+					"type": "color_background",
+					"id": "background_gradient_color",
+					"label": "Background gradient",
+					"info": "Background gradient replaces background where possible."
+				},
+				{
+					"type": "color",
+					"id": "text_color",
+					"default": "#121212",
+					"label": "Text"
+				}
+			]
+		}
+	],
+	"presets": [
+		{
+			"name": "✧Page heading 1-1",
+			"settings": {
+				"container_full_width": false,
+				"content_position": "center",
+				"content_alignment": "center",
+				"content_max_width": 700,
+				"show_banner": false,
+				"image": "shopify://shop_images/smi-image_14_1f6900c6-d2be-4cf6-a5ed-c0cf1bec596b.jpg",
+				"image_overlay": "linear-gradient(127deg, rgba(43, 28, 13, 0.3) 11%, rgba(43, 28, 13, 0.3) 81%)",
+				"padding_top": 50,
+				"padding_bottom": 50,
+				"color_scheme": "scheme_2"
+			},
+			"blocks": [
+				{
+					"type": "heading",
+					"settings": {
+						"heading": "Our blog",
+						"heading_size": "smi-h2"
+					}
+				},
+				{
+					"type": "description",
+					"settings": {
+						"description": "<p>Discover the latest update fashion trends on our blog today!</p>"
+					}
+				},
+				{
+					"type": "color",
+					"settings": {
+						"background_color": "#fcf8f5",
+						"background_gradient_color": "",
+						"text_color": "#000000"
+					}
+				}
+			]
+		}
+	],
+	"enabled_on": {
+		"templates": [
+			"product",
+			"blog",
+			"page",
+			"collection",
+			"article"
+		]
+	}
+}
+{% endschema %}

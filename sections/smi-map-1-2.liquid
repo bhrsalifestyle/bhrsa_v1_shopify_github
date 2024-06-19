@@ -1,0 +1,591 @@
+{% style %}
+	.smi-content-settings .smi-content-max-width{width:var(--content-max-width);max-width:100%}.smi-content-settings .content-alignment-left{display:flex;flex-wrap:wrap;justify-content:flex-start;text-align:left}.smi-content-settings .content-alignment-right{display:flex;flex-wrap:wrap;justify-content:flex-end;text-align:right}.smi-content-settings .content-alignment-center{display:flex;flex-wrap:wrap;justify-content:center;text-align:center}@media screen and (min-width: 768px){.smi-content-settings .smi-content-position-left{display:flex;flex-wrap:wrap;justify-content:flex-start}.smi-content-settings .smi-content-position-right{display:flex;flex-wrap:wrap;justify-content:flex-end}.smi-content-settings .smi-content-position-center{display:flex;flex-wrap:wrap;justify-content:center}}.smi-component-blocks-heading{width:100%;max-width:750px;justify-content:var(--content-alignment)}.smi-component-blocks-heading .smi-text-75{opacity:.75}.smi-component-blocks-heading .sub-heading{color:rgba(var(--color-subtext), 1)}.smi-component-blocks-text{width:100%}.smi-component-blocks-text .smi-text-75{opacity:.75}.smi-component-blocks-text p{margin-bottom:10px}.smi-component-blocks-text p:last-child{margin-bottom:0px}.smi-component-button-single.smi-component-buttons-full-width{width:100%}.smi-component-button-single.smi-component-buttons-full-width a.smi-button--outline,.smi-component-button-single.smi-component-buttons-full-width a.smi-button--solid{width:100%}.smi-component-blocks-divider{width:100%;height:1px;font-size:1px;color:rgba(0,0,0,0);background:rgba(var(--color-foreground), 0.2)}.smi-section-map-1 .smi-content-postion{justify-content:var(--content-position)}.smi-section-map-1 .smi-heading-component{justify-content:var(--content-alignment)}.smi-section-map-1 .smi-component-blocks-heading,.smi-section-map-1 .smi-component-blocks-text{display:flex;justify-content:var(--content-position);flex-direction:column;text-align:var(--content-alignment);position:relative;word-wrap:break-word}@media screen and (max-width: 767.98px){.smi-section-map-1 .smi-component-blocks-heading,.smi-section-map-1 .smi-component-blocks-text{display:inline-block}}.smi-section-map-1 .smi-heading-inner{margin-bottom:calc(var(--spacing-elements)*24px)}.smi-section-map-1 .smi-group-bottom-direction{display:flex;justify-content:var(--content-alignment);text-align:var(--content-alignment);position:relative}.smi-section-map-1 .smi-container-content{background-color:rgb(var(--color-background));width:var(--content-max-width);position:relative;max-width:100%}.smi-section-map-1 .smi-container-content>div:last-child{margin-bottom:0px}.smi-section-map-1 .smi-background-block iframe{transform:none;top:0px;left:0px;right:0px;border:none;width:100% !important;height:100% !important}.smi-section-map-1 .smi-background-block::before{display:none}@media screen and (min-width: 768px){.smi-section-map-1 .smi-background-block .place-card.place-card-large{display:none !important}.smi-section-map-1 .smi-background-block iframe{height:calc(100% + 500px) !important;margin-top:-250px}.smi-section-map-1 .smi-background-block.smi-position-map-left iframe{width:120% !important}.smi-section-map-1 .smi-background-block.smi-position-map-center iframe{width:165% !important}.smi-section-map-1 .smi-background-block.smi-position-map-right iframe{width:120% !important;left:-20% !important}}.smi-section-map-1 .smi-button-wrapper .smi-button{width:100%;margin-left:0px;margin-right:0px}.smi-section-map-1 .smi-button-wrapper .smi-button--solid{border:none}.smi-section-map-1 .smi-button-wrapper .smi-button--solid svg{fill:rgba(var(--color-button-text), 1);stroke:rgb(var(--color-button-text))}.smi-section-map-1 .smi-button-wrapper .smi-button--outline svg{fill:rgba(var(--color-button-text), 1);stroke:rgb(var(--color-button-text))}@media screen and (max-width: 767.98px){.smi-section-map-1 .smi-container-fluid{margin-inline-start:0px;margin-inline-end:0px}.smi-section-map-1 .smi-container .smi-container-content.smi-pd-0{padding-left:0px;padding-right:0px;padding-bottom:0px}.smi-section-map-1 .smi-background-block{position:inherit}.smi-section-map-1 .smi-background-block iframe{position:inherit;height:310px !important}}
+{% endstyle %}
+{% comment %}#component#["settings/content-settings","settings/color-scheme","blocks/color","blocks/heading","settings/text","blocks/divider","settings/button-single","settings/design-mode","settings/animation-settings","settings/heading"]#endcomponent#{% endcomment %}
+<style>
+  {% assign colorblock = section.blocks | where: 'type', 'color' | first %}
+{% if colorblock %}
+      #shopify-section-{{ section.id }},
+      #shopify-section-{{ section.id }} .smi-color-{{ section.settings.color_scheme }},
+      .smi-block-custom-color { 
+        --color-background: {{ colorblock.settings.background_color.red }}, {{ colorblock.settings.background_color.green }},{{ colorblock.settings.background_color.blue }};        
+        {% if colorblock.settings.background_gradient_color == blank %}
+            --gradient-background: {{ colorblock.settings.background_color }};
+        {% else %}
+            --gradient-background: {{ colorblock.settings.background_gradient_color }};
+        {% endif %}
+        --color-foreground-hex: {{ colorblock.settings.text_color }};
+        --color-foreground: {{ colorblock.settings.text_color.red }}, {{ colorblock.settings.text_color.green }},{{ colorblock.settings.text_color.blue }};
+        --color-subtext: {{ colorblock.settings.subtext_color.red }},{{ colorblock.settings.subtext_color.green }},{{ colorblock.settings.subtext_color.blue }};
+        --color-button: {{ colorblock.settings.solid_background_button_color.red }}, {{ colorblock.settings.solid_background_button_color.green }},{{ colorblock.settings.solid_background_button_color.blue }};
+        --color-button-text: {{ colorblock.settings.solid_button_label_color.red }}, {{ colorblock.settings.solid_button_label_color.green }},{{ colorblock.settings.solid_button_label_color.blue }};
+        --color-secondary-button-text: {{ colorblock.settings.outline_button_color.red }}, {{ colorblock.settings.outline_button_color.green }},{{ colorblock.settings.outline_button_color.blue }};
+        --color-shadow: {{ colorblock.settings.shadow_color.red }}, {{ colorblock.settings.shadow_color.green }},{{ colorblock.settings.shadow_color.blue }};
+    }
+{% endif %}
+ #shopify-section-{{ section.id }}{
+    --section-padding-top: {{ section.settings.padding_top }}px;
+--section-padding-bottom: {{ section.settings.padding_bottom }}px;
+{% if section.settings.padding_top_section != blank or section.settings.padding_bottom_section != blank %}
+    --section-margin-top: {{ section.settings.padding_top_section }}px;
+    --section-margin-bottom: {{ section.settings.padding_bottom_section }}px;
+{% endif %}
+ --heading-alignment: {{ section.settings.heading_alignment }};
+    --content-position: {{ section.settings.content_position }};
+    --content-alignment: {{ section.settings.content_alignment }};
+    --heading-alignment: {{ section.settings.content_alignment }};
+  }
+  #smi-{{ section.id }}{
+    --section-padding-top: {{ section.settings.padding_top }}px;
+--section-padding-bottom: {{ section.settings.padding_bottom }}px;
+{% if section.settings.padding_top_section != blank or section.settings.padding_bottom_section != blank %}
+    --section-margin-top: {{ section.settings.padding_top_section }}px;
+    --section-margin-bottom: {{ section.settings.padding_bottom_section }}px;
+{% endif %}
+    --content-max-width: {{ section.settings.content_max_width }}px;
+  }
+  .smi-section.smi-map-1{
+    margin-top:var(--section-margin-top);
+    margin-bottom:var(--section-margin-bottom);
+  }
+</style>
+{% assign google_map_iframe = section.settings.google_map_iframe | strip 
+%}
+{% liquid
+if settings.smi_animations_reveal_on_scroll != blank
+  assign animation_scroll = settings.smi_animations_reveal_on_scroll
+else
+  assign global_settings = shop.metafields.smind.settings.value
+  assign animation_scroll = global_settings.revealOnScroll
+endif
+assign gettext =section.blocks | where: 'type', 'text' | first
+assign getbutton =section.blocks | where: 'type', 'button' | first
+%}
+<div
+  id="smi-{{ section.id }}"
+  class="smi-{{ section.id }} smi-section__inner smi-gradient smi-section-map-1 smi-color-{{ section.settings.color_scheme }}"
+  data-section="map-1" data-name="✧Map 1">
+   
+  <div class="{%- if section.settings.container_full_width %} smi-container-fluid{%- else %} smi-container{%- endif %}">
+    {% if google_map_iframe != blank %}
+      <div class="smi-background-block smi-background-block--none smi-position-map-{{section.settings.content_position}}">
+        {{google_map_iframe}}
+      </div>
+    {% endif %}
+    {% if gettext != blank or getbutton != blank %}
+      <div class="smi-content-postion smi-d-flex">
+        {%-liquid
+    if settings.smi_animations_reveal_on_scroll != nil
+        assign animation_scroll = settings.smi_animations_reveal_on_scroll
+    else
+        assign global_settings = shop.metafields.smind.settings.value
+        assign animation_scroll = global_settings.revealOnScroll
+    endif
+-%}
+      <div class="smi-container-content smi-content-wrapper smi-shadow smi-border smi-py-xl smi-px-lg smi-px-xxl smi-py-xxl{%- if animation_scroll %} smi-scroll-trigger smi-animate--slide-in {% endif -%}">
+        {%- for block in section.blocks -%}
+          {% if block.type == 'heading' %}
+              {%-liquid
+    if settings.smi_animations_reveal_on_scroll != nil
+        assign animation_scroll = settings.smi_animations_reveal_on_scroll
+    else
+        assign global_settings = shop.metafields.smind.settings.value
+        assign animation_scroll = global_settings.revealOnScroll
+    endif
+-%}
+<div class="smi-heading-component smi-heading-component--align-{{block.settings.heading_alignment}} smi-link-wrapper" {{- block.shopify_attributes -}}    >
+  {% liquid
+    assign heading = block.settings.heading | strip
+    assign sub_heading = block.settings.sub_heading | strip
+    assign description = block.settings.description | strip
+  %}
+  <div class="smi-heading-inner
+    {%- if animation_scroll %} smi-scroll-trigger smi-animate--slide-in{% endif -%}
+    {%- if heading != blank or sub_heading != blank or description != blank %} smi-mb-xxl{% endif -%}
+    ">
+        {%- assign sub_heading = block.settings.sub_heading | strip -%}
+{% if sub_heading != blank %}
+    <p class="smi-text-sub smi-mb-xxs smi-heading-component__subheading" data-type="subheading" data-key="s.subheading">{{- sub_heading -}}</p>
+{% endif %} 
+        {%- assign description = block.settings.description | strip -%}
+{%- assign heading = block.settings.heading | strip -%}
+{% if heading != blank %}
+    <h2 class="{{ block.settings.heading_size }} {% if description != blank %}smi-mb-sm{% endif %} smi-heading-component__heading" data-type="heading" data-key="s.heading">{{- heading -}}</h2>
+{% endif %} 
+        {%- assign description = block.settings.description | strip -%}
+{% if description != blank %}
+    <div class="smi-text-md smi-heading-component__description" data-type="description" data-key="s.description">{{ description }}</div>
+{% endif %}
+    </div>
+</div>
+          {% endif %}
+          {% if block.type == 'text' %}
+              <div class="smi-mb-lg">
+                <div class="smi-component-blocks-text smi-text-md" {{- block.shopify_attributes -}}>
+    <div class="smi-text-75 smi-link-wrapper">{{ block.settings.text | newline_to_br }}</div>
+</div>
+              </div>
+          {% endif %}
+          {% if block.type == 'divider' %}
+              <div class="smi-component-blocks-divider smi-mb-lg">
+    divider
+</div>
+          {% endif %}
+          {% if block.type == 'button' %}
+              <div class="smi-group-bottom-direction smi-mb-lg">
+                {% liquid
+    assign button_label = block.settings.button_label
+    assign button_style = block.settings.button_style
+    assign button_link = block.settings.button_link
+%}
+{% if button_label != blank %}
+    <div class="smi-component-button-single smi-button-wrapper
+        {%- if block.settings.button_full_width == true %} {%unless button_style contains 'text'%}smi-component-buttons-full-width{% endunless %}{%- endif -%}
+    "  {{- block.shopify_attributes -}}>
+        {% if button_label != blank %}
+            {% assign button_hover_animation = settings.smi_animations_hover_elements | default: shop.metafields.smind.settings.value.buttonHoverEffect | default: 'none'  %}
+            <a href="{% if button_link != blank %}{{ button_link }}{% else %}#{% endif %}" class="smi-button smi-text-button smi-button--{{ button_style | split: '_' | first -}}
+            {%- if button_style contains 'arrow' %} smi-has-icon{% endif %}
+            {{- ' smi-hover-' | append: button_hover_animation -}}
+            {{- ' smi-border smi-shadow' -}}">
+                    <span>
+                        {{- button_label | escape -}}
+                    </span>
+                    {% if button_style contains 'arrow' %}
+                        <div class="smi-d-flex smi-align-content-center">
+                            {% render 'smi-icons', icon: 'arrow-right-2' %}
+                        </div>
+                    {% endif %}
+            </a>
+        {% endif %}
+    </div>
+{% endif %}
+              </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</div>
+<script>
+window.addEventListener("DOMContentLoaded", (event) => {
+  var currentEl = document.getElementById('smi-{{ section.id }}'); 
+  const height_section = currentEl.offsetHeight;
+  var mapIframe = currentEl.querySelector('iframe');
+  mapIframe.style.height = height_section + "px";
+  mapIframe.style.width = "100%";
+});
+</script>
+{% schema %}
+{
+	"name": "✧Map 1-2",
+	"tag": "section",
+	"class": "smi-section smi-map-1",
+	"settings": [
+		{
+			"type": "checkbox",
+			"id": "container_full_width",
+			"label": "Container full width",
+			"default": false
+		},
+		{
+			"type": "textarea",
+			"id": "google_map_iframe",
+			"label": "Google maps iframe source",
+			"default": "<iframe title='Map Smind' src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.590606359831!2d105.7630195759982!3d21.009041688454115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134535bad767b7d%3A0x90e371a9122cd564!2zQ8O0bmcgVHkgQ-G7lSBQaOG6p24gU2hpbmVjb21tZXJjZQ!5e0!3m2!1sen!2s!4v1701162034590!5m2!1sen!2s' width='600' height='450' style='border:0;' referrerpolicy='no-referrer-when-downgrade'></iframe>"
+		},
+		{
+			"type": "paragraph",
+			"content": "How to get Google maps iframe.[Learn more](https://docs.smind.io/guides/getting-google-maps-iframe)."
+		},
+		{
+			"type": "header",
+			"content": "Content settings"
+		},
+		{
+			"type": "select",
+			"id": "content_position",
+			"label": "Content position",
+			"options": [
+				{
+					"value": "left",
+					"label": "Left"
+				},
+				{
+					"value": "center",
+					"label": "Center"
+				},
+				{
+					"value": "right",
+					"label": "Right"
+				}
+			],
+			"default": "left"
+		},
+		{
+			"type": "text_alignment",
+			"id": "content_alignment",
+			"label": "Content alignment",
+			"default": "left"
+		},
+		{
+			"type": "range",
+			"id": "content_max_width",
+			"min": 300,
+			"max": 1200,
+			"step": 10,
+			"unit": "px",
+			"label": "Content max-width",
+			"default": 700
+		},
+		{
+			"type": "header",
+			"content": "Color"
+		},
+		{
+			"type": "select",
+            "options": [
+                {
+                    "value": "scheme_1",
+                    "label": "Scheme 1"
+                },
+                {
+                    "value": "scheme_2",
+                    "label": "Scheme 2"
+                },
+                {
+                    "value": "scheme_3",
+                    "label": "Scheme 3"
+                },
+                {
+                    "value": "scheme_4",
+                    "label": "Scheme 4"
+                },
+                {
+                    "value": "scheme_5",
+                    "label": "Scheme 5"
+                },
+                {
+                    "value": "scheme_6",
+                    "label": "Scheme 6"
+                },
+                {
+                    "value": "scheme_7",
+                    "label": "Scheme 7"
+                },
+                {
+                    "value": "scheme_8",
+                    "label": "Scheme 8"
+                },
+                {
+                    "value": "scheme_9",
+                    "label": "Scheme 9"
+                },
+                {
+                    "value": "scheme_10",
+                    "label": "Scheme 10"
+                }
+            ],
+			"id": "color_scheme",
+			"label": "Color Scheme",
+			"info": "To use color scheme: Step 1: Hide color block in section. Step 2: Customize colors in color block of “✧Styles” section in global area. [Learn more](https://docs.smind.io/guides/color-block-and-color-scheme)"
+		},
+		{
+			"type": "header",
+			"content": "Section padding"
+		},
+		{
+			"type": "range",
+			"id": "padding_top_section",
+			"min": 0,
+			"max": 200,
+			"step": 2,
+			"unit": "px",
+			"label": "Top section padding",
+			"default": 0
+		},
+		{
+			"type": "range",
+			"id": "padding_bottom_section",
+			"min": 0,
+			"max": 200,
+			"step": 2,
+			"unit": "px",
+			"label": "Bottom section padding",
+			"default": 0
+		},
+		{
+			"type": "range",
+			"id": "padding_top",
+			"min": 0,
+			"max": 200,
+			"step": 2,
+			"unit": "px",
+			"label": "Top padding",
+			"default": 50
+		},
+		{
+			"type": "range",
+			"id": "padding_bottom",
+			"min": 0,
+			"max": 200,
+			"step": 2,
+			"unit": "px",
+			"label": "Bottom padding",
+			"default": 50
+		}
+	],
+	"blocks": [
+		{
+			"name": "Color",
+			"limit": 1,
+			"type": "color",
+			"settings": [
+				{
+					"type": "paragraph",
+					"content": "How to use “Color block” and “Color scheme”. [Learn more](https://docs.smind.io/guides/color-block-and-color-scheme#how-to-use-the-color-block)"
+				},
+				{
+					"type": "color",
+					"id": "background_color",
+					"default": "#F3F3F3",
+					"label": "Background"
+				},
+				{
+					"type": "color_background",
+					"id": "background_gradient_color",
+					"label": "Background gradient",
+					"info": "Background gradient replaces background where possible."
+				},
+				{
+					"type": "color",
+					"id": "text_color",
+					"default": "#121212",
+					"label": "Text"
+				},
+				{
+					"type": "color",
+					"id": "subtext_color",
+					"default": "#121212",
+					"label": "Subtext"
+				},
+				{
+					"type": "color",
+					"id": "solid_background_button_color",
+					"default": "#121212",
+					"label": "Solid button background"
+				},
+				{
+					"type": "color",
+					"id": "solid_button_label_color",
+					"default": "#FFFFFF",
+					"label": "Solid button label"
+				},
+				{
+					"type": "color",
+					"id": "outline_button_color",
+					"default": "#121212",
+					"label": "Outline buttton"
+				},
+				{
+					"type": "color",
+					"id": "shadow_color",
+					"default": "#121212",
+					"label": "Shadow"
+				}
+			]
+		},
+		{
+			"type": "heading",
+			"name": "Heading",
+			"limit": 1,
+			"settings": [
+				{
+					"type": "inline_richtext",
+					"id": "sub_heading",
+					"label": "Subheading",
+					"default": "URNA CRAS MAURIS"
+				},
+				{
+					"type": "inline_richtext",
+					"id": "heading",
+					"label": "heading",
+					"default": "Opening Hours"
+				},
+				{
+					"type": "select",
+					"id": "heading_size",
+					"label": "Heading size",
+					"options": [
+						{
+							"value": "smi-h4",
+							"label": "XS"
+						},
+						{
+							"value": "smi-h3",
+							"label": "S"
+						},
+						{
+							"value": "smi-h2",
+							"label": "M"
+						},
+						{
+							"value": "smi-h1",
+							"label": "L"
+						}
+					],
+					"default": "smi-h3"
+				},
+				{
+					"type": "inline_richtext",
+					"id": "description",
+					"default": "Enjoy 10% off on your first purchase and be the first to know about new releases, latest stories and offers. ",
+					"label": "Description"
+				}
+			]
+		},
+		{
+			"name": "Text",
+			"type": "text",
+			"settings": [
+				{
+					"type": "richtext",
+					"id": "text",
+					"label": "Content",
+					"default": "<p>Text</p>"
+				}
+			]
+		},
+		{
+			"type": "divider",
+			"name": "Divider",
+			"settings": [
+				{
+					"type": "paragraph",
+					"content": "No customizable settings available."
+				}
+			]
+		},
+		{
+			"name": "Button",
+			"type": "button",
+			"settings": [
+				{
+					"type": "header",
+					"content": "Button"
+				},
+				{
+					"type": "text",
+					"id": "button_label",
+					"label": "Button label",
+					"default": "Button label",
+					"info": "Leave the label blank to hide the button."
+				},
+				{
+					"type": "url",
+					"id": "button_link",
+					"label": "Button link"
+				},
+				{
+					"type": "select",
+					"id": "button_style",
+					"label": "Button style",
+					"options": [
+						{
+							"value": "solid",
+							"label": "Solid"
+						},
+						{
+							"value": "solid_arrow",
+							"label": "Solid & arrow"
+						},
+						{
+							"value": "outline",
+							"label": "Outline"
+						},
+						{
+							"value": "outline_arrow",
+							"label": "Outline & arrow"
+						},
+						{
+							"value": "text",
+							"label": "Text"
+						},
+						{
+							"value": "text_arrow",
+							"label": "Text & arrow"
+						}
+					],
+					"default": "solid"
+				},
+				{
+					"type": "checkbox",
+					"id": "button_full_width",
+					"label": "Button full-width",
+					"default": false
+				}
+			]
+		}
+	],
+	"presets": [
+		{
+			"name": "✧Map 1-2",
+			"settings": {
+				"container_full_width": false,
+				"google_map_iframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d37096.75458057774!2d-2.9488437681373876!3d53.399804699383594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1701228415177!5m2!1svi!2s\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+				"content_position": "right",
+				"content_alignment": "left",
+				"content_max_width": 400,
+				"padding_top_section": 0,
+				"padding_bottom_section": 0,
+				"padding_top": 80,
+				"padding_bottom": 80,
+				"color_scheme": "scheme_1"
+			},
+			"blocks": [
+				{
+					"type": "heading",
+					"settings": {
+						"sub_heading": "",
+						"heading": "Opening hours",
+						"heading_size": "smi-h2",
+						"description": ""
+					}
+				},
+				{
+					"type": "text",
+					"settings": {
+						"text": "<p>8502 Preston Rd.Inglewood Street, London<br/>(907) 555-0101</p><p>Monday - Friday<br/>10.00 am - 8.00 pm</p>"
+					}
+				},
+				{
+					"type": "button",
+					"settings": {
+						"button_label": "Get directions",
+						"button_link": null,
+						"button_style": "outline",
+						"button_full_width": true
+					}
+				},
+				{
+					"type": "color",
+					"settings": {
+						"background_color": "#ffffff",
+						"background_gradient_color": "",
+						"text_color": "#000000",
+						"subtext_color": "#000000",
+						"solid_background_button_color": "#000000",
+						"solid_button_label_color": "#ffffff",
+						"outline_button_color": "#000000",
+						"shadow_color": "#000000"
+					}
+				}
+			]
+		}
+	]
+}
+{% endschema %}
+<script defer>
+window.addEventListener("DOMContentLoaded",(e=>{document.getElementById("smi-{{ section.id }}")}));
+</script>
