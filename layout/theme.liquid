@@ -16,6 +16,16 @@
   <!-- Pinterest -->
   <meta name="p:domain_verify" content="9e4eefad9cc643ca6b365606861f199f"/>
 
+
+{% if template.name == 'checkout' %}
+  <script>
+    // Facebook Pixel: AddPaymentInfo event
+    fbq('track', 'AddPaymentInfo');
+  </script>
+{% endif %}
+
+
+  
 <!-- Stamped -->
 <script 
 async 
