@@ -1,15 +1,5 @@
 <div class="page-width page-content">
 
-{% if template.name == 'thank_you' %}
-  <script>
-    // Facebook Pixel: Purchase event
-    fbq('track', 'Purchase', {
-      value: '{{ checkout.total_price | money_without_currency }}',
-      currency: '{{ shop.currency }}'
-    });
-  </script>
-{% endif %}
-
 
   
   {% if settings.show_breadcrumbs %}
