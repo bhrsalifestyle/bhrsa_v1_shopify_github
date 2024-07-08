@@ -497,7 +497,7 @@
           "type": "colection_tab",
           "settings": {
             "collection": "toxic-free-featured-collection",
-            "number_items": 8,
+            "number_items": 15,
             "label_collection": "Personal care & Home care"
           }
         },
@@ -505,7 +505,7 @@
           "type": "colection_tab",
           "settings": {
             "collection": "featured-collection",
-            "number_items": 10,
+            "number_items": 15,
             "label_collection": "Nourishing Food"
           }
         },
