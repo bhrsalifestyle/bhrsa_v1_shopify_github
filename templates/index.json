@@ -1456,6 +1456,34 @@
         "padding_top": 170,
         "padding_bottom": 170
       }
+    },
+    "1721906255390da1fa": {
+      "type": "apps",
+      "blocks": {
+        "greenspark_full_width_banner_AiT3UU": {
+          "type": "shopify:\/\/apps\/greenspark\/blocks\/full-width-banner\/8c13bd86-5fb4-4c2e-83b1-e3a158a87952",
+          "settings": {
+            "text_color": "#3B755F",
+            "banner_image": "shopify:\/\/shop_images\/Saving_Ocean_From_Plastic_Bottles.jpg",
+            "banner_height": 350,
+            "toggle_months": true,
+            "toggle_trees": true,
+            "toggle_plastic": true,
+            "toggle_co2": true,
+            "toggle_kelp": false,
+            "toggle_straws": false,
+            "toggle_miles": false,
+            "toggle_football": false
+          }
+        }
+      },
+      "block_order": [
+        "greenspark_full_width_banner_AiT3UU"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
     }
   },
   "order": [
@@ -1479,6 +1507,7 @@
     "smi_testimonial_1_1_pP9FP9",
     "smi_email_signup_4_7_QPPjbN",
     "smi_timeline_2_4_cBik9Y",
-    "smi_video_1_2_YiE9PV"
+    "smi_video_1_2_YiE9PV",
+    "1721906255390da1fa"
   ]
 }
