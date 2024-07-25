@@ -1,1 +1,49 @@
-{"sections":{"main":{"type":"main-cart","settings":{}},"recently-viewed":{"type":"recently-viewed","settings":{}}},"order":["main","recently-viewed"]}
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "main": {
+      "type": "main-cart",
+      "settings": {
+      }
+    },
+    "1721912926b0033f42": {
+      "type": "apps",
+      "blocks": {
+        "greenspark_current_order_impact_widget_9FeL79": {
+          "type": "shopify:\/\/apps\/greenspark\/blocks\/current-order-impact-widget\/8c13bd86-5fb4-4c2e-83b1-e3a158a87952",
+          "settings": {
+            "horizontal_alignment": "center",
+            "size": "regular",
+            "fullwidth_justification": "flex-start",
+            "greenspark_widget_color": "#3B755F"
+          }
+        }
+      },
+      "block_order": [
+        "greenspark_current_order_impact_widget_9FeL79"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1721912926b0033f42",
+    "recently-viewed"
+  ]
+}

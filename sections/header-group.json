@@ -162,20 +162,6 @@
     },
     "17219127381a637a29": {
       "type": "apps",
-      "blocks": {
-        "greenspark_current_order_impact_widget_J3MjnQ": {
-          "type": "shopify:\/\/apps\/greenspark\/blocks\/current-order-impact-widget\/8c13bd86-5fb4-4c2e-83b1-e3a158a87952",
-          "settings": {
-            "horizontal_alignment": "center",
-            "size": "regular",
-            "fullwidth_justification": "flex-start",
-            "greenspark_widget_color": "#3B755F"
-          }
-        }
-      },
-      "block_order": [
-        "greenspark_current_order_impact_widget_J3MjnQ"
-      ],
       "settings": {
         "full_width": false,
         "space_around": true
