@@ -1,1 +1,192 @@
-{"type":"header","name":"t:sections.header-group.name","sections":{"smi_top_bar_1_1_bQJeGU":{"type":"smi-top-bar-1-1","blocks":{"announcement_7qdbMx":{"type":"announcement","settings":{"content":"<p>Free shipping for all order over $100<\/p>"}},"color_axzhG7":{"type":"color","settings":{"background_color":"#282828","background_gradient_color":"","text_color":"#ffffff"}}},"block_order":["announcement_7qdbMx","color_axzhG7"],"disabled":true,"settings":{"container_full_width":false,"show_bottom_divider":false,"show_icon_on_desktop":true,"icon_style":"1","icon_size":18,"enable_language":true,"enable_country":true,"auto_rotate_slides":true,"change_slides_every":5,"color_scheme":"scheme_3","padding_top":10,"padding_bottom":10}},"toolbar":{"type":"toolbar","blocks":{"toolbar-1":{"type":"announcement","disabled":true,"settings":{"richtext":"<p>Welcome to Bhrsa! Discover healthy, toxic-free, and eco-friendly products for you and your home<\/p>","richtext_mobile":"<p>Welcome to Bhrsa!<\/p>"}},"toolbar-0":{"type":"announcement","settings":{"richtext":"<p>Transform your home with low-tox & eco-wellness products.<\/p>","richtext_mobile":"<p>Transform your home with low-tox & eco-wellness products.<\/p>"}},"33ee6d7c-6acc-4493-88c3-88e1620acf15":{"type":"announcement","disabled":true,"settings":{"richtext":"<p>Join our community and save 10% on your first purchase! Subscribe now<\/p>","richtext_mobile":""}}},"block_order":["toolbar-1","toolbar-0","33ee6d7c-6acc-4493-88c3-88e1620acf15"],"settings":{"announcement_center":true,"toolbar_social":true,"show_locale_selector":true,"show_currency_selector":true,"show_currency_flags":true}},"smi_announcement_bar_2_3_yDAqJU":{"type":"smi-announcement-bar-2-3","blocks":{"announcement_MHMhCz":{"type":"announcement","settings":{"icon":"discount","upload_icon":"shopify:\/\/shop_images\/shipping-boxes-in-front-of-red-brick.jpg","icon_size":24,"content":"<p>Save on Shipping : Use code LOW-TOX  - <a href=\"#\" title=\"#\">Shop now! <\/a>above INR 1399! <\/p><p> <\/p>"}},"announcement_a7PkCE":{"type":"announcement","disabled":true,"settings":{"icon":"truck","icon_size":24,"content":"<p>Free shipping for all order over $100<\/p>"}},"color_JrNJVb":{"type":"color","settings":{"background_color":"#282828","background_gradient_color":"","text_color":"#ffffff"}}},"block_order":["announcement_MHMhCz","announcement_a7PkCE","color_JrNJVb"],"settings":{"enable_sticky_bar":true,"scroll_direction":"rtl","scrolling_speed":1,"gap_between_content":70,"color_scheme":"scheme_1","padding_top":10,"padding_bottom":10}},"header":{"type":"header","blocks":{"f25e9859-fa0d-446e-8b21-cc050de7b360":{"type":"logo","settings":{"logo":"shopify:\/\/shop_images\/Bhrsa_primary_Logo_for_dark_background_03388b61-8fe5-4039-8a1a-9cce997c095e.png","desktop_logo_width":120,"mobile_logo_width":90}}},"block_order":["f25e9859-fa0d-446e-8b21-cc050de7b360"],"settings":{"main_menu_link_list":"main-menu","hover_menu":true,"main_menu_alignment":"center","mega_products":true,"header_sticky":true,"header_footer_menu":true,"sticky_index":false,"sticky_collection":true}}},"order":["smi_top_bar_1_1_bQJeGU","toolbar","smi_announcement_bar_2_3_yDAqJU","header"]}
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "type": "header",
+  "name": "t:sections.header-group.name",
+  "sections": {
+    "smi_top_bar_1_1_bQJeGU": {
+      "type": "smi-top-bar-1-1",
+      "blocks": {
+        "announcement_7qdbMx": {
+          "type": "announcement",
+          "settings": {
+            "content": "<p>Free shipping for all order over $100<\/p>"
+          }
+        },
+        "color_axzhG7": {
+          "type": "color",
+          "settings": {
+            "background_color": "#282828",
+            "background_gradient_color": "",
+            "text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "announcement_7qdbMx",
+        "color_axzhG7"
+      ],
+      "disabled": true,
+      "settings": {
+        "container_full_width": false,
+        "show_bottom_divider": false,
+        "show_icon_on_desktop": true,
+        "icon_style": "1",
+        "icon_size": 18,
+        "enable_language": true,
+        "enable_country": true,
+        "auto_rotate_slides": true,
+        "change_slides_every": 5,
+        "color_scheme": "scheme_3",
+        "padding_top": 10,
+        "padding_bottom": 10
+      }
+    },
+    "toolbar": {
+      "type": "toolbar",
+      "blocks": {
+        "toolbar-1": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "richtext": "<p>Welcome to Bhrsa! Discover healthy, toxic-free, and eco-friendly products for you and your home<\/p>",
+            "richtext_mobile": "<p>Welcome to Bhrsa!<\/p>"
+          }
+        },
+        "toolbar-0": {
+          "type": "announcement",
+          "settings": {
+            "richtext": "<p>Transform your home with low-tox & eco-wellness products.<\/p>",
+            "richtext_mobile": "<p>Transform your home with low-tox & eco-wellness products.<\/p>"
+          }
+        },
+        "33ee6d7c-6acc-4493-88c3-88e1620acf15": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "richtext": "<p>Join our community and save 10% on your first purchase! Subscribe now<\/p>",
+            "richtext_mobile": ""
+          }
+        }
+      },
+      "block_order": [
+        "toolbar-1",
+        "toolbar-0",
+        "33ee6d7c-6acc-4493-88c3-88e1620acf15"
+      ],
+      "settings": {
+        "announcement_center": true,
+        "toolbar_social": true,
+        "show_locale_selector": true,
+        "show_currency_selector": true,
+        "show_currency_flags": true
+      }
+    },
+    "smi_announcement_bar_2_3_yDAqJU": {
+      "type": "smi-announcement-bar-2-3",
+      "blocks": {
+        "announcement_MHMhCz": {
+          "type": "announcement",
+          "settings": {
+            "icon": "discount",
+            "upload_icon": "shopify:\/\/shop_images\/shipping-boxes-in-front-of-red-brick.jpg",
+            "icon_size": 24,
+            "content": "<p>Save on Shipping : Use code LOW-TOX  - <a href=\"#\" title=\"#\">Shop now! <\/a>above INR 1399! <\/p><p> <\/p>"
+          }
+        },
+        "announcement_a7PkCE": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "icon": "truck",
+            "icon_size": 24,
+            "content": "<p>Free shipping for all order over $100<\/p>"
+          }
+        },
+        "color_JrNJVb": {
+          "type": "color",
+          "settings": {
+            "background_color": "#282828",
+            "background_gradient_color": "",
+            "text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "announcement_MHMhCz",
+        "announcement_a7PkCE",
+        "color_JrNJVb"
+      ],
+      "settings": {
+        "enable_sticky_bar": true,
+        "scroll_direction": "rtl",
+        "scrolling_speed": 1,
+        "gap_between_content": 70,
+        "color_scheme": "scheme_1",
+        "padding_top": 10,
+        "padding_bottom": 10
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "f25e9859-fa0d-446e-8b21-cc050de7b360": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Bhrsa_primary_Logo_for_dark_background_03388b61-8fe5-4039-8a1a-9cce997c095e.png",
+            "desktop_logo_width": 120,
+            "mobile_logo_width": 90
+          }
+        }
+      },
+      "block_order": [
+        "f25e9859-fa0d-446e-8b21-cc050de7b360"
+      ],
+      "settings": {
+        "main_menu_link_list": "main-menu",
+        "hover_menu": true,
+        "main_menu_alignment": "center",
+        "mega_products": true,
+        "header_sticky": true,
+        "header_footer_menu": true,
+        "sticky_index": false,
+        "sticky_collection": true
+      }
+    },
+    "17219127381a637a29": {
+      "type": "apps",
+      "blocks": {
+        "greenspark_current_order_impact_widget_J3MjnQ": {
+          "type": "shopify:\/\/apps\/greenspark\/blocks\/current-order-impact-widget\/8c13bd86-5fb4-4c2e-83b1-e3a158a87952",
+          "settings": {
+            "horizontal_alignment": "center",
+            "size": "regular",
+            "fullwidth_justification": "flex-start",
+            "greenspark_widget_color": "#3B755F"
+          }
+        }
+      },
+      "block_order": [
+        "greenspark_current_order_impact_widget_J3MjnQ"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    }
+  },
+  "order": [
+    "smi_top_bar_1_1_bQJeGU",
+    "toolbar",
+    "smi_announcement_bar_2_3_yDAqJU",
+    "header",
+    "17219127381a637a29"
+  ]
+}
