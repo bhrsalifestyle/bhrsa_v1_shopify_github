@@ -42,10 +42,10 @@
             "text_color": "{{ shop.brand.colors.primary[0].foreground }}",
             "banner_image": "shopify:\/\/shop_images\/Saving_Ocean_From_Plastic_Bottles_3.jpg",
             "banner_height": 350,
-            "toggle_months": true,
+            "toggle_months": false,
             "toggle_trees": true,
             "toggle_plastic": true,
-            "toggle_co2": true,
+            "toggle_co2": false,
             "toggle_kelp": false,
             "toggle_straws": false,
             "toggle_miles": false,
@@ -58,7 +58,7 @@
       ],
       "settings": {
         "full_width": false,
-        "space_around": true
+        "space_around": false
       }
     },
     "smi_rich_content_1_1_X47gLe": {
