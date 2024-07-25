@@ -1464,7 +1464,7 @@
           "type": "shopify:\/\/apps\/greenspark\/blocks\/full-width-banner\/8c13bd86-5fb4-4c2e-83b1-e3a158a87952",
           "settings": {
             "text_color": "{{ shop.brand.colors.primary[0].foreground }}",
-            "banner_image": "shopify:\/\/shop_images\/Saving_Ocean_From_Plastic_Bottles_2.jpg",
+            "banner_image": "shopify:\/\/shop_images\/Saving_Ocean_From_Plastic_Bottles_3.jpg",
             "banner_height": 350,
             "toggle_months": true,
             "toggle_trees": true,
