@@ -12,6 +12,15 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "af6529b6-a86a-4287-8e08-5d29589cd50a": {
+          "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/star-rating-badge\/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "use_metafields": false,
+            "sku_tagtype": "sku",
+            "is_featured_product": false,
+            "featured_product_handle": ""
+          }
+        },
         "greenspark_impact_settings_widgets_38xT8U": {
           "type": "shopify:\/\/apps\/greenspark\/blocks\/impact-settings-widgets\/8c13bd86-5fb4-4c2e-83b1-e3a158a87952",
           "settings": {
@@ -20,15 +29,6 @@
             "size": "small",
             "fullwidth_justification": "flex-start",
             "greenspark_widget_color": "#3B755F"
-          }
-        },
-        "af6529b6-a86a-4287-8e08-5d29589cd50a": {
-          "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/star-rating-badge\/a103faaf-2125-4b0e-89fa-de5149736723",
-          "settings": {
-            "use_metafields": false,
-            "sku_tagtype": "sku",
-            "is_featured_product": false,
-            "featured_product_handle": ""
           }
         },
         "variant_picker": {
@@ -100,8 +100,8 @@
         }
       },
       "block_order": [
-        "greenspark_impact_settings_widgets_38xT8U",
         "af6529b6-a86a-4287-8e08-5d29589cd50a",
+        "greenspark_impact_settings_widgets_38xT8U",
         "variant_picker",
         "price",
         "sales_point",
