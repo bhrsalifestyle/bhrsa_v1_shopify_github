@@ -43,7 +43,7 @@
             "banner_image": "shopify:\/\/shop_images\/Saving_Ocean_From_Plastic_Bottles_8.jpg",
             "banner_height": 350,
             "toggle_months": false,
-            "toggle_trees": true,
+            "toggle_trees": false,
             "toggle_plastic": true,
             "toggle_co2": false,
             "toggle_kelp": false,
