@@ -16,8 +16,8 @@
           "type": "shopify:\/\/apps\/greenspark\/blocks\/impact-settings-widgets\/8c13bd86-5fb4-4c2e-83b1-e3a158a87952",
           "settings": {
             "impact_setting_type": "offsetPerOrder",
-            "horizontal_alignment": "center",
-            "size": "regular",
+            "horizontal_alignment": "left",
+            "size": "small",
             "fullwidth_justification": "flex-start",
             "greenspark_widget_color": "#3B755F"
           }
