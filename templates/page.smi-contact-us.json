@@ -57,7 +57,7 @@
           "type": "phone",
           "settings": {
             "label": "Phone number",
-            "required": false
+            "required": true
           }
         }
       },
