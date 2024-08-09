@@ -63,7 +63,7 @@
         "image": "shopify:\/\/shop_images\/f_1.jpg",
         "color_scheme": "scheme_4",
         "image_overlay": "linear-gradient(127deg, rgba(43, 28, 13, 0.3) 11%, rgba(43, 28, 13, 0.3) 81%)",
-        "padding_top": 18,
+        "padding_top": 36,
         "padding_bottom": 26
       }
     },
