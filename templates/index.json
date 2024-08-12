@@ -9,30 +9,6 @@
 */
 {
   "sections": {
-    "slideshow_image_gqGGXP": {
-      "type": "slideshow-image",
-      "blocks": {
-        "image_Qa4ceC": {
-          "type": "image",
-          "settings": {
-            "link": "shopify:\/\/collections\/all",
-            "image": "shopify:\/\/shop_images\/20_Off_Sale_Website_Banner_Ecommerce_White_Linen_8c4fff45-7500-4aed-b96e-4791fa486ee8.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/20_Off_Sale_Website_Banner_Ecommerce_White_Linen_8c4fff45-7500-4aed-b96e-4791fa486ee8.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "image_Qa4ceC"
-      ],
-      "disabled": true,
-      "settings": {
-        "full_width": false,
-        "style": "arrows",
-        "autoplay": true,
-        "autoplay_speed": 7,
-        "lazyload_images": true
-      }
-    },
     "1721906255390da1fa": {
       "type": "apps",
       "blocks": {
@@ -59,6 +35,29 @@
       "settings": {
         "full_width": false,
         "space_around": false
+      }
+    },
+    "slideshow_image_gqGGXP": {
+      "type": "slideshow-image",
+      "blocks": {
+        "image_Qa4ceC": {
+          "type": "image",
+          "settings": {
+            "link": "shopify:\/\/collections\/all",
+            "image": "shopify:\/\/shop_images\/20_Off_Sale_Website_Banner_Ecommerce_White_Linen_1_82d590b3-baa1-45c2-8cb9-7b5a743d899c.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/20_Off_Sale_Website_Banner_Ecommerce_White_Linen_8c4fff45-7500-4aed-b96e-4791fa486ee8.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_Qa4ceC"
+      ],
+      "settings": {
+        "full_width": false,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "lazyload_images": true
       }
     },
     "smi_countdown_7_6_DiRwym": {
@@ -1488,8 +1487,8 @@
     }
   },
   "order": [
-    "slideshow_image_gqGGXP",
     "1721906255390da1fa",
+    "slideshow_image_gqGGXP",
     "smi_countdown_7_6_DiRwym",
     "smi_rich_content_1_1_X47gLe",
     "8f5dcd3d-1431-424d-8814-c55be9b305ef",
