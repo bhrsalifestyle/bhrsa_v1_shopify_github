@@ -94,8 +94,8 @@
           "type": "button",
           "settings": {
             "button_label": "Shop now",
-            "button_link": "shopify:\/\/collections\/plastic-free",
-            "button_style": "outline_arrow"
+            "button_link": "shopify:\/\/collections",
+            "button_style": "solid_arrow"
           }
         },
         "color_gVP8g8": {
