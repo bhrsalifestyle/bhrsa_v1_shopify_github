@@ -9,6 +9,58 @@
 */
 {
   "sections": {
+    "slideshow_image_gqGGXP": {
+      "type": "slideshow-image",
+      "blocks": {
+        "image_Qa4ceC": {
+          "type": "image",
+          "settings": {
+            "link": "shopify:\/\/collections\/all",
+            "image": "shopify:\/\/shop_images\/20_Off_Sale_Website_Banner_Ecommerce_White_Linen_8c4fff45-7500-4aed-b96e-4791fa486ee8.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/20_Off_Sale_Website_Banner_Ecommerce_White_Linen_8c4fff45-7500-4aed-b96e-4791fa486ee8.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_Qa4ceC"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "1721906255390da1fa": {
+      "type": "apps",
+      "blocks": {
+        "greenspark_full_width_banner_AiT3UU": {
+          "type": "shopify:\/\/apps\/greenspark\/blocks\/full-width-banner\/8c13bd86-5fb4-4c2e-83b1-e3a158a87952",
+          "settings": {
+            "text_color": "{{ shop.brand.colors.primary[0].foreground }}",
+            "banner_image": "shopify:\/\/shop_images\/Saving_Ocean_From_Plastic_Bottles_9.jpg",
+            "banner_height": 350,
+            "toggle_months": false,
+            "toggle_trees": false,
+            "toggle_plastic": true,
+            "toggle_co2": false,
+            "toggle_kelp": false,
+            "toggle_straws": false,
+            "toggle_miles": false,
+            "toggle_football": false
+          }
+        }
+      },
+      "block_order": [
+        "greenspark_full_width_banner_AiT3UU"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false
+      }
+    },
     "smi_countdown_7_6_DiRwym": {
       "type": "smi-countdown-7-6",
       "blocks": {
@@ -68,6 +120,7 @@
         "button_if4cng",
         "color_gVP8g8"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "image": "shopify:\/\/shop_images\/contact_us_bhrsa_2_1.jpg",
@@ -79,58 +132,6 @@
         "padding_bottom": 50,
         "image_padding_top": 50,
         "image_padding_bottom": 50
-      }
-    },
-    "slideshow_image_gqGGXP": {
-      "type": "slideshow-image",
-      "blocks": {
-        "image_Qa4ceC": {
-          "type": "image",
-          "settings": {
-            "link": "shopify:\/\/collections\/all",
-            "image": "shopify:\/\/shop_images\/20_Off_Sale_Website_Banner_Ecommerce_White_Linen_8c4fff45-7500-4aed-b96e-4791fa486ee8.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/20_Off_Sale_Website_Banner_Ecommerce_White_Linen_8c4fff45-7500-4aed-b96e-4791fa486ee8.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "image_Qa4ceC"
-      ],
-      "disabled": true,
-      "settings": {
-        "full_width": false,
-        "style": "arrows",
-        "autoplay": true,
-        "autoplay_speed": 7,
-        "lazyload_images": true
-      }
-    },
-    "1721906255390da1fa": {
-      "type": "apps",
-      "blocks": {
-        "greenspark_full_width_banner_AiT3UU": {
-          "type": "shopify:\/\/apps\/greenspark\/blocks\/full-width-banner\/8c13bd86-5fb4-4c2e-83b1-e3a158a87952",
-          "settings": {
-            "text_color": "{{ shop.brand.colors.primary[0].foreground }}",
-            "banner_image": "shopify:\/\/shop_images\/Saving_Ocean_From_Plastic_Bottles_9.jpg",
-            "banner_height": 350,
-            "toggle_months": false,
-            "toggle_trees": false,
-            "toggle_plastic": true,
-            "toggle_co2": false,
-            "toggle_kelp": false,
-            "toggle_straws": false,
-            "toggle_miles": false,
-            "toggle_football": false
-          }
-        }
-      },
-      "block_order": [
-        "greenspark_full_width_banner_AiT3UU"
-      ],
-      "settings": {
-        "full_width": false,
-        "space_around": false
       }
     },
     "smi_rich_content_1_1_X47gLe": {
@@ -1487,9 +1488,9 @@
     }
   },
   "order": [
-    "smi_countdown_7_6_DiRwym",
     "slideshow_image_gqGGXP",
     "1721906255390da1fa",
+    "smi_countdown_7_6_DiRwym",
     "smi_rich_content_1_1_X47gLe",
     "8f5dcd3d-1431-424d-8814-c55be9b305ef",
     "smi_collection_list_12_3_g9fWhP",
