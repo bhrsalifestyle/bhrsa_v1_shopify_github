@@ -85,9 +85,9 @@
         "heading_content_fbf4Hd": {
           "type": "heading_content",
           "settings": {
-            "heading": "Grab the best deal on Plastic Free Collection",
+            "heading": "Happy Independence to our Bharath",
             "heading_size": "smi-h5",
-            "content": "<p>Hurry up ! This offer is for a limited time. Use Code <\/p><p><strong>ENVIRONMENT<\/strong><\/p><p>At Checkout<\/p>"
+            "content": "<p>This day celebrates and honours all the people involved in India's struggle for Independence battle<\/p>"
           }
         },
         "button_if4cng": {
@@ -120,7 +120,6 @@
         "button_if4cng",
         "color_gVP8g8"
       ],
-      "disabled": true,
       "settings": {
         "full_width": true,
         "image": "shopify:\/\/shop_images\/contact_us_bhrsa_2_1.jpg",
