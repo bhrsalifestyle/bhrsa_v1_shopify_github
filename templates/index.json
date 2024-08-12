@@ -100,6 +100,7 @@
         },
         "color_gVP8g8": {
           "type": "color",
+          "disabled": true,
           "settings": {
             "section_background_color": "#ffffff",
             "section_text_color": "#000000",
