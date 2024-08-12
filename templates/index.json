@@ -67,10 +67,10 @@
         "heading_PPgYyU": {
           "type": "heading",
           "settings": {
-            "sub_heading": "World Environment Week",
-            "heading": "SALE",
+            "sub_heading": "Independence Week",
+            "heading": "",
             "heading_size": "smi-h2",
-            "description": ""
+            "description": "<p>OFFER<\/p>"
           }
         },
         "countdown_timer_NVAY3c": {
@@ -78,7 +78,7 @@
           "settings": {
             "end_date_time": "2024-8-17",
             "number_size": "smi-h2",
-            "countdown_style": "classic_2",
+            "countdown_style": "solid_1_radius",
             "hide_expires": true
           }
         },
