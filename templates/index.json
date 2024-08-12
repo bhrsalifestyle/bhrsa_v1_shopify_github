@@ -76,7 +76,7 @@
         "countdown_timer_NVAY3c": {
           "type": "countdown_timer",
           "settings": {
-            "end_date_time": "2024-06-6",
+            "end_date_time": "2024-8-17",
             "number_size": "smi-h2",
             "countdown_style": "classic_2",
             "hide_expires": true
