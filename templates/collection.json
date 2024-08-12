@@ -55,7 +55,7 @@
         "color_mbkWVw"
       ],
       "settings": {
-        "container_full_width": true,
+        "container_full_width": false,
         "content_position": "center",
         "content_alignment": "center",
         "content_max_width": 700,
