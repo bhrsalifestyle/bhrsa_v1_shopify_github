@@ -126,7 +126,7 @@
         "content_alignment": "center",
         "section_color_scheme": "scheme_1",
         "color_scheme": "scheme_1",
-        "image_overlay": "linear-gradient(270deg, rgba(32, 21, 2, 0.502), rgba(32, 21, 2, 0.502) 100%)",
+        "image_overlay": "",
         "padding_top": 50,
         "padding_bottom": 50,
         "image_padding_top": 50,
