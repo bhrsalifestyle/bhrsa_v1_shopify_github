@@ -9,6 +9,78 @@
 */
 {
   "sections": {
+    "smi_countdown_7_6_DiRwym": {
+      "type": "smi-countdown-7-6",
+      "blocks": {
+        "heading_PPgYyU": {
+          "type": "heading",
+          "settings": {
+            "sub_heading": "World Environment Week",
+            "heading": "SALE",
+            "heading_size": "smi-h2",
+            "description": ""
+          }
+        },
+        "countdown_timer_NVAY3c": {
+          "type": "countdown_timer",
+          "settings": {
+            "end_date_time": "2024-06-6",
+            "number_size": "smi-h2",
+            "countdown_style": "classic_2",
+            "hide_expires": true
+          }
+        },
+        "heading_content_fbf4Hd": {
+          "type": "heading_content",
+          "settings": {
+            "heading": "Grab the best deal on Plastic Free Collection",
+            "heading_size": "smi-h5",
+            "content": "<p>Hurry up ! This offer is for a limited time. Use Code <\/p><p><strong>ENVIRONMENT<\/strong><\/p><p>At Checkout<\/p>"
+          }
+        },
+        "button_if4cng": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop now",
+            "button_link": "shopify:\/\/collections\/plastic-free",
+            "button_style": "outline_arrow"
+          }
+        },
+        "color_gVP8g8": {
+          "type": "color",
+          "settings": {
+            "section_background_color": "#ffffff",
+            "section_text_color": "#000000",
+            "section_shadow_color": "#000000",
+            "text_color": "#ffffff",
+            "subtext_color": "#ffffff",
+            "solid_background_button_color": "#ffffff",
+            "solid_button_label_color": "#63513f",
+            "outline_button_color": "#ffffff",
+            "shadow_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "heading_PPgYyU",
+        "countdown_timer_NVAY3c",
+        "heading_content_fbf4Hd",
+        "button_if4cng",
+        "color_gVP8g8"
+      ],
+      "settings": {
+        "full_width": true,
+        "image": "shopify:\/\/shop_images\/contact_us_bhrsa_2_1.jpg",
+        "content_alignment": "center",
+        "section_color_scheme": "scheme_1",
+        "color_scheme": "scheme_1",
+        "image_overlay": "linear-gradient(270deg, rgba(32, 21, 2, 0.502), rgba(32, 21, 2, 0.502) 100%)",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "image_padding_top": 50,
+        "image_padding_bottom": 50
+      }
+    },
     "slideshow_image_gqGGXP": {
       "type": "slideshow-image",
       "blocks": {
@@ -952,79 +1024,6 @@
         "padding_bottom": 0
       }
     },
-    "smi_countdown_7_6_DiRwym": {
-      "type": "smi-countdown-7-6",
-      "blocks": {
-        "heading_PPgYyU": {
-          "type": "heading",
-          "settings": {
-            "sub_heading": "World Environment Week",
-            "heading": "SALE",
-            "heading_size": "smi-h2",
-            "description": ""
-          }
-        },
-        "countdown_timer_NVAY3c": {
-          "type": "countdown_timer",
-          "settings": {
-            "end_date_time": "2024-06-6",
-            "number_size": "smi-h2",
-            "countdown_style": "classic_2",
-            "hide_expires": true
-          }
-        },
-        "heading_content_fbf4Hd": {
-          "type": "heading_content",
-          "settings": {
-            "heading": "Grab the best deal on Plastic Free Collection",
-            "heading_size": "smi-h5",
-            "content": "<p>Hurry up ! This offer is for a limited time. Use Code <\/p><p><strong>ENVIRONMENT<\/strong><\/p><p>At Checkout<\/p>"
-          }
-        },
-        "button_if4cng": {
-          "type": "button",
-          "settings": {
-            "button_label": "Shop now",
-            "button_link": "shopify:\/\/collections\/plastic-free",
-            "button_style": "outline_arrow"
-          }
-        },
-        "color_gVP8g8": {
-          "type": "color",
-          "settings": {
-            "section_background_color": "#ffffff",
-            "section_text_color": "#000000",
-            "section_shadow_color": "#000000",
-            "text_color": "#ffffff",
-            "subtext_color": "#ffffff",
-            "solid_background_button_color": "#ffffff",
-            "solid_button_label_color": "#63513f",
-            "outline_button_color": "#ffffff",
-            "shadow_color": "#ffffff"
-          }
-        }
-      },
-      "block_order": [
-        "heading_PPgYyU",
-        "countdown_timer_NVAY3c",
-        "heading_content_fbf4Hd",
-        "button_if4cng",
-        "color_gVP8g8"
-      ],
-      "disabled": true,
-      "settings": {
-        "full_width": true,
-        "image": "shopify:\/\/shop_images\/contact_us_bhrsa_2_1.jpg",
-        "content_alignment": "center",
-        "section_color_scheme": "scheme_1",
-        "color_scheme": "scheme_1",
-        "image_overlay": "linear-gradient(270deg, rgba(32, 21, 2, 0.502), rgba(32, 21, 2, 0.502) 100%)",
-        "padding_top": 50,
-        "padding_bottom": 50,
-        "image_padding_top": 50,
-        "image_padding_bottom": 50
-      }
-    },
     "slideshow-split": {
       "type": "slideshow-split",
       "blocks": {
@@ -1488,6 +1487,7 @@
     }
   },
   "order": [
+    "smi_countdown_7_6_DiRwym",
     "slideshow_image_gqGGXP",
     "1721906255390da1fa",
     "smi_rich_content_1_1_X47gLe",
@@ -1500,7 +1500,6 @@
     "04274eb4-bb82-4eba-9325-003a096f472a",
     "featured-collections",
     "smi_logo_list_2_5_aU4U6A",
-    "smi_countdown_7_6_DiRwym",
     "slideshow-split",
     "featured-collection",
     "featured-collection2",
