@@ -58,12 +58,12 @@
         "container_full_width": false,
         "content_position": "center",
         "content_alignment": "center",
-        "content_max_width": 400,
+        "content_max_width": 700,
         "show_banner": true,
         "image": "shopify:\/\/shop_images\/f_1.jpg",
         "color_scheme": "scheme_4",
         "image_overlay": "linear-gradient(127deg, rgba(43, 28, 13, 0.3) 11%, rgba(43, 28, 13, 0.3) 81%)",
-        "padding_top": 44,
+        "padding_top": 138,
         "padding_bottom": 36
       }
     },
