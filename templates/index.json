@@ -48,6 +48,12 @@
             "image_mobile": "shopify:\/\/shop_images\/20_Off_Sale_Website_Banner_Ecommerce_White_Linen_1_82d590b3-baa1-45c2-8cb9-7b5a743d899c.jpg"
           }
         },
+        "image_N4AdTX": {
+          "type": "image",
+          "settings": {
+            "link": ""
+          }
+        },
         "image_tLzd4c": {
           "type": "image",
           "disabled": true,
@@ -60,6 +66,7 @@
       },
       "block_order": [
         "image_Qa4ceC",
+        "image_N4AdTX",
         "image_tLzd4c"
       ],
       "settings": {
