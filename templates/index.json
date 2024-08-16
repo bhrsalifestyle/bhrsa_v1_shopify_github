@@ -50,6 +50,7 @@
         },
         "image_N4AdTX": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "link": ""
           }
