@@ -93,7 +93,7 @@
         "countdown_timer_NVAY3c": {
           "type": "countdown_timer",
           "settings": {
-            "end_date_time": "2024-8-18",
+            "end_date_time": "2024-8-24",
             "number_size": "smi-h2",
             "countdown_style": "solid_1_radius",
             "hide_expires": true
