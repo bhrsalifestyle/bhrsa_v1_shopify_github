@@ -1,1 +1,62 @@
-{"sections":{"main":{"type":"main-page","settings":{}}},"order":["main"]}
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "smi_rich_text_1_2_RgyAW4": {
+      "type": "smi-rich-text-1-2",
+      "blocks": {
+        "heading_p6zKbc": {
+          "type": "heading",
+          "settings": {
+            "sub_heading": "",
+            "heading": "Affiliate Program",
+            "heading_size": "smi-h2",
+            "description": "<p>Explore the epitome of style with our latest fashion collection. Immerse yourself in timeless elegance as classic trends seamlessly blend. From casual chic to sophisticated glamour, discover curated pieces that transcend seasons. Elevate your wardrobe fashion with our exclusive designs and impeccable craftsmanship.<\/p>"
+          }
+        },
+        "color_yQWPXX": {
+          "type": "color",
+          "settings": {
+            "background_color": "#fcf8f5",
+            "background_gradient_color": "",
+            "text_color": "#000000",
+            "subtext_color": "#000000",
+            "solid_background_button_color": "#000000",
+            "solid_button_label_color": "#fcf8f5",
+            "outline_button_color": "#000000",
+            "shadow_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "heading_p6zKbc",
+        "color_yQWPXX"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_position": "center",
+        "content_alignment": "center",
+        "content_max_width": 750,
+        "color_scheme": "scheme_2",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    }
+  },
+  "order": [
+    "main",
+    "smi_rich_text_1_2_RgyAW4"
+  ]
+}
