@@ -993,6 +993,14 @@
             "logo_width": 160,
             "link": "shopify:\/\/collections\/vedic-tails"
           }
+        },
+        "logo_qJtAhM": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Futurebites_png_logo.png",
+            "logo_width": 160,
+            "link": "shopify:\/\/collections\/future-bites"
+          }
         }
       },
       "block_order": [
@@ -1020,7 +1028,8 @@
         "logo_nB979k",
         "logo_YwmwFz",
         "logo_ndf6AX",
-        "logo_W4Ldjy"
+        "logo_W4Ldjy",
+        "logo_qJtAhM"
       ],
       "settings": {
         "container_full_width": true,
