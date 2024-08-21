@@ -234,12 +234,6 @@
         "settings": {
         }
       },
-      "11212335281082087862": {
-        "type": "shopify:\/\/apps\/sk-advanced-form-builder\/blocks\/app\/f3e35b58-5874-4ef2-8e03-c92cda6e49eb",
-        "disabled": false,
-        "settings": {
-        }
-      },
       "17133417730061672019": {
         "type": "shopify:\/\/apps\/greenspark\/blocks\/app-embed\/8c13bd86-5fb4-4c2e-83b1-e3a158a87952",
         "disabled": false,
@@ -249,6 +243,12 @@
           "imageSize": 105,
           "id": "",
           "badgeUrl": ""
+        }
+      },
+      "15711573365076306404": {
+        "type": "shopify:\/\/apps\/bloop-referral\/blocks\/bss_bloop_script\/9d243b55-b2a4-42a8-aa2e-043240bb5d58",
+        "disabled": false,
+        "settings": {
         }
       }
     }
