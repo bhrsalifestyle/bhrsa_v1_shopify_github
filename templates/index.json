@@ -64,12 +64,21 @@
             "image": "shopify://shop_images/2_932940f5-7a97-46b7-b480-4e9548e97744.jpg",
             "image_mobile": "shopify://shop_images/2_932940f5-7a97-46b7-b480-4e9548e97744.jpg"
           }
+        },
+        "image_XEAKtq": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "image": "shopify://shop_images/5_235ea4cd-ed84-4a11-bb51-0b226b9371c4.jpg",
+            "image_mobile": "shopify://shop_images/5_235ea4cd-ed84-4a11-bb51-0b226b9371c4.jpg"
+          }
         }
       },
       "block_order": [
         "image_Qa4ceC",
         "image_N4AdTX",
-        "image_4RbqQM"
+        "image_4RbqQM",
+        "image_XEAKtq"
       ],
       "settings": {
         "full_width": false,
