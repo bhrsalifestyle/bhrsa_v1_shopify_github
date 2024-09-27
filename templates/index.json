@@ -13,10 +13,10 @@
       "type": "apps",
       "blocks": {
         "greenspark_full_width_banner_AiT3UU": {
-          "type": "shopify:\/\/apps\/greenspark\/blocks\/full-width-banner\/8c13bd86-5fb4-4c2e-83b1-e3a158a87952",
+          "type": "shopify://apps/greenspark/blocks/full-width-banner/8c13bd86-5fb4-4c2e-83b1-e3a158a87952",
           "settings": {
             "text_color": "{{ shop.brand.colors.primary[0].foreground }}",
-            "banner_image": "shopify:\/\/shop_images\/Saving_Ocean_From_Plastic_Bottles_9.jpg",
+            "banner_image": "shopify://shop_images/Saving_Ocean_From_Plastic_Bottles_9.jpg",
             "banner_height": 350,
             "toggle_months": false,
             "toggle_trees": false,
@@ -44,9 +44,9 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "link": "shopify:\/\/collections\/all",
-            "image": "shopify:\/\/shop_images\/20_Off_Sale_Website_Banner_Ecommerce_White_Linen_1_82d590b3-baa1-45c2-8cb9-7b5a743d899c.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/20_Off_Sale_Website_Banner_Ecommerce_White_Linen_1_82d590b3-baa1-45c2-8cb9-7b5a743d899c.jpg"
+            "link": "shopify://collections/all",
+            "image": "shopify://shop_images/20_Off_Sale_Website_Banner_Ecommerce_White_Linen_1_82d590b3-baa1-45c2-8cb9-7b5a743d899c.jpg",
+            "image_mobile": "shopify://shop_images/20_Off_Sale_Website_Banner_Ecommerce_White_Linen_1_82d590b3-baa1-45c2-8cb9-7b5a743d899c.jpg"
           }
         },
         "image_N4AdTX": {
@@ -55,20 +55,11 @@
           "settings": {
             "link": ""
           }
-        },
-        "image_tLzd4c": {
-          "type": "image",
-          "settings": {
-            "link": "",
-            "image": "shopify:\/\/shop_images\/20_Off_Sale_Website_Banner_Ecommerce_White_Linen_a6a68821-2e9d-406e-9c39-99c08f951ec4.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/20_Off_Sale_Website_Banner_Ecommerce_White_Linen_a6a68821-2e9d-406e-9c39-99c08f951ec4.jpg"
-          }
         }
       },
       "block_order": [
         "image_Qa4ceC",
-        "image_N4AdTX",
-        "image_tLzd4c"
+        "image_N4AdTX"
       ],
       "disabled": true,
       "settings": {
@@ -88,7 +79,7 @@
             "sub_heading": "Raksha Bandhan Week offer",
             "heading": "20%",
             "heading_size": "smi-h2",
-            "description": "<p>Discount<\/p>"
+            "description": "<p>Discount</p>"
           }
         },
         "countdown_timer_NVAY3c": {
@@ -105,14 +96,14 @@
           "settings": {
             "heading": "Celebrate",
             "heading_size": "smi-h5",
-            "content": "<p>The Protectors<\/p>"
+            "content": "<p>The Protectors</p>"
           }
         },
         "button_if4cng": {
           "type": "button",
           "settings": {
             "button_label": "Shop now",
-            "button_link": "shopify:\/\/collections\/all",
+            "button_link": "shopify://collections/all",
             "button_style": "solid_arrow"
           }
         },
@@ -142,7 +133,7 @@
       "disabled": true,
       "settings": {
         "full_width": true,
-        "image": "shopify:\/\/shop_images\/Plain_White.jpg",
+        "image": "shopify://shop_images/Plain_White.jpg",
         "content_alignment": "center",
         "section_color_scheme": "scheme_1",
         "color_scheme": "scheme_1",
@@ -162,7 +153,7 @@
             "sub_heading": "",
             "heading": "Why choose us?",
             "heading_size": "smi-h3",
-            "description": "<p>With Bhrsa, you can shop with confidence, knowing that each item has been vetted for your health and the environment, and that your purchase supports ethical practices and positive societal impact.<\/p>"
+            "description": "<p>With Bhrsa, you can shop with confidence, knowing that each item has been vetted for your health and the environment, and that your purchase supports ethical practices and positive societal impact.</p>"
           }
         },
         "icon_with_text_RkTqbP": {
@@ -173,7 +164,7 @@
             "icon_bg": "#f2eee6",
             "heading": "Careful Curation & Toxin-Free Ingredients",
             "heading_size": "smi-h4",
-            "content": "<p>We care for you by handpicking food, personal & home care products with an aim to reduce your daily toxin exposure<\/p>",
+            "content": "<p>We care for you by handpicking food, personal & home care products with an aim to reduce your daily toxin exposure</p>",
             "icon_position": "top",
             "half_width_on_large_screen": true
           }
@@ -186,7 +177,7 @@
             "icon_bg": "#f2eee6",
             "heading": "Health-Centric Mission",
             "heading_size": "smi-h4",
-            "content": "<p>Our founder's health crisis revealed toxin dangers. <\/p><p><strong>Toxins + Deficiency = Disease <\/strong>Bhrsa promotes a low-tox lifestyle for better health.<\/p>",
+            "content": "<p>Our founder's health crisis revealed toxin dangers. </p><p><strong>Toxins + Deficiency = Disease </strong>Bhrsa promotes a low-tox lifestyle for better health.</p>",
             "icon_position": "top",
             "half_width_on_large_screen": true
           }
@@ -199,7 +190,7 @@
             "icon_bg": "#f2eee6",
             "heading": "Transparent Practices and Community Support",
             "heading_size": "smi-h4",
-            "content": "<p>We support genuine businesses, promote fair practices, and contribute to social causes beyond business<\/p>",
+            "content": "<p>We support genuine businesses, promote fair practices, and contribute to social causes beyond business</p>",
             "icon_position": "top",
             "half_width_on_large_screen": true
           }
@@ -212,7 +203,7 @@
             "icon_bg": "#f2eee6",
             "heading": "Holistic Approach To Health And Environment",
             "heading_size": "smi-h4",
-            "content": "<p>Knowing deep interconnection between our health & planets health is a holistic way to act on sustainability efforts. <\/p>",
+            "content": "<p>Knowing deep interconnection between our health & planets health is a holistic way to act on sustainability efforts. </p>",
             "icon_position": "top",
             "half_width_on_large_screen": true
           }
@@ -241,7 +232,7 @@
       ],
       "settings": {
         "full_width": "container",
-        "upload_image": "shopify:\/\/shop_images\/Untitled_design.jpg",
+        "upload_image": "shopify://shop_images/Untitled_design.jpg",
         "desktop_media_width": "40",
         "desktop_media_position": "row",
         "media_ratio": "auto",
@@ -260,9 +251,9 @@
         "a16701ef-e2e1-4413-bd19-c58a8de0f25d": {
           "type": "image",
           "settings": {
-            "link": "shopify:\/\/collections\/all",
-            "image": "shopify:\/\/shop_images\/bhrsa_Banner_65c2dfd6-ef6c-4e85-9b52-7767c7d8adab.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/bhrsa_Banner.jpg"
+            "link": "shopify://collections/all",
+            "image": "shopify://shop_images/bhrsa_Banner_65c2dfd6-ef6c-4e85-9b52-7767c7d8adab.jpg",
+            "image_mobile": "shopify://shop_images/bhrsa_Banner.jpg"
           }
         }
       },
@@ -284,15 +275,15 @@
           "type": "collection",
           "settings": {
             "collection": "nourishing-foods",
-            "image": "shopify:\/\/shop_images\/7_51cdc287-b74f-466d-9764-94d6b01936be.jpg",
+            "image": "shopify://shop_images/7_51cdc287-b74f-466d-9764-94d6b01936be.jpg",
             "image_overlay": "",
             "subheading": "",
             "heading": "Nourishing Foods",
             "heading_size": "smi-h4",
-            "description": "<em>86 products<\/em>",
+            "description": "<em>86 products</em>",
             "desktop_content_position": "center_center",
             "mobile_content_position": "center_center",
-            "link": "shopify:\/\/collections\/nourishing-foods",
+            "link": "shopify://collections/nourishing-foods",
             "button_label": "Shop now",
             "button_style": "text"
           }
@@ -301,15 +292,15 @@
           "type": "collection",
           "settings": {
             "collection": "care-beauty-1",
-            "image": "shopify:\/\/shop_images\/2_845e2bbe-e7fe-40b4-93dc-32abd57486d2.jpg",
+            "image": "shopify://shop_images/2_845e2bbe-e7fe-40b4-93dc-32abd57486d2.jpg",
             "image_overlay": "",
             "subheading": "",
             "heading": "Care & Beauty",
             "heading_size": "smi-h4",
-            "description": "<em>85 products<\/em>",
+            "description": "<em>85 products</em>",
             "desktop_content_position": "center_center",
             "mobile_content_position": "center_center",
-            "link": "shopify:\/\/collections\/care-beauty-1",
+            "link": "shopify://collections/care-beauty-1",
             "button_label": "Shop now",
             "button_style": "text"
           }
@@ -318,15 +309,15 @@
           "type": "collection",
           "settings": {
             "collection": "home-lifestyle-1",
-            "image": "shopify:\/\/shop_images\/10_589e4502-42b0-49ab-922d-3e5d4d4dea68.jpg",
+            "image": "shopify://shop_images/10_589e4502-42b0-49ab-922d-3e5d4d4dea68.jpg",
             "image_overlay": "",
             "subheading": "",
             "heading": "Home & Lifestyle",
             "heading_size": "smi-h4",
-            "description": "<em>70 products<\/em>",
+            "description": "<em>70 products</em>",
             "desktop_content_position": "center_center",
             "mobile_content_position": "center_center",
-            "link": "shopify:\/\/collections\/home-lifestyle-1",
+            "link": "shopify://collections/home-lifestyle-1",
             "button_label": "Shop now",
             "button_style": "text"
           }
@@ -335,15 +326,15 @@
           "type": "collection",
           "settings": {
             "collection": "healthy-pet-care",
-            "image": "shopify:\/\/shop_images\/anusha-barwa-ppKcYi1CXcI-unsplash.jpg",
+            "image": "shopify://shop_images/anusha-barwa-ppKcYi1CXcI-unsplash.jpg",
             "image_overlay": "",
             "subheading": "",
             "heading": "Healthy Pet Care",
             "heading_size": "smi-h4",
-            "description": "<em>10 products<\/em>",
+            "description": "<em>10 products</em>",
             "desktop_content_position": "center_center",
             "mobile_content_position": "center_center",
-            "link": "shopify:\/\/collections\/healthy-pet-care",
+            "link": "shopify://collections/healthy-pet-care",
             "button_label": "Shop now",
             "button_style": "text"
           }
@@ -410,17 +401,17 @@
           "type": "hero",
           "settings": {
             "top_subheading": "",
-            "title": "<p>Nourishing Foods<\/p>",
+            "title": "<p>Nourishing Foods</p>",
             "title_size": 56,
             "subheading": "Your Health is Our Priority: Discover Our Thoughtfully Curated Selection of Nourishing, Toxic-Free Foods",
-            "link": "shopify:\/\/collections\/nourishing-foods",
+            "link": "shopify://collections/nourishing-foods",
             "link_text": "Shop EcoWellness",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "#ffffff",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/Nourishing_Food.png",
-            "image_mobile": "shopify:\/\/shop_images\/Nourishing_Food.png",
+            "image": "shopify://shop_images/Nourishing_Food.png",
+            "image_mobile": "shopify://shop_images/Nourishing_Food.png",
             "overlay_opacity": 40
           }
         },
@@ -428,17 +419,17 @@
           "type": "hero",
           "settings": {
             "top_subheading": "",
-            "title": "<p>Care & Beauty<\/p>",
+            "title": "<p>Care & Beauty</p>",
             "title_size": 56,
             "subheading": "Elevate Your Self-Care Routine with Our Non-Toxic, Safe Products: Because Your Health Matters",
             "link": "",
             "link_text": "Shop EcoWellness",
-            "link_2": "shopify:\/\/collections\/care-beauty-1",
+            "link_2": "shopify://collections/care-beauty-1",
             "link_text_2": "",
             "color_accent": "#ffffff",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/Care_and_Beauty.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/Care_and_Beauty.jpg",
+            "image": "shopify://shop_images/Care_and_Beauty.jpg",
+            "image_mobile": "shopify://shop_images/Care_and_Beauty.jpg",
             "overlay_opacity": 40
           }
         },
@@ -446,17 +437,17 @@
           "type": "hero",
           "settings": {
             "top_subheading": "",
-            "title": "<p>Home & Lifestyle<\/p>",
+            "title": "<p>Home & Lifestyle</p>",
             "title_size": 56,
             "subheading": "Our Curated Selection of Non-Toxic, Eco-Friendly Products for a Healthier Home Environment",
-            "link": "shopify:\/\/collections\/home-lifestyle-1",
+            "link": "shopify://collections/home-lifestyle-1",
             "link_text": "Shop EcoWellness",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "#ffffff",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/Home_and_Lifestyle.png",
-            "image_mobile": "shopify:\/\/shop_images\/Home_and_Lifestyle.png",
+            "image": "shopify://shop_images/Home_and_Lifestyle.png",
+            "image_mobile": "shopify://shop_images/Home_and_Lifestyle.png",
             "overlay_opacity": 40
           }
         },
@@ -464,16 +455,16 @@
           "type": "hero",
           "settings": {
             "top_subheading": "",
-            "title": "<p>Hobbies & Work<\/p>",
+            "title": "<p>Hobbies & Work</p>",
             "title_size": 56,
             "subheading": "Our Handpicked Selection of Sustainable Work & Art Supplies : To not lose nature's art supplies",
-            "link": "shopify:\/\/collections\/hobbies-work-1",
+            "link": "shopify://collections/hobbies-work-1",
             "link_text": "Shop EcoWellness",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "#ffffff",
             "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/Hobbies_and_work.png",
+            "image": "shopify://shop_images/Hobbies_and_work.png",
             "overlay_opacity": 40
           }
         }
@@ -501,13 +492,13 @@
         "image_aKdfJ8": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/dull-red-paper-handmade-pack-of-24-a4-504247.jpg",
+            "image": "shopify://shop_images/dull-red-paper-handmade-pack-of-24-a4-504247.jpg",
             "subheading": "",
             "heading": "Wellness Hobbies",
             "heading_size": "smi-h1",
             "description": "Our thoughtfully curated selection of wellness hobbies, promoting a healthy and eco-friendly lifestyle.",
             "first_button_label": "Shop EcoWellness",
-            "first_button_link": "shopify:\/\/collections\/nourishing-foods",
+            "first_button_link": "shopify://collections/nourishing-foods",
             "first_button_style": "solid",
             "second_button_label": "",
             "second_button_link": "",
@@ -524,13 +515,13 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/2_845e2bbe-e7fe-40b4-93dc-32abd57486d2.jpg",
+            "image": "shopify://shop_images/2_845e2bbe-e7fe-40b4-93dc-32abd57486d2.jpg",
             "subheading": "",
             "heading": "Care & Beauty",
             "heading_size": "smi-h1",
             "description": "Elevate Your Self-Care Routine with Our Non-Toxic, Safe Products: Because Your Health Matters",
             "first_button_label": "Shop EcoWellness",
-            "first_button_link": "shopify:\/\/collections\/care-beauty-1",
+            "first_button_link": "shopify://collections/care-beauty-1",
             "first_button_style": "solid",
             "second_button_label": "",
             "second_button_link": "",
@@ -547,13 +538,13 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/10_589e4502-42b0-49ab-922d-3e5d4d4dea68.jpg",
+            "image": "shopify://shop_images/10_589e4502-42b0-49ab-922d-3e5d4d4dea68.jpg",
             "subheading": "",
             "heading": "Home & Lifestyle",
             "heading_size": "smi-h1",
             "description": "Our Curated Selection of Non-Toxic, Eco-Friendly Products for a Healthier Home Environment",
             "first_button_label": "Shop EcoWellness",
-            "first_button_link": "shopify:\/\/collections\/home-lifestyle-1",
+            "first_button_link": "shopify://collections/home-lifestyle-1",
             "first_button_style": "solid",
             "second_button_label": "",
             "second_button_link": "",
@@ -667,7 +658,7 @@
         "heading_size": "smi-h2",
         "description": "",
         "heading_alignment": "center",
-        "media_ratio": "1\/1",
+        "media_ratio": "1/1",
         "media_shape": "default",
         "content_alignment": "left",
         "show_second_image": true,
@@ -691,24 +682,24 @@
           "type": "image",
           "settings": {
             "link": "",
-            "image": "shopify:\/\/shop_images\/Bhrsa_Website_Hero_Page_1.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/Bhrsa_Website_Hero_Page_1.jpg"
+            "image": "shopify://shop_images/Bhrsa_Website_Hero_Page_1.jpg",
+            "image_mobile": "shopify://shop_images/Bhrsa_Website_Hero_Page_1.jpg"
           }
         },
         "template--14515920339073__04274eb4-bb82-4eba-9325-003a096f472a-image-2": {
           "type": "image",
           "settings": {
             "link": "",
-            "image": "shopify:\/\/shop_images\/Bhrsa_Website_Hero_Page_5.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/Bhrsa_Website_Hero_Page_5.jpg"
+            "image": "shopify://shop_images/Bhrsa_Website_Hero_Page_5.jpg",
+            "image_mobile": "shopify://shop_images/Bhrsa_Website_Hero_Page_5.jpg"
           }
         },
         "6fc18ceb-511b-4f53-9f78-3237d27225c2": {
           "type": "image",
           "settings": {
             "link": "",
-            "image": "shopify:\/\/shop_images\/Bhrsa_Website_Hero_Page_3.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/Bhrsa_Website_Hero_Page_3.jpg"
+            "image": "shopify://shop_images/Bhrsa_Website_Hero_Page_3.jpg",
+            "image_mobile": "shopify://shop_images/Bhrsa_Website_Hero_Page_3.jpg"
           }
         }
       },
@@ -795,161 +786,161 @@
         "logo_dnLF6U": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/download_1.png",
+            "image": "shopify://shop_images/download_1.png",
             "logo_width": 160,
-            "link": "shopify:\/\/collections\/almitra-sustainables"
+            "link": "shopify://collections/almitra-sustainables"
           }
         },
         "logo_PgE7gD": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/logo.jpg",
+            "image": "shopify://shop_images/logo.jpg",
             "logo_width": 160,
-            "link": "shopify:\/\/collections\/arusha-foods"
+            "link": "shopify://collections/arusha-foods"
           }
         },
         "logo_WFTHyd": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/download.png",
+            "image": "shopify://shop_images/download.png",
             "logo_width": 160,
-            "link": "shopify:\/\/collections\/baan-organics"
+            "link": "shopify://collections/baan-organics"
           }
         },
         "logo_T9npnU": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/bluecat-paper-logo-square-1500-x-1500.png",
+            "image": "shopify://shop_images/bluecat-paper-logo-square-1500-x-1500.png",
             "logo_width": 160,
-            "link": "shopify:\/\/collections\/bluecat-paper"
+            "link": "shopify://collections/bluecat-paper"
           }
         },
         "logo_fPRDmt": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2.5x2.5_logo.png",
+            "image": "shopify://shop_images/2.5x2.5_logo.png",
             "logo_width": 160,
-            "link": "shopify:\/\/collections\/chiya-leaf"
+            "link": "shopify://collections/chiya-leaf"
           }
         },
         "logo_qnkPJJ": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/logo_209424e6-d812-4321-9184-797952ce380e.jpg",
+            "image": "shopify://shop_images/logo_209424e6-d812-4321-9184-797952ce380e.jpg",
             "logo_width": 160,
-            "link": "shopify:\/\/collections\/gramiyaa"
+            "link": "shopify://collections/gramiyaa"
           }
         },
         "logo_X6GeWQ": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Havis_foods_logo.jpg",
+            "image": "shopify://shop_images/Havis_foods_logo.jpg",
             "logo_width": 160,
-            "link": "shopify:\/\/collections\/havis-foods"
+            "link": "shopify://collections/havis-foods"
           }
         },
         "logo_Mxj8Et": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1687760443870.jpg",
+            "image": "shopify://shop_images/1687760443870.jpg",
             "logo_width": 160,
-            "link": "shopify:\/\/collections\/holysip-kombucha"
+            "link": "shopify://collections/holysip-kombucha"
           }
         },
         "logo_exVfD8": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/IHO_Logo_1080x1080_450c8298-b4e1-4fb6-a5d5-0e2a0dddc0d1.png",
+            "image": "shopify://shop_images/IHO_Logo_1080x1080_450c8298-b4e1-4fb6-a5d5-0e2a0dddc0d1.png",
             "logo_width": 160,
-            "link": "shopify:\/\/collections\/india-hemp-organics"
+            "link": "shopify://collections/india-hemp-organics"
           }
         },
         "logo_hYK3Hc": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/LeafySure-Final-Logo_01_1.png",
+            "image": "shopify://shop_images/LeafySure-Final-Logo_01_1.png",
             "logo_width": 160,
-            "link": "shopify:\/\/collections\/leafysure"
+            "link": "shopify://collections/leafysure"
           }
         },
         "logo_tUTTHJ": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/luc.png",
+            "image": "shopify://shop_images/luc.png",
             "logo_width": 160,
-            "link": "shopify:\/\/collections\/lucs-candles"
+            "link": "shopify://collections/lucs-candles"
           }
         },
         "logo_7m9EMR": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/final_Logo.jpg",
+            "image": "shopify://shop_images/final_Logo.jpg",
             "logo_width": 160,
-            "link": "shopify:\/\/collections\/mother-nature-products"
+            "link": "shopify://collections/mother-nature-products"
           }
         },
         "logo_JUEexz": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Mountain-Bean-Logo-03_32c62586-873f-4437-baef-4156eff7716d.png",
+            "image": "shopify://shop_images/Mountain-Bean-Logo-03_32c62586-873f-4437-baef-4156eff7716d.png",
             "logo_width": 160,
-            "link": "shopify:\/\/collections\/mountain-bean"
+            "link": "shopify://collections/mountain-bean"
           }
         },
         "logo_ntr3dN": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/A15751_Murshmallow_Logo_HP_2.png",
+            "image": "shopify://shop_images/A15751_Murshmallow_Logo_HP_2.png",
             "logo_width": 160,
-            "link": "shopify:\/\/collections\/murshmallow"
+            "link": "shopify://collections/murshmallow"
           }
         },
         "logo_j9kqpC": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Copy_of_Logo_English_Green_BG.jpg",
+            "image": "shopify://shop_images/Copy_of_Logo_English_Green_BG.jpg",
             "logo_width": 160,
-            "link": "shopify:\/\/collections\/ooo-farms"
+            "link": "shopify://collections/ooo-farms"
           }
         },
         "logo_pmBRUx": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/PP_Logo.jpg",
+            "image": "shopify://shop_images/PP_Logo.jpg",
             "logo_width": 160,
-            "link": "shopify:\/\/collections\/praanapoorna-collective"
+            "link": "shopify://collections/praanapoorna-collective"
           }
         },
         "logo_VNGzph": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/puretive_logo.jpg",
+            "image": "shopify://shop_images/puretive_logo.jpg",
             "logo_width": 160,
-            "link": "shopify:\/\/collections\/puretive-botanics"
+            "link": "shopify://collections/puretive-botanics"
           }
         },
         "logo_HTkkgr": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Svastya_Logo.png",
+            "image": "shopify://shop_images/Svastya_Logo.png",
             "logo_width": 160,
-            "link": "shopify:\/\/collections\/svastya-organics"
+            "link": "shopify://collections/svastya-organics"
           }
         },
         "logo_AAkNVd": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Shunyam_Logo.png",
+            "image": "shopify://shop_images/Shunyam_Logo.png",
             "logo_width": 160,
-            "link": "shopify:\/\/collections\/shunyam"
+            "link": "shopify://collections/shunyam"
           }
         },
         "logo_Qfm87D": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/soak_logo_small_copy.png",
+            "image": "shopify://shop_images/soak_logo_small_copy.png",
             "logo_width": 160,
-            "link": "shopify:\/\/collections\/soak-wellbeing"
+            "link": "shopify://collections/soak-wellbeing"
           }
         },
         "color_znWta6": {
@@ -967,41 +958,41 @@
         "logo_nB979k": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/channels4_profile.jpg",
+            "image": "shopify://shop_images/channels4_profile.jpg",
             "logo_width": 160,
-            "link": "shopify:\/\/collections\/sukalam"
+            "link": "shopify://collections/sukalam"
           }
         },
         "logo_YwmwFz": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Untitled_design_1_copy.png",
+            "image": "shopify://shop_images/Untitled_design_1_copy.png",
             "logo_width": 160,
-            "link": "shopify:\/\/collections\/vandyam-prasad-foods-pvt-ltd"
+            "link": "shopify://collections/vandyam-prasad-foods-pvt-ltd"
           }
         },
         "logo_ndf6AX": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/vistaraku_logo-03_3aa8fe71-7632-4203-ac04-c9f8d7870199.png",
+            "image": "shopify://shop_images/vistaraku_logo-03_3aa8fe71-7632-4203-ac04-c9f8d7870199.png",
             "logo_width": 160,
-            "link": "shopify:\/\/collections\/vistaraku"
+            "link": "shopify://collections/vistaraku"
           }
         },
         "logo_W4Ldjy": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/download_a11dc6a0-b236-482b-9aa6-7f7e1503c403.png",
+            "image": "shopify://shop_images/download_a11dc6a0-b236-482b-9aa6-7f7e1503c403.png",
             "logo_width": 160,
-            "link": "shopify:\/\/collections\/vedic-tails"
+            "link": "shopify://collections/vedic-tails"
           }
         },
         "logo_qJtAhM": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Futurebites_png_logo.png",
+            "image": "shopify://shop_images/Futurebites_png_logo.png",
             "logo_width": 160,
-            "link": "shopify:\/\/collections\/future-bites"
+            "link": "shopify://collections/future-bites"
           }
         }
       },
@@ -1037,7 +1028,7 @@
         "container_full_width": true,
         "enable_spacing_between_items": false,
         "sub_heading": "",
-        "heading": "<strong>Shop by brand<\/strong>",
+        "heading": "<strong>Shop by brand</strong>",
         "heading_size": "smi-h2",
         "description": "",
         "heading_alignment": "center",
@@ -1063,12 +1054,12 @@
             "title": "Protein-Packed Food Guide",
             "title_size": 40,
             "subheading": "This exclusive offer is available for a limited time – grab your guide and transform your kitchen into a hub of health and nutrition!",
-            "link": "shopify:\/\/products\/bhrsa-digital-download-guide-to-protein-packed-food",
+            "link": "shopify://products/bhrsa-digital-download-guide-to-protein-packed-food",
             "link_text": "Get Your Free Guide Now",
             "link_2": "",
             "link_text_2": "",
             "text_position": "left",
-            "image": "shopify:\/\/shop_images\/ProteinGuide.jpg",
+            "image": "shopify://shop_images/ProteinGuide.jpg",
             "indent_image": true,
             "color_scheme": "3"
           }
@@ -1123,25 +1114,25 @@
         "template--14515920339073__d52077d1-4e48-4160-a41d-cb52450e9ee0-Article-1": {
           "type": "Article",
           "settings": {
-            "article": "why-low-tox-lifestyle-for-your-health\/what-is-low-tox-lifestyle-and-why-is-it-important-for-your-health"
+            "article": "why-low-tox-lifestyle-for-your-health/what-is-low-tox-lifestyle-and-why-is-it-important-for-your-health"
           }
         },
         "template--14515920339073__d52077d1-4e48-4160-a41d-cb52450e9ee0-Article-2": {
           "type": "Article",
           "settings": {
-            "article": "the-power-of-balanced-biological-rhythms-and-physiological-well-being\/harmony-within-the-power-of-balanced-biological-rhythms-and-physiological-well-being"
+            "article": "the-power-of-balanced-biological-rhythms-and-physiological-well-being/harmony-within-the-power-of-balanced-biological-rhythms-and-physiological-well-being"
           }
         },
         "template--14515920339073__d52077d1-4e48-4160-a41d-cb52450e9ee0-Article-3": {
           "type": "Article",
           "settings": {
-            "article": "the-root-of-disease\/the-root-of-disease"
+            "article": "the-root-of-disease/the-root-of-disease"
           }
         },
         "article_T6E4YN": {
           "type": "Article",
           "settings": {
-            "article": "magic-of-almond-oil-your-new-go-to-for-everything-from-salad-dressing-to-skin-care\/magic-of-almond-oil-your-new-go-to-for-everything-from-salad-dressing-to-skin-care"
+            "article": "magic-of-almond-oil-your-new-go-to-for-everything-from-salad-dressing-to-skin-care/magic-of-almond-oil-your-new-go-to-for-everything-from-salad-dressing-to-skin-care"
           }
         }
       },
@@ -1200,7 +1191,7 @@
         "heading_alignment": "center",
         "blog": "",
         "maximum_item_to_show": 6,
-        "media_ratio": "3\/2",
+        "media_ratio": "3/2",
         "media_shape": "default",
         "content_alignment": "center",
         "show_tags": true,
@@ -1230,10 +1221,10 @@
           "settings": {
             "heading": "",
             "heading_size": "smi-h6",
-            "description": "<a href=\"https:\/\/admin.shopify.com\/store\/trial-6958\/products\/6661376770177\/variants\/39682269413505\"><strong>Energy | Herbal Infusion for Caffeine-Free Energy  - <\/strong><\/a>I’m in love with this product bcz it reduced my muscle soreness Thank you bhrsa.",
+            "description": "<a href=\"https://admin.shopify.com/store/trial-6958/products/6661376770177/variants/39682269413505\"><strong>Energy | Herbal Infusion for Caffeine-Free Energy  - </strong></a>I’m in love with this product bcz it reduced my muscle soreness Thank you bhrsa.",
             "author_name": "Poorna",
             "author_info": "Hassan, Karnataka",
-            "author_image": "shopify:\/\/shop_images\/energy-herbal-infusion-for-caffeine-free-energy-45-g-967878.jpg",
+            "author_image": "shopify://shop_images/energy-herbal-infusion-for-caffeine-free-energy-45-g-967878.jpg",
             "author_shape": "round",
             "star": "5"
           }
@@ -1243,10 +1234,10 @@
           "settings": {
             "heading": "",
             "heading_size": "smi-h6",
-            "description": "<a href=\"https:\/\/admin.shopify.com\/store\/trial-6958\/products\/6576894607489\/variants\/39412284915841\"><strong>Neem & Rosemary Clay Face Mask | Restore Dull Skin <\/strong><\/a> - The pack really helped my dry skin and soothed my pimples :)",
+            "description": "<a href=\"https://admin.shopify.com/store/trial-6958/products/6576894607489/variants/39412284915841\"><strong>Neem & Rosemary Clay Face Mask | Restore Dull Skin </strong></a> - The pack really helped my dry skin and soothed my pimples :)",
             "author_name": "Shreya Pandey",
             "author_info": "Mumbai, Maharashtra",
-            "author_image": "shopify:\/\/shop_images\/Neem.jpg",
+            "author_image": "shopify://shop_images/Neem.jpg",
             "author_shape": "shape-blob-5",
             "star": "5"
           }
@@ -1256,10 +1247,10 @@
           "settings": {
             "heading": "",
             "heading_size": "smi-h6",
-            "description": "<a href=\"https:\/\/admin.shopify.com\/store\/trial-6958\/products\/6666857840769\/variants\/39699904462977\"><strong>Krishna Kamod Rice (Semi Polished) | Electrolyte Rich - <\/strong><\/a>It was very good experience. Excellent customer care and very good product quality.Looking forward to buy more products 😊",
+            "description": "<a href=\"https://admin.shopify.com/store/trial-6958/products/6666857840769/variants/39699904462977\"><strong>Krishna Kamod Rice (Semi Polished) | Electrolyte Rich - </strong></a>It was very good experience. Excellent customer care and very good product quality.Looking forward to buy more products 😊",
             "author_name": "Sandhya Purani",
             "author_info": "Kozhikode, Kerala",
-            "author_image": "shopify:\/\/shop_images\/CopyofCopyofKRISHNAKAMODSP.jpg",
+            "author_image": "shopify://shop_images/CopyofCopyofKRISHNAKAMODSP.jpg",
             "author_shape": "shape-blob-6",
             "star": "5"
           }
@@ -1288,7 +1279,7 @@
         "sub_heading": "",
         "heading": "What our customers say",
         "heading_size": "smi-h2",
-        "description": "<p>Valuable Testimonials<\/p>",
+        "description": "<p>Valuable Testimonials</p>",
         "heading_alignment": "center",
         "content_alignment": "center",
         "arrow_style": "arr-circle-style-1",
@@ -1311,7 +1302,7 @@
             "sub_heading": "",
             "heading": "Subscribe to the newsletter",
             "heading_size": "smi-h2",
-            "description": "<p>Signup for our newsletter to stay up to date on sales and events.<\/p>"
+            "description": "<p>Signup for our newsletter to stay up to date on sales and events.</p>"
           }
         },
         "email_form_hkK7z8": {
@@ -1359,7 +1350,7 @@
       ],
       "settings": {
         "full_width": "container-fluid-no-padding",
-        "image_banner": "shopify:\/\/shop_images\/www.bhrsa.com_1.jpg",
+        "image_banner": "shopify://shop_images/www.bhrsa.com_1.jpg",
         "desktop_media_width": "50",
         "desktop_media_position": "row-reverse",
         "media_height": "small",
@@ -1377,7 +1368,7 @@
         "milestone_image_PAezLk": {
           "type": "milestone-image",
           "settings": {
-            "milestone_image": "shopify:\/\/shop_images\/Bhrsa_primary_Logo_for_dark_background_ecf41f0f-c763-4d75-83ad-43e52bab5c5b.png",
+            "milestone_image": "shopify://shop_images/Bhrsa_primary_Logo_for_dark_background_ecf41f0f-c763-4d75-83ad-43e52bab5c5b.png",
             "sub_heading": "JULY, 2021",
             "heading": "Inception of an idea to spread awareness of low-tox products for holistic wellness of people & planet",
             "heading_size": "smi-h3",
@@ -1391,11 +1382,11 @@
           "type": "milestone-image",
           "disabled": true,
           "settings": {
-            "milestone_image": "shopify:\/\/shop_images\/smi-smi-clothing-classic-24.jpg",
+            "milestone_image": "shopify://shop_images/smi-smi-clothing-classic-24.jpg",
             "sub_heading": "JAN, 1990",
             "heading": "Trailblazing beginings",
             "heading_size": "smi-h3",
-            "description": "<p>Stepping into the realm of bohemian fashion is akin to entering a world of whimsy and carefree charm. A flowing floral maxi dress embodies the spirit of boho chic, with its free-spirited silhouette and vibrant patterns. <\/p>",
+            "description": "<p>Stepping into the realm of bohemian fashion is akin to entering a world of whimsy and carefree charm. A flowing floral maxi dress embodies the spirit of boho chic, with its free-spirited silhouette and vibrant patterns. </p>",
             "button_label": "",
             "button_link": "",
             "button_style": "solid"
@@ -1405,11 +1396,11 @@
           "type": "milestone-image",
           "disabled": true,
           "settings": {
-            "milestone_image": "shopify:\/\/shop_images\/smi-review_clothing-52.jpg",
+            "milestone_image": "shopify://shop_images/smi-review_clothing-52.jpg",
             "sub_heading": "FEB, 2007",
             "heading": "A mid-century revolution",
             "heading_size": "smi-h3",
-            "description": "<p>Sharp lines, structured shoulders, and precise stitching come together to create a silhouette that exudes confidence and professionalism. Each element of the suit is carefully designed to empower the wearer.<\/p>",
+            "description": "<p>Sharp lines, structured shoulders, and precise stitching come together to create a silhouette that exudes confidence and professionalism. Each element of the suit is carefully designed to empower the wearer.</p>",
             "button_label": "",
             "button_link": "",
             "button_style": "solid"
@@ -1419,11 +1410,11 @@
           "type": "milestone-image",
           "disabled": true,
           "settings": {
-            "milestone_image": "shopify:\/\/shop_images\/smi-image_clothing-01_15.jpg",
+            "milestone_image": "shopify://shop_images/smi-image_clothing-01_15.jpg",
             "sub_heading": "MAR, 2019",
             "heading": "Unlocking your style potential",
             "heading_size": "smi-h3",
-            "description": "<p>The loose fit allows for easy movement, perfect for lounging at home or enjoying a leisurely stroll in the cool autumn breeze. It's a reminder that fashion can be a source of comfort and self-care.<\/p>",
+            "description": "<p>The loose fit allows for easy movement, perfect for lounging at home or enjoying a leisurely stroll in the cool autumn breeze. It's a reminder that fashion can be a source of comfort and self-care.</p>",
             "button_label": "",
             "button_link": "",
             "button_style": "solid"
@@ -1457,7 +1448,7 @@
         "description": "",
         "heading_alignment": "center",
         "content_alignment": "left",
-        "media_ratio": "3\/2",
+        "media_ratio": "3/2",
         "media_shape": "default",
         "timeline_style": "5",
         "color_scheme": "scheme_1",
@@ -1503,8 +1494,8 @@
       ],
       "settings": {
         "full_width": true,
-        "cover_image": "shopify:\/\/shop_images\/758436fd-e028-4e64-beb0-19d234a34fc4.jpg",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=Wc1g3v8YJp0",
+        "cover_image": "shopify://shop_images/758436fd-e028-4e64-beb0-19d234a34fc4.jpg",
+        "video_url": "https://www.youtube.com/watch?v=Wc1g3v8YJp0",
         "autoplay": false,
         "content_position": "center",
         "content_alignment": "center",
