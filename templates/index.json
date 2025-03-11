@@ -11,27 +11,6 @@
   "sections": {
     "1721906255390da1fa": {
       "type": "apps",
-      "blocks": {
-        "greenspark_full_width_banner_AiT3UU": {
-          "type": "shopify://apps/greenspark/blocks/full-width-banner/8c13bd86-5fb4-4c2e-83b1-e3a158a87952",
-          "settings": {
-            "text_color": "{{ shop.brand.colors.primary[0].foreground }}",
-            "banner_image": "shopify://shop_images/Saving_Ocean_From_Plastic_Bottles_9.jpg",
-            "banner_height": 350,
-            "toggle_months": false,
-            "toggle_trees": false,
-            "toggle_plastic": true,
-            "toggle_co2": false,
-            "toggle_kelp": false,
-            "toggle_straws": false,
-            "toggle_miles": false,
-            "toggle_football": false
-          }
-        }
-      },
-      "block_order": [
-        "greenspark_full_width_banner_AiT3UU"
-      ],
       "settings": {
         "full_width": false,
         "space_around": false
@@ -271,8 +250,8 @@
           "type": "image",
           "settings": {
             "link": "shopify://collections/all",
-            "image": "shopify://shop_images/bhrsa_Banner_65c2dfd6-ef6c-4e85-9b52-7767c7d8adab.jpg",
-            "image_mobile": "shopify://shop_images/bhrsa_Banner.jpg"
+            "image": "shopify://shop_images/bhrsa_Banner_1.jpg",
+            "image_mobile": "shopify://shop_images/bhrsa_Banner_1.jpg"
           }
         }
       },
@@ -789,9 +768,7 @@
         "featured-collections-4",
         "featured-collections-5"
       ],
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "title": "Shop by values",
         "heading_size": "h2",
